@@ -1,0 +1,1854 @@
+--- Page 1 ---
+11/28/2025 Star Theater Operators Manual 1
+
+--- Page 2 ---
+Comprehensive Log of Star Theater Operations
+• Up to date as of: 8/16/2025
+11/28/2025 Star Theater Operators Manual 2
+
+--- Page 3 ---
+11/28/2025 Star Theater Operators Manual 3
+T able of Contents
+Pg Description Pg Description
+1 Cover Page 21 iPad Continued…
+2 Cover Page 22 Laser System
+3 Table of Contents 23 Laser Startup/Shutdown
+4 Table of Contents 24 Laser Drive Housing
+5 Table of Contents 25 Laser Selection Panel
+6 System Guide Section Start 26 Laser Mixer
+7 Pre and Post Show Checklists 27 Laser Kosmos
+8 House Lights 28 Video Input for Monitor Display
+9 Turning on the System 29 Aux Projector
+10 Turning on Projectors 30 Spotlights
+11 Starting a Show 31 Podium Computer
+12 Turning off the System and the Projector 32 Audio: Mics
+13 Control Panel Items 33 Audio: Software Clove
+14 Cove Lights 34 Audio: Software Sound web
+15 Cove Lights Continued… 35 Server Documentation Page
+16 External Music (YouTube) 36 TightVNC (Audio Related)
+17 Control Panel: Star Talks: Home 37 File Directory Part 1
+18 Xbox Controller 38 File Directory Part 2
+19 Resource for Star Talks 39 File Directory Part 3
+20 iPad 40 File Directory Part 4
+
+--- Page 4 ---
+11/28/2025 Star Theater Operators Manual 4
+T able of Contents
+Pg Description Pg Description
+41 DS-Media 61 Backups
+42 Scripting 62 Backups: Preparing the Hardware
+43 Scripting Continued… 63 Backups: Preparing the Software
+44 Projector Blend Masks 64 Backups: Post-Backup Procedure
+45 Projector Settings 65 Incident & Change Event Log
+46 Spare Show Copies 66 Incident & Change Event Log Page Layout
+47 Trouble Shooting 67 Ticketing & Attendance Section
+48 System Shutdown & Start Up Section 68 Attendance Logging
+49 Full Shutdown for Dangerous Weather Part 1 69 Regular Public Show Ticketing
+50 Full Shutdown for Dangerous Weather Part 2 70 Regular Public Show Ticketing Continued…
+51 Full Shutdown for Dangerous Weather Part 3 71 Credit Card Payment: Using the Kiosk
+52 Full Shutdown for Dangerous Weather Part 4 72 Credit Card Payment: Using the Kiosk Continued…
+53 Full Start Up Procedure 73 Credit Card Payment: Password Updates
+54 Regular Maintenance Section 74 Events Catalogue Section
+55 E&S Making sure Digistar is Updated 75 Groups by Request: Basketball Recruitment
+56 Regular Maintenance Schedule 76 Groups by Request: Football
+57 Projector Filter Change 77 Groups by Request: Schools & Community
+58 Maintenance Tab: Alignment 78 Groups by Request: MSU Class, Dorm, Club
+59 Maintenance Tab: Color Blending 79 Special Groups: Social Engagements
+60 Maintenance Tab: Color Blending Continued… 80 Special Events: Astra-Con
+
+--- Page 5 ---
+11/28/2025 Star Theater Operators Manual 5
+T able of Contents
+Pg Description Pg Description
+81 Special Events: Camps or Workshops 101
+82 Special Events: International Obs. Moon Night 102
+83 Public Shows Indoors and Outdoors 103
+84 Special Events: Valentines Under the Stars 104
+85 Special Events: Gift Certificates 105
+86 Mesmerica Shows 106
+87 Beautifica Shows 107
+88 Miscellaneous Section 108
+89 Contacts: Facilities and Janitorial Services 109
+90 Website, Email Distribution, Marketing 110
+91 Website, Email Distribution, Marketing Continued... 111
+92 Website, Email Distribution, Marketing Continued... 112
+93 Login Info 113
+94 Full Dome Service Provider Evans and Sutherland 114
+95 Laser System Contact 115
+96 Webex, Zoom, and Google Meets 116
+97 117
+98 118
+99 119
+100 120
+
+--- Page 6 ---
+Access and Contacts
+Digital Access 
+• Knowing the login information for the various locations is 
+essential; you will have access to it on this slide anytime you 
+need a reminder
+Location/Account Username Password
+Main Console Digistar digistar
+Podium Console Guest none
+Gmail Account msustartheater@gmail.com Digistar21m!
+Instagram Account Msuspacesciencecenter DSS17ssc!
+iPad Apple ID (account 
+name Ara Stark) msustartheater@gmail.com Digistar21m!
+Credit Card System 
+(Current) SSC Morehead#202821
+11/28/2025 Star Theater Operators Manual 6
+
+--- Page 7 ---
+Contacts: Facilities and Janitorial Services
+If there is an issue with the physical environment surrounding the hardware and software in the star theater, facilities should be contacted. Normally, 
+contact the star theater director, who will then contact facilities.  If the director can’t be reached right away, contact facilities at 606 783 2066.  After 
+hours, you will be leaving a message with someone at the campus security desk who will attempt to leave a message with them. Contact should be 
+initiated as follows:
+1) If the temperature falls below 65 degrees or above 80 degrees.
+2) If there is a leak of any kind…. Floor,  ceiling, or wall.  
+3) If the full dome shows additional ‘staining’ (beyond what we already have).
+4) If humidity is unusually high. 
+5) If a visitor leaves a mark (vomiting, spilling, staining, leaving food, tracking in dirt), the janitorial services should be contacted.  We are supposed 
+to have a janitor in the building during the day.   If you can’t find the janitor right away, look for the star theater director or Cindy to contact the 
+Cleaning Supervisor Tim Ruley (606 316 0188).  If the neither the director nor Cindy can be found, you can contact the cleaning supervisor 
+politely, particularly if it is a health hazard for folks in the building. 
+11/28/2025 Star Theater Operators Manual 7
+
+--- Page 8 ---
+Full Dome Service Provider Evans and Sutherland: Contacting and Problem Solving
+• In the event of a freeze (or other issues), first try the Reset button located in the top left of the leftmost monitor. If this does 
+not resolve the issue, contact our service provider as described below.
+• Evans and Sutherland is the service provider which develops, updates, and (upon request) maintains the Digistar system.
+• Apply for an account here when you have your first issue. Click Support and fill out the application. Use your MSU ID and 
+password for the username and password respectively. (You can also use a personal email if you choose, but using your 
+MSU stuff proves easier.)
+• Typically, several exchanges involving elaborating a problem, prescribing a potential solution that we can try on our end and 
+describing the result will solve the problem. If not, we can set up an online session directly with E&S at the other end 
+through 
+• T eamViewer. Exchange mobile numbers with the E&S technician in advance.
+• Use T eamViewer from the dropdown menu, get the user and password, update the ticket, and have a session for further 
+issue resolution. TeamViewer will allow the technician to remotely control the system. They will be on call with you while 
+troubleshooting. 
+• In the event of an emergency (pertaining to the Digistar system) call (800)-327-5707 or (801)-588-7000. An emergency 
+means that we are under time constraints, and a major issue is not able to be resolved. 
+11/28/2025 Star Theater Operators Manual 8
+
+--- Page 9 ---
+Laser System Contact
+• For laser system (website av-Imagineering.com) support contact Joanne Young (joanne@av-Imagineering.com) 
+or Susan Hatfield (susan@av-Imagineering.com) to get remote help from a technician via phone or email 
+exchanges, describing the problem, prescribing and testing solutions.
+11/28/2025 Star Theater Operators Manual 9
+
+--- Page 10 ---
+Post-Show Shut Down Checklist
+Make sure to…
+1. Make sure the Projectors are turned off.
+2. Make sure the cove lights are turned off.
+3. Make sure the chrome internet browser is closed.
+4. After ensuring the previous steps, close Digistar by selecting 
+the x at the top right of the screen.
+5. Switch off house lights as you leave.
+6. Shut the doors behind you and store door stops/anything 
+else inside the theater.
+11/28/2025 Star Theater Operators Manual 10
+Getting Started
+Pre and Post show Checklist
+Pre-Show set up Checklist
+Make sure to…
+1. Arrive half an hour early.
+2. Projectors on, warmed, and/or laser system ready with show 
+loaded.
+3. Mic tested and ready.
+4. Proper lighting for seating guests
+5. Nice music, not too loud.
+6. Something on the projectors for people to see as they come in.
+7. Doors propped open.
+8. Once they arrive, get a tally of people and mark it on the 
+attendance sheet, reference Attendance Logging page for 
+details.
+9. Have a friendly attitude!
+
+--- Page 11 ---
+House Lights
+• The house lights are controlled by an entirely separate system from 
+Digistar.You can control these in Spice as well as the various panels 
+around the room. There are 2 versions you may see; they function the 
+same way. 
+1 All lights on
+2 Only front lights on
+3 Only step lights on
+4 No lights on
+5 All lights off
+Normal Light Panel Operators Console Light Panel
+11/28/2025 Star Theater Operators Manual 11
+
+--- Page 12 ---
+Turning on the System
+First, turn on each of the monitors using their respective 
+buttons, the 3 main larger monitors have their buttons on 
+the back and to the right.
+The smaller rightmost monitor has its button on the front 
+bottom right.
+Once they are on, you should see 3 different computers 
+displaying. The 3 monitors to the left are linked, and the 
+one to the right is on its own system. The place where we 
+will start is the 3 monitors on the left which give us access 
+to the main system of Digistar.
+T o open Digistar 7, see the right picture. This monitor 
+should be on the home screen by default assuming the 
+previous operator shut off Digistar properly. This is the 
+Digistar 7 application, shown by the red boxes; This will 
+open the full dome system that you will be using.
+Then, turn on the smaller monitor using the previously 
+mentioned power button. Clove and Spice Automation will 
+be open already.
+11/28/2025 Star Theater Operators Manual 12
+
+--- Page 13 ---
+Turning on Projectors​
+Along the top of the lefthand monitor, switch to the SYSTEM tab 
+(furthest right of the tabs as seen below surrounded by red box).
+Now, turn on the projectors (indicated in red). Click on Power 
+On.  It will prompt you to confirm turning on and shutting off the 
+projectors, just select yes to move through the prompts. The light 
+on the projector down I front will turn from red, to green, then 
+white. White means on, red means off, green means in process. 
+Once the projectors are on, a countdown will show on the dome. 
+This is the auto warmup process. The projectors will take at 
+least 20-30 minutes to warm up.
+Note: As mentioned, projectors should be given 30 minutes to 
+warm up.
+Note:  If an error occurs (indicated by a red flashing exclamation 
+point at the top right of the main Digistar 7 page) clear the error 
+by right clicking it. (This error is common, its because the system 
+for the projector loads slowly when you turn on Digistar.)
+11/28/2025 Star Theater Operators Manual 13
+
+--- Page 14 ---
+Starting a show
+• Open the playback tab indicated by the red circle below. T o play a show, either double-click the show you would like to play or manually 
+place it onto the dome by clicking and dragging the desired show onto the dome view.
+Note: These show options are due to 
+change depending on a lot of factors, 
+but generally they stay the same. 
+11/28/2025 Star Theater Operators Manual 14
+
+--- Page 15 ---
+Turning off the System and the Projector
+Make sure the projectors are turned OFF before you leave. Always check.  It only 
+takes a second. Look at the projector and make sure the red light is on and the 
+projector is clearly not projecting.
+NOTE: Normally, the system will be on when you come in unless the system has 
+been shutdown to protect it from severe weather or for maintenance. Assuming 
+the crew is communicating, you should always know when the computer will be 
+off and this will never line up with a show happening. As a side note, when 
+leaving the Star Theater, just shut off the monitors (the same buttons on the back 
+of the monitors you turned on when you came in), NEVER SHUT DOWN THE 
+COMPUTER unless you know what you are doing. Consult a crew member 
+veteran if you think this needs to be performed!
+11/28/2025 Star Theater Operators Manual 15
+
+--- Page 16 ---
+Control Panel Items
+ 
+On the right Digistar screen is the control panel tab. By default, this is placed on the right Digistar monitor, however after a full shutdown it can be 
+between the rest of the tabs on the left monitor, indicated here in red.
+The control panel tab contains many useful tools, some of which came with 
+Digistar 7, and many which our crew have developed themselves. We will 
+discuss other control panel tabs below this slide. 
+• Maintenance: The maintenance tab includes different tests for 
+fixing/maintaining good audio quality. 
+• Video Input: The video input tab is used to projector the rightmost 
+monitor onto the dome. 
+• Cove Lights: The cove lights tab controls the cove lights. 
+• Star T alks: The star talks tab includes all of the controls for running the 
+live night sky.
+11/28/2025 Star Theater Operators Manual 16
+
+--- Page 17 ---
+Cove Lights
+• You can use the cove lights tab to create ambience before a show and to provide 
+soft lighting for guests to adjust to after a show.
+• There are a couple of ways to turn on cove lights.Either shown here in the control 
+panel or via the iPad. 
+• Note: From the control panel drop down menu, select Cove Lights.
+11/28/2025 Star Theater Operators Manual 17
+
+--- Page 18 ---
+Cove Lights continued…
+After selecting cove lights (see directions above), you will see, in the middle of the central screen, buttons for cove light color selection. Options 
+include bluish gray and MSU blue and gold. With the white button, cove lights are turned off to start feature. You can also hand mix w/ sliders. Also, 
+there are also two larger buttons with preselected color for ’seating’ and ‘end lighting’. If you are not sure what lighting to use, use these!
+At the end of a show, when you are closing up shop, ensure that cove lights are shut off before closing Digistar. These cannot be controlled if Digistar 
+is not running.
+11/28/2025 Star Theater Operators Manual 18
+
+--- Page 19 ---
+External Music (Y ouTube)
+We play all external music through YouTube . We already have multiple space ambience videos bookmarked as well as added to a playlist on 
+YouTube. These videos have been screened and are known to be appropriate for our audiences.Adjust volume accordingly. Make sure to choose 
+appropriate music.
+There were originally concerns that playing audio through windows may cause issues, but these concerns have been alleviated as the issue 
+experienced (clove crashing) still occurs even after windows has not been played through it for an extended period of time. 
+Feel free to use YouTube or other players for Star Theater use.
+We use a free ad block which is no longer in service. This means that it will not be updated and maintained. However, it will continue to work until 
+further notice. It is not available for download, so do not remove the ad block for any reason, unless a reasonable alternative is tested before hand.
+We also use YouTube for the meditation sessions. These can be found in the meditation playlist. 
+11/28/2025 Star Theater Operators Manual 19
+
+--- Page 20 ---
+Control Panel: Star T alks: Home
+11/28/2025 Star Theater Operators Manual 20
+• Keep in mind that this home tab will be 
+updated frequently as new content and 
+pages are updated and changed.
+• The home tab is a master tab where you can 
+access all information needed for Star Talks, 
+and more in the future!
+• This is exactly where new recruits should go. 
+Everything here is an excellent resource to 
+train on and learn.
+
+--- Page 21 ---
+Resources for Star T alks
+• The joy of Star T alks is that eventually, everyone’s Star T alk will become unique. These resources are intended to get you started on 
+your journey. The absolute best resource a new recruit has to start learning how to give a Star Talk is by using the home tab. This is 
+a directory of all of the important tabs of content for a Star Talk. These tabs include buttons for various functions, and information 
+about what the buttons do as well as information about the topic.
+• For example, the Saturn tab has buttons to do lots of interesting things with Saturn, as well as many facts about Saturn, its moons, 
+ring, and more!
+11/28/2025 Star Theater Operators Manual 21
+• T o use the home tab, simply click 
+on any of the icons to be taken 
+directly to the location associated 
+with that button. Each tab under 
+the home directory will also have 
+this icon that will “bring you 
+home!”
+
+--- Page 22 ---
+Xbox Controller
+T o view any object, during a star talk or for setting up scenery, you will use 
+navigation controls.
+Click on the Astronomy Tab.
+Use navigation to control the spin and drift.
+Speed of movements can be controlled with the left and right controller 
+triggers respectively, or by the speed slider in navigation.
+Rotation Controls: Right Stick
+Zoom in/out: Left Stick, (forward, backward on the stick)
+Tilt/Roll: Left Stick, (left, right on stick)
+Left Trigger: Slow Down
+Right Trigger: Speed Up
+X Button: Toggle Drift
+Controller runs on batteries. Treat this like any other battery controlled 
+device. 
+Controller is connected to bluetooth dongle connnected into the back of the 
+left most monitor.
+11/28/2025 Star Theater Operators Manual 22
+
+--- Page 23 ---
+iPad
+• Depicted to the right is the home screen of the iPad. The iPad may or 
+may not already have Digistar 7 open. Assuming it does not, click on 
+the app in the red box.
+• The iPad will be an essential tool for smoothly running a show. The 
+iPad will allow you to have another tab open and ready to go for quick 
+actions. For instance, you have just finished a star talk and want to 
+turn on the lights while you are giving finishing announcements. 
+Simply have the iPad ready next to you and tap the lighting you 
+would like as you speak!
+11/28/2025 Star Theater Operators Manual 23
+
+--- Page 24 ---
+iPad continued...
+• The iPad can NOT access Digistar 7 while it is not running on 
+the computer. The iPad is giving remote access to Digistar on 
+the computer. So, if you want to use the iPad, Digistar MUST 
+be active on the computer.
+• The iPad can access any tab from the CONTROL PANEL tab, 
+as the iPad is essentially always mirroring this tab. This most 
+commonly used for lighting (as seen to the right) but by 
+selecting the button marked in red, you can access all the 
+other control panel tabs.
+11/28/2025 Star Theater Operators Manual 24
+
+--- Page 25 ---
+Laser System
+The laser system is another key component of running the 
+Star Theater. The laser system is contained below the desk to 
+the far right. 
+Below are pictures of what you will see with sections of 
+interest. Major components include the…
+• Drive Housing
+• Selection Panel
+• Start-Up/Shut-Down Panel
+• Mixer
+• Kosmos
+11/28/2025 Star Theater Operators Manual 25
+
+--- Page 26 ---
+Laser Startup/Shutdown
+• First of all, remove the laser lens cap, shown to right, marked in red.
+• Then go to the Startup/Shutdown Panel below, turn the key and switch all the 
+seen switches except for the middle one.
+• These are the correct states for all the switches when the laser system is on. 
+Note that ‘Pangolin’ should always be left in the HD24 state regardless of laser 
+system status.
+Power Shutter Lift Pangolin Geometric Color Filter
+On On Up HD24 On On
+11/28/2025 Star Theater Operators Manual 26
+
+
+--- Page 27 ---
+Laser Drive Housing
+After powering on the Startup/Shutdown Panel, move here, the laser drive housing. In the red circle is the power button. Press this to power it on; 
+This will also power on the Laser Selection Panel.
+•  The red boxes indicate the drive select buttons, drive one and two from left to right respectively. 
+•  Use the drive select buttons to switch between which drive you are pulling laser shows from.
+NOTE: It is possible for the drives to become dismounted with sufficient jarring. If you’re experiencing an error, try making sure the drives are 
+pushed in all the way. The drives are the two large squares with latches seen above.
+11/28/2025 Star Theater Operators Manual 27
+
+--- Page 28 ---
+Laser Selection Panel
+•  After selecting the desired drive, you can interact with and select 
+what laser show (from the selected drive) you would like to play. You 
+can do this by using the up and down arrow buttons shown to the 
+left. These are both encompassed by a red box.
+•  These arrow buttons also have ‘yes’ and ‘no’ inscribed on the up 
+and down arrows respectively. This is used for various prompts, 
+mainly the power shutdown confirmation prompt which you will use 
+every time you turn off the laser system.
+•  Below the aforementioned are the controls specific for whatever 
+show you are running. The other controls select a show, these are 
+used to way find the show. REW, FFWD, STOP , and PLAY are all 
+very intuitive and understandable.
+•  The LOCATE button to the left of these controls will allow you to 
+jump to a specified time that is programmed into the show. This is 
+useful as many of our shows have 25 to 35 seconds of empty time 
+which the locate button can be programmed to skip.
+11/28/2025 Star Theater Operators Manual 28
+
+--- Page 29 ---
+Laser Mixer
+• The mixer is used solely for laser volume and 
+additionally controls the Shure mic volume. These are 
+the optimal settings.
+11/28/2025 Star Theater Operators Manual 29
+
+
+--- Page 30 ---
+Laser Kosmos
+This is an additional piece of controlling laser audio.
+• Main function is to add base.
+• Global bypass will ‘bypass’ or shutoff the base. This is useful if you want to use the shure mics.
+• Base consists of ‘Quake’ and ‘Thud.’ Each of these should be adjusted for laser shows and turned off when using a shure mic. 
+Additionally, you can simply bypass the base if you want to use a shure mic. 
+11/28/2025 Star Theater Operators Manual 30
+
+
+--- Page 31 ---
+Video Input for Monitor Display
+• The Star Theater is capable of projecting the view of the 
+monitors onto the dome (Warped to become a square image 
+when projected.)
+• Note:  If presenter is using a remote access tool such as Webex 
+or zoom either locally or remotely, the presenter/guest  needs 
+to create an invitation for the star theater Gmail account ahead 
+time.  Further instructions given onremote access tool (e.g., 
+Webex, Zoom) presenter page.
+• To do projection of external images or presentations switch to 
+the ‘Video Input’ tab on the control panel. Click the leftmost 
+box (shown to the right, indicated in red) and wait about 5 
+seconds. This starts the streaming utility.Then, click the 
+“Enable Video” button (once again, indicated by the red box) 
+which will begin streaming the view you see on the RIGHT 
+monitor of the Digistar computer. 
+• Keep in mind that we do not want to present sensitive 
+information pertaining to crew members or anyone else, so be 
+cautious and mindful.
+• NOTE: Streaming windows through Digistar with windows and 
+Digistar volumes up will double the audio. The buttons 
+automatically toggle between Digistar and Streaming audio 
+levels. Keep this in mind,
+11/28/2025 Star Theater Operators Manual 31
+
+
+--- Page 32 ---
+Auditorium/External Presenter Support
+Aux Projector
+• The aux projector is used for external presentations, this projector 
+is separate from the ones we use for planetarium features. This is 
+a single projector in the back that projects from 3 main inputs; the 
+podium computer, laptop input, and doc cam. All of these and 
+their input locations can be found at the podium.
+• T o turn on the aux projector, use the right most monitor in the 
+Spice Program; On and Off buttons. This is indicated in the red 
+box to the right. T o make the display (Brightness 0) turn off 
+without turning off the projector, use the respective buttons 
+instead of the power buttons. If you need to fade for smooth 
+transitions, although a bit hard, you can use the projector control 
+sliders to do this manually.
+• Alternatively, you can use the remote. Press the power button 
+once to turn it on and twice to turn it off. 
+• Optimal values for the projector are Brightness 50 and Contrast 
+55. Y ou can set these values using the buttons.
+11/28/2025 Star Theater Operators Manual 32
+• See the Podium Documentation page for information if anything is not working properly. If the aux projector is not turning on 
+via the shown button on the rightmost monitor, try using the remote located in the drawer of the operator’s console. If it is still 
+not working it is likely that a part of the aux projector has gone bad. In such a case report it to the current Director of the Star 
+Theater immediately for repairs/replacement.
+
+--- Page 33 ---
+Spotlights
+• At the  operator’s console, on the non-Digistar 
+monitor, in ‘Spice’ are sliders which allow 
+adjustment of spotlight level. 
+• Ensure these are turned off before leaving. Do 
+so by decreasing these sliders to 0%.
+11/28/2025 Star Theater Operators Manual 33
+
+--- Page 34 ---
+Podium Computer
+• The podium computer is configured such that the screen is projected through the desktop pc mode. This can be activated by pressing the 
+‘DESKTOP PC’ button on the podium panel. Additionally, if nothing is coming on the screen, you may want to make sure the computer is actually 
+turned on. The power button is marked in red.
+• The laptop inputs are the inputs labeled ‘AUDIO IN’ and ‘COMPUTER IN.’ These are the audio and video inputs respectively. Cables should be 
+left in these inputs for general use. Plug these into any laptop using these cables directly or an adaptor to project video and audio from the laptop.
+• The Doc Cam is a camera which is located on the podium desk. It is a large white box with a camera arm on it. T o switch to this view, switch the 
+doc cam on using the power switch and press the ‘DOC CAM’ button on the podium panel. Ensure the DOC CAM is on by turning on the power 
+switch, indicated in red.
+• The DvD/VCR player will not be used often, but is functional. Use it like any VCR, but ensure that you switch to the DvD/VCR mode on the 
+podium control panel in order to display the image (and audio.)
+• As mentioned on the audio slide, the podium audio is controlled by inputs 13 & 14 on the rightmost monitor in the operator console.
+11/28/2025 Star Theater Operators Manual 34
+
+--- Page 35 ---
+Webex, Zoom, and Google Meets
+Webex: Webex is a paid application, however any student or staff of 
+MSU can request access as it is part of their tuition expenses. Contact 
+IT to be given access. Note that getting IT support can be time 
+consuming. Set up the meeting at the operator's console. The in-person 
+speaker needs to use a mic so everyone can hear them.
+Zoom: Zoom is free, it offers a “basic” (unpaid) plan which allows for 100 
+participants, at a maximum length of 40 minutes. T o set up the meeting, 
+you must have a zoom account. Set up the meeting at the operator's 
+console. The in-person speaker needs to use a mic so everyone can 
+hear them.
+Google Meets: Google meets is the best option. By simply going to 
+the provided link on the chrome browser (logged in by default under the 
+msustartheater@gmail.com account) you can quickly start a meeting. 
+Maximum of 100 participants, the meeting can last for 1 hour with no 
+login. If the presentation needs to run for longer, simply reset google 
+meets like you would any other page. Set up the meeting at the 
+operator's console. The in-person speaker needs to use a mic so 
+everyone can hear them.
+11/28/2025 Star Theater Operators Manual 35
+Links
+• Webex: https://web.webex.com/sign-in/enter-email
+• Zoom:  https://www.zoom.us/signin#/login
+• Google Meets: https://meet.google.com/landing
+
+--- Page 36 ---
+Setting up for online viewers.
+Steps…
+1. Startup like usual. 
+2. Log in to the external video platform to your choice.
+3. Plug in the Web-Cam for external viewers, depicted to the 
+right.
+4. Extend the Web-Cam.
+5. In the external video platform, ensure you the Web-Cam is 
+selected as the camera input. Adjust the position of the camera 
+as needed.
+5. The audio for external view uses a non-external mic in the 
+theater. The work-around is to ensure the presenter uses a mic 
+so the external video platform hears them through the 
+secondary mic. The presenter should be using a mic anyways.
+6. If needed, open the presenters presentation the console and 
+present your screen in addition to the camera. This allows 
+external viewers to see the presentation better. Follow along 
+with the presenter.
+11/28/2025 Star Theater Operators Manual 36
+
+
+--- Page 37 ---
+Audio: Mics
+• The AKG Mic is controlled secondary via the clove input, 
+but primarily by the depicted amp. This amp is located 
+with the shure mic receivers at the operator's nest, 
+depicted to the right. It controls the highs, mids, and lows 
+of the AKG mic. The amp should be left alone as it is 
+already in optimal audio settings.
+• The Shure Mics audio is controlled primarily by clove, but 
+secondarily by some of the laser mixers, which they are 
+routed through. To avoid issues of base being applied to 
+the mic (Which is un-optimal for quality of sound) you 
+enable the bypass on the kosmos mixer. Indicated below 
+in red.
+11/28/2025 Star Theater Operators Manual 37
+
+
+--- Page 38 ---
+Audio: Software Clove
+• Below are the current inputs for clove.
+• Clove is accessed under the spice ex manager software. Open it and right click 
+on clove. Then click "show."
+Input 1 Input 2 Input 3 Input 4 Input 5 Input 6 Input 7 & 8 Input 10 Input 13 & 14
+Left speaker Right speaker Left surround Right surround Center 
+speaker
+Subwoofer 
+speaker
+Laser audio 
+Shure mics
+AKG mic Podium audio 
+11/28/2025 Star Theater Operators Manual 38
+
+
+--- Page 39 ---
+Audio: Software Spice Automation
+Spice Automation is the program used for controlling the following:
+1. Clove Settings (Auto instead of manual adjustment.)
+2. House-Lights
+3. Spot-Lights
+4. Aux-Projector
+These preset buttons, marked in red, are the optimal values for 
+each of their respective shows. To view these values, you can right 
+click on each and view the values. If for any reason these presets 
+are lost or inaccessible, a spare set are stored on a drive hanging 
+on the wall with the manual in the server room.
+Note: This page is editable. This means changes, upgrades, and 
+reorganization is frequent.
+11/28/2025 Star Theater Operators Manual 39
+
+
+--- Page 40 ---
+Audio: Spice Ex Manager
+Spice Ex Manager is a simple program for viewing thyme and 
+clove. Thyme is currently not important to view. Clove is.
+Open the manager and right click on the desired program, then 
+"view."
+Note: Do not click "Monitor." This is not useful and can cause 
+problems.
+11/28/2025 Star Theater Operators Manual 40
+
+
+--- Page 41 ---
+Audio: Software Soundweb
+Soundweb is now stored on the same computer as clove and spice. It may occur somehow that the 
+soundweb hardware forgets the profile. To fix this you can open the soundweb software and upload 
+the profile to the soundweb hardware.
+11/28/2025 Star Theater Operators Manual 41
+Tim and Isaiah need 
+to be together to do 
+this page
+
+--- Page 42 ---
+11/28/2025 Star Theater Operators Manual 42
+Note: This chart is still 
+accurate as of 8/16/25
+Note: This chart will be 
+updated if/when changes 
+are made.
+Note: This drawio file can 
+be found in teams under 
+supplemental manual 
+materials under manual 
+updates.
+Server Documentation:
+
+--- Page 43 ---
+11/28/2025 Star Theater Operators Manual 43
+Pictures to go with server documentation schematic??? Where are they?
+
+--- Page 44 ---
+File Directory Part 1:
+The following is a list of important file locations and their significance.
+1. C:\D7Content\Shows
+This is where the 0 file for a show is stored. This acts as the base file that the system uses to understand what it is 
+doing. You must create a new folder here, preferably named something reasonable, and store the 0 file here.
+2. \\DSGP1\D7Content\Shows
+This is where the 1 file and audio file are stored. Video file 1 is the half of the video that is ran through GP1, and so 
+obviously what comes out of projector one. GP1 is also where the audio is stored and played from. Follow a similar 
+process for implementing shows as the previous location but of course store the video 1 and audio file here instead.
+3. \\DSGP2\D7Content\Shows
+This is where the 2 file is stored. Video file 2 is the half of the video that is ran through GP2, and so obviously what 
+comes out of projector two. Follow a similar process for implementing shows as the previous location but of course 
+store the video 2 file here instead.
+4. C:\D7Content\Library
+This is where A LOT of the base Digistar content is stored such as models, textures, audio files, meshes, overlays, pre-
+installed pages, scripts, and more.
+5. C:\D7Content\Resources
+This contains many different thing, including a “curriculum” which has sets of scripts setup as lessons for a wide range 
+of age groups. A library of clips that users can call upon to show during shows using a button script. Meshes, GUI 
+components, icon components terrain maps, tests, and a weather file that accesses current weather information to 
+update the weather on the dome for shows.
+11/28/2025 Star Theater Operators Manual 44
+
+--- Page 45 ---
+File Directory Part 2:
+The following is a continuation of the list of important file locations and their significance.
+6. C:\D7Content\T emp
+A set of files that change often based on various things such as Digistar updates, graphing data, migrationbackups, etc.
+7. C:\D7Content\T emp\MigrationBackup
+A set of additional key digistar functions incase of corruption.
+8. C:\D7Content\User
+This is where alot of operator changes, apart from show additions, are made. Pre-existing content in these areas should not be removed, but new 
+content may be added. This includes things like videos, pictures, scripts, images, etc.
+9. C:\D7Content\User\Scripts
+This is where scripts are stored in general. For this location to have a script stored within it, an operator must manually store it here. This is 
+uncommon as the editing and upgrading of scripts is done regularly wirhin Digistar itself. If one is looking for examples of scripts, what they want 
+may be here, or it may be somewhere else, such as under the star talks tab in digistar. The reason why this is this way is because of how Digistar 
+function. The Digistar program does not carewhere or how its commands are given, just so long as they are given. This means you can create a 
+button that calls on a script from this location (which in this case are glorified text documents) or you may simply write the code into the button itself. 
+Operators usually code buttons within Digistar itself in this way.
+In addition to this, there are .lis (text files) that are stored here. An explaination is provided:
+“They are text files that get created anytime a script is played. These are created by Digistar automatically and not by previous operators. They show 
+the script with the absolute time code that commands are executed in the script. Though there are other ways in the UI, it's a great way to see how 
+long a script is. If there are errors in the script's playback, they are listed in the .LIS file too. If for whatever reason an error isn't listed in the Errors 
+window, you can go to the .LIS to see them. A text editor will open these files. They have been around since the DI days.” –Mike (E&S)
+11/28/2025 Star Theater Operators Manual 45
+
+--- Page 46 ---
+File Directory Part 3:
+The following is a continuation of the list of important file locations and their significance.
+10. C:\D7Content\User\Scripts\Img display on dome
+In continuation of file 9: However, if an operator wants to display an image on the dome, whatever that image may be, 
+it must be stored in this location, aka under scripts and img display on dome. This is because, unlike other scripting 
+scenarios, Digistar will need to know where to pull the image from to display. Examples of the code based around this 
+are prevalent throughout operator pages. See these if you do not understand.
+11. \\DSHOST & \\DSGP1 & \\DSGP2
+There are thousands of files under the host, gp1, and gp2 respectively. These files are not necessarily meant for 
+storage and retrieval of materials. These files are how the computer and the Digistar Program functions, and many of 
+these systems are outside the scope of a Star Theater Operator’s duties.
+12. C:\Users\Digistar\Desktop\All
+This is where all commonly stored and retrieved materials are. The names of subsequent files in this folder are self 
+explanatory.
+• Activities & Workshops
+• Attendance_Logs
+• Stuff for Ryan
+• DSmedia Guides
+• Incident Log Versions
+• Legacy
+• Manual Versions
+• Misc
+• Nasa Shorts
+• Recruitment
+• Soundweb
+11/28/2025 Star Theater Operators Manual 46
+
+--- Page 47 ---
+File Directory Part 4:
+The following is a continuation of the list of important file locations and their significance.
+13. C:\D7Software
+Here is where the files and folders are that Digistar calls upon for many of its functions. Many of them are specific to 
+our location, since we have stuff like our home being located at the space science center, weather data, etc.
+14. C:\DigistarSupport
+This is where a schematic of the Digistar System is stored as well as the executable for team viewer, which they use to 
+remote into our system.
+15. C:\NVIDIA
+NVIDIA software that Digistar uses in order to produce the graphics we see.
+16. C:\Program Files - C:\Program Files (x86) - C:\ProgramData
+Various more generic computer-based files in a spot where DSHOST can access them.
+17. C:\Squid
+Squid is a program with the function of optimizing and moving data, making data caches, etc. This is where this 
+software resides.
+18. C:\Windows
+Windows files.
+11/28/2025 Star Theater Operators Manual 47
+
+--- Page 48 ---
+DS-media (for configuration of content not provided by E&S)
+• DS-media is a piece of software that comes installed with the Digistar full dome system. This allows for configuration of pre-existing fisheye 
+videos to work on our two-projector setup. It also allows us to merge audio files for our 5.1 speaker system.
+• Comprehensive, well documented guides on the use of this are available in the ‘Dsmedia Guides’ folder on the Digistar computer desktop. It is 
+currently on the right-most monitor, but keep in mind this is apt-to change. 
+• These guides are up to date as of 11/02/24
+11/28/2025 Star Theater Operators Manual 48
+
+--- Page 49 ---
+Scripting
+• Scripting is an advanced skill that will allow you to create new content for yourself and others to use. Scripting is what has made the majority of 
+the pages we use for star talks. Scripting is literally its own coding language, so in no way is the crew expected to fully learn the entire language 
+in a few days. It takes time and experience to learn this language. Y ou can open scripts using the ‘PRODUCTION’ tab indicated in red and 
+marked as ‘1.’
+• T o find more information about scripting (as well as Digistar in general) click on the three lines indicated in red followed by clicking ‘help.’ This 
+will open the Digistar Manual where you can navigate to ‘Scripting.’
+11/28/2025 Star Theater Operators Manual 49
+Using existing content as baseline:
+• Start by looking at everything that has already been made. Y ou can 
+open up and look at the scripting of just about everything. To do so on 
+the control panel page, click the script view and then on any object in 
+the window to see how it works. This is the ‘Move/Resize’ button, 
+marked in red, labeled “2.” T o switch back to the ‘Interactive’ mode 
+(default), click the other button, marked in red, labeled “1.”
+
+--- Page 50 ---
+11/28/2025 Star Theater Operators Manual 50
+Scripting Continued...
+Remember, all pages in Digistar are editable, which means you can view how all of the scripts function at a moments notice. We will call this "basic 
+scripting." Some basic scripting examples include, but are not limited to... 
+1. Navigation flyto jupiter
+2. 0:00 bennu on 
+ 0:01 Navigation flyto bennu
+3. Pillars_Hubble_jpg1 is textureModelClass
+  Pillars_Hubble_jpg1 model $Content\Library\Models\Misc\image.x
++0.3  Pillars_Hubble_jpg1 modelT exture 0 $Content\User\Scripts\Img display on dome\Pillars Hubble.jpg 
+ Pillars_Hubble_jpg1 intensity 0 
+ Pillars_Hubble_jpg1 scale 0.95859649122807 1 1 
+ Pillars_Hubble_jpg1 clamp on 
+ Pillars_Hubble_jpg1 position spherical 0 45 10 m 
+ Pillars_Hubble_jpg1 turnto position 0 0 0 
++0.2  scenenear add Pillars_Hubble_jpg1 
++1  Pillars_Hubble_jpg1 intensity 100 dur 2 
+Number 1 is a navigation subclass. Navigation subclasses must always start with "navigation " and have some sort of destination or function. For 
+example, flyto jupiter, which does exactly that. 
+Number 2 is slightly more involved, the script has to turn on the bennu model first, then, one second later , flyto it. 
+Number 3 looks complicated, but these are the auto generated scripts for an image! If you navigate to the "img display on dome" file and drag and drop 
+the desired image into digistar, it will generate a script which displays that image! You can edit these values to fade the image in or out slower , 
+reposition, make it closer or farther away, etc.
+
+--- Page 51 ---
+11/28/2025 Star Theater Operators Manual 51
+Advanced Scripting: Creating Custom Planets
+It is possible to create your OWN celestial bodies, such as planets, stars, and other objects, in Digistar. Doing so can be unintuitive, so included 
+here will be some explanations and examples showing how to create your own planet orbiting the Sun, your own star, and your own star system.
+When creating a planet or body orbiting the Sun (in our own solar system), best practice will be to use a PlanetClass object. Further explanation of 
+this class can be found in the Digistar user's manual (accessible via instructions located at the start of the scripting section). However, below is a 
+brief code snippet showing what creating a new planet might look like, as well as some notes on what some of the less intuitive commands may be. 
+The source for this example can be found at the directory locationC:\D7Content\Library\Scripts\Tutorials, alongside extraneous code that adds 
+detail, but is not necessary for creating a custom planet.
+# Setup Custom Planet (This section creates the class and sets the texture and radius of the planet)
+ myPlanet is planetClass
+ myPlanet texture $Content\Library\Images\Textures\planet_Dagobah.png
+ myPlanet radius 0.8 rearth
+# setup the scene graph (This section places the planet in the simulation. The order of these commands is CRUCIAL and must be followed in order to properly 
+set the position of the planet.)
+  ppos is emptyClass (An emptyClass is essentially a position marker for anything you wish to add to the scene or simulation)
+  Sun add ppos (This sets the empty class as a "child object" of the Sun, meaning any subsequent position or attitude commands will be relative to the Sun!)
+ ppos position 2.5 au (This string of commands will set the position of ppos ("planetposition") at a distance of 2.5 au (Earth distances from the Sun)
+ scene add ppos (This command adds the position to the simulation)
+ scene add myPlanet (This command will add the custom planet to the simulation)
+ myPlanet goto ppos (This moves the planet TO THE POSITION YOU SET. If this command is NOT present, the custom planetwill reside INSIDE the Sun)
+
+--- Page 52 ---
+11/28/2025 Star Theater Operators Manual 52
+Advanced Scripting: Creating Custom Stars
+When creating a custom star, it is best to use the sunClass. This allows several attributes to be applied that are not necessarily available to other 
+classes of objects, such as glow, sunspots, and magnetic field lines. The following example creates and places a pulsar, but using different color 
+and texture files or values, a custom star of any shape, mass, color, or design can be created.
+#Initialize Position of PSR J0437
+Pulspos is emptyClass
+Pulspos position celestial 4.6167 -47.2524 509.8 ly (Using celestial coordinates is a great way to place an object "correctly" in the simulation universe. The 
+order of numbers is right ascension, declination, and distance)
+scene add Pulspos
+PSRJ0437 is sunClass 
+PSRJ0437 surfaceTexture $Content\Library\Images\Textures\pulsar-new.jpg (Again, this texture can be anything in the system or downloaded by the user.)
+PSRJ0437 granulesFadeRange 1 1 (This command removes the convection cells on the star's surface. The first number sets the distance at which the granules 
+are fully loaded, while the second sets the distance at which they BEGIN to load. Setting it as 1 1 deletes them, but this setting can be tweaked to the user's 
+preference.)
+PSRJ0437 color 100 100 100 (This essentially turns the model white. These are not typical RGB values as Digistar limits the value to 100, meaning user 
+tweaking is necessary to achieve desired color.)
+scene add PSRJ0437
+PSRJ0437 goto Pulspos
+Again, any star of any design can be created using the above code as a template.
+
+--- Page 53 ---
+11/28/2025 Star Theater Operators Manual 53
+Advanced Scripting: Creating a Star System
+Using a combination of basic commands seen previously, an entire star system can be created. The following script recreates the Ross 19 system, 
+which contains a brown dwarf.
+# Setup Ross 19A
+ Ross19A is sunClass 
+ Ross19A surfaceTexture $Content\Library\Images\Textures\PaulDelaneySunspots.jpg
+ Ross19A color tempK 3500
+ Ross19A color 100 55 40
+ Ross19A gamma 2 (Custom preference, not necessary for creating the star)
+ Ross19A glowDensity 2
+ spos is emptyClass
+ spos position celestial 2.317746 35.353267 56.893 ly
+ scene add spos
+ scene add Ross19A
+ Ross19A goto spos
+ Ross19A scale 0.675141 (This command defaults to scaling with reference to the Sun, so this red dwarf is 0.67 times the size of the Sun.)
+ 
+ Ross19A granulesT exture $Content\Library\Models\Stars\Resources\Granules.dds (Crucial for creating convection cells on the star's surface)
+ Ross19A granulesFadeRange 40 100
+ Ross19A granulesAnimationSpeed 4 (Speeds up or slows down the rate at which these convection cells "bubble." Animation speed.)
+ Ross19A granulesScale 0.5
+ Ross19A granulesT emperatureRelativeVariation 1
+ Ross19A granulesT emperatureRelativeOffset 0.075
+ Ross19A granulesT emperatureVariation 0.0
+ Ross19A granulesT emperatureOffset 0.0
+
+--- Page 54 ---
+11/28/2025 Star Theater Operators Manual 54
+Advanced Scripting: Creating a Star System Continued
+#Setup Brown Dwarf Ross 19B (This section makes the brown dwarf)
+ 
+ Ross19B is sunclass
+ Ross19B surfacetexture $Content\Library\Images\Textures\isaiahbrowndwarf.jpg
+ Ross19B color tempK 3500
+ Ross19A add Ross19B (Establish custom dwarf planet as child of Ross 19A and adds it to the scene)
+  Ross19B position 0 9900 0 au (Because 19B has been added as a child object of 19A, this position command now places it relative to the "parent")
+ Ross19B glowDensity  1.5
+ Ross19B scale 0.268579882 (Again, scales in reference to the "parent." In this case, Ross 19A)
+ Ross19B flare off (A chromatic flare that appears as a simple PNG when you reach a certain distance from a sunClass object. Turned off here because of 
+how dim the brown dwarf is)
+This, run with the code on the previous page, will have created the Ross 19 system and these bodies should now be approachable by the flyto commands. Any 
+system of bodies can be created by using the appropriate classes of objects, distances, and positions. Using this as a template is especially applicable for star 
+systems, but by reclassifying as planets, you can create your own planetary systems (such as the Earth and Moon).
+
+--- Page 55 ---
+11/28/2025 Star Theater Operators Manual 55
+Advanced Scripting: Creating an Orbiting Satellite
+Digistar comes with the useful ability to simulate highly realistic satellite orbital motion, such as the ISS or Hubble. Doing so can be incredibly confusing as many 
+commands are changed by use of the orbit and orbiter classes. Pay close attention to the commands and their order below, as misplacing even one of them can 
+completely disassemble your orbiter and its orbital path.
+#Establish classes for necessary objects
+MagellanBody is solidModelClass (Required to make a physical object for the satellite)
+MagellanBody model $Content\Library\Models\SolarSystem\Planets\Venus\Magellan Orbiter\Magellan.obj (Establishes the model used for the object)
+MagellanBodyOrbit is orbitClass (This command creates the ORBITAL PATH AND TRAIL OF THE SATELLITE.)
+MagellanBodyctl is orbiterClass (This command creates the ORBITER. Think of it like an emptyclass object. It does NOT have any appearance, but simply 
+creates a point that follows the specified orbital path)
+MagellanDot is dotClass (Not 100% necessary, but useful for spotting the satellite while at a large distance away. Creates a dot marker.)
+#Assign the necessary body and orbit for the orbiter class
+MagellanBodyctl body MagellanBody (This command sets the "physical appearance" of the orbiter as the solid model we established earlier. This can be ANY 
+physical model, including planetclass or sunclass objects, which can be used to make orbiting planetary systems.)
+MagellanBodyctl orbit MagellanBodyOrbit (This command sets the orbital path created earlier. This is a CRITICAL command. Not using it will not allow the 
+code to continue as the orbiter won't recognize an orbital path for it to follow .)
+#Set parameters of orbit and aesthetic characterisitics
+MagellanBodyctl eccentricity 0.39177 (Establishes the apoapsis of the orbit. There is no command for this in Digistar. You MUST calculate the eccentricity to 
+give the orbit an apoapsis.)
+MagellanBodyctl periapsisDistance 6345.8 km (Sets the periapsis distance from the CENTER OF THE TARGET BODY)
+MagellanBodyctl inclination 85.5 (Sets inclination from the ascending node)
+MagellanBodyctl meanMotion 2658.4 (Can be calculated to give the satellite an accurate orbital speed. Measured in degrees/day)
+MagellanBodyOrbit color beige (Not strictly necessary. Aesthetic only)
+MagellanBodyOrbit perifocus Venus (Sets the target body for the orbit. Crucial for positioning anything you don't want to orbit the Sun)
+
+--- Page 56 ---
+11/28/2025 Star Theater Operators Manual 56
+Advanced Scripting: Creating an Orbiting Satellite
+#Turn on objects and move them to appropriate position
+MagellanBodyctl on (Turns on the orbiter class we made earlier)
+scene add MagellanBody (Adds the physical appearance of the satellite to the scene)
+scene add MagellanBodyOrbit (Adds the orbit to the scene)
+scene add MagellanDot
+MagellanBody intensity 0 (Intensity is set to zero to allow it to fade on later. Not necessary. Aesthetic choice)
+MagellanBodyOrbit intensity 0
+MagellanDot intensity 0 
+MagellanBody moveto VenusPosition (CRITICAL COMMAND. If the physical model is NOT moved to the perifocus, the satellite's physical model will appear 
+inside the sun and the orbit will not rener properly)
+MagellanBodyOrbit moveto VenusPosition(CRITICAL. Same as above)
+MagellanDot moveto MagellanBody (CRITICAL. Same as above)
++1
+MagellanBody intensity 100 duration 2 (Fades on our objects. Not necessary Aesthetic choice)
+MagellanBodyOrbit intensity 100 duration 2
+MagellanDot intensity 100 duration 2
+#Set navigation parameters for close approach (flyto) button (The following two commands are critical for allowing you to approach the satellite closely. 
+Otherwise, the system will default to a distance of about 1.6 km away, which is not close enough to see the satellite. These commands are useful in other 
+ways for other small objects. They must be executed BEFORE issuing the flyto command, otherwise you will approach to the default distance.)
+navigation destObject MagellanBody
+navigation destRadius 2 m  
+This code can be used as a template for any orbital satellite. Reclassify objects to create your own planetary orbits, etc!
+
+--- Page 57 ---
+Projector Blend Masks
+• Firstly, DO NOT touch the blend masks. They are set by Digistar engineers, 
+these do not need to be adjusted by anyone but them.
+• A blend mask is a thin piece of metal which is placed over the end of the 
+projector. 
+• At the end of the day, the projectors are technically just a really expensive 
+regular projector, but the hardware and software that control them are what 
+makes them work on the dome. Hence, these masks are placed over the beam 
+to cut the image to the desired shape and size. They are placed into a slot after 
+the beam, but before the right-angle lens. The knobs allow you to tighten them in 
+place, allowing for adjustment until the desired shape is reached.
+• Keep in mind that this image may look like the mask is one piece but is in fact 2 
+different sections.
+11/28/2025 Star Theater Operators Manual 57
+
+
+--- Page 58 ---
+Projector Settings
+Refer to T eams under…
+Documents > General > manual updates > Supplemental Manual Materials > Canon 4K6021Z - setup instructions (1)
+11/28/2025 Star Theater Operators Manual 58
+• You will need a ladder to reach the Projector settings 
+menu input panel.
+• The panel is located on the side of the projector. However, 
+because our projector uses a right-angle lens, this means 
+the control panel is on the side where the beam comes 
+out. Be careful as to not let the beam enter your vision 
+while making changes. 
+• Projector settings do not need to be changed.
+• In the very unlikely scenario in which the projectors are 
+somehow reset, which has never occurred fully, you might 
+need to reupdate the settings.
+
+
+--- Page 59 ---
+Troubleshooting – Intro and Audio Fluctuation
+• Every planetarium is personalized. This means there are specific pieces of 
+hardware and software, all connected in ways that is unique to our 
+planetarium.  All issues must be assessed and solved by operators, who are 
+the most trained and able to do this task.
+• Troubleshooting can be broken down into one goal: find the source of the 
+problem and narrow down the solution based on this information.
+• When the planetarium has an issue, the first step is to figure out if it is a 
+hardware issue, dealing with physical components like wires or speakers, or a 
+software issue, dealing with things like a web browser or the Digistar 
+application.
+• An example of this is as follows – Audio Fluctuation:
+• The audio is noticed to be fluctuating
+• Try the most frequently effective method of turning the computer off and 
+on again (restart)
+• If this does not fix it, try playing audio from different applications 
+(different websites, different browsers, digistar, base video player, etc.)
+• Based on which conditions the issue is present under, this will 
+help narrow down where the problem is located.  Is it present in 
+all? Some? Only one?
+• If it is in all of them, it may suggest something to do with the system as 
+a whole or even a hardware issue
+• If it is only in one, that suggests the issue is with that specific software
+11/28/2025 Star Theater Operators Manual 59
+Decision Matrix.drawio.pdf
+• T o do something similar for hardware, consult 
+the onsite engineer, as there is higher risk of greater 
+issues if the wrong actions are taken
+• In some cases, solving a software issue can be done
+with google searches
+• Other times, consulting someone more
+tech-savvy can be more effective in getting the job done
+
+--- Page 60 ---
+11/28/2025 Star Theater Operators Manual 60
+Troubleshooting – Aux Projector
+• IMPORTANT : any time there is a presentation using this 
+projector, have  the same presentation running on the 
+Digistar computer
+• If something goes wrong with the podium computer or 
+the projector itself, set the Aux BriCon to 0 and 
+promptly start streaming the Digistar monitor that has 
+the presentation running
+• Begin troubleshooting when the event is over and there is 
+nothing else on the schedule
+• Turn the failed component (whether it is the computer or the 
+projector) off and on again
+• If the component seems to be optimally running after this, 
+repeat the task that was being performed at the time of 
+failure to see if the issue repeats 
+• Issue repetition with task repetition will narrow down the 
+cause, or possibly reveal a previously unknown limit of the 
+technology
+• If the component is not running optimally after the reset, 
+contact the engineer on site
+Troubleshooting – Show ‘Drop-Out’
+• If a show only has very brief problem mid-event, note the 
+timestamp and let the show play on
+• If a show has an extended problem mid-event, such as the 
+audio ‘dropping out,’ quickly make a mental note of roughly 
+what timestamp the issue took place, stop the show in 
+Digistar, then start it again
+• Skip ahead to a little bit after the noted timestamp until the 
+issue resolves, ideally this happens on the first try
+• In both cases, play the show around the noted timestamp to 
+see if the issue repeats when the theater has down time
+• If the issue does not repeat, or repeats inconsistently, this 
+narrows it down to a glitch of sorts
+• This is likely going to be an issue with the GPs, contact 
+engineer on site
+• If the issue repeats consistently, go to the show’s video and 
+audio files individually as needed to see if file corruption has 
+occurred
+• If corruption is the issue, contact the group that 
+provided the show for new files
+
+--- Page 61 ---
+11/28/2025 Star Theater Operators Manual 61
+Troubleshooting – Projectors, Sound Computer, and More
+• If anything goes wrong with the dome projectors, contact the engineer on site
+• If the sound computer crashes, turn it off and on again at the computer itself (in the server room)
+• In general, troubleshooting is a skill that will get easier with practice.
+• There will be issues that are not exemplified here, but the thought process still applies
+
+--- Page 62 ---
+11/28/2025 Star Theater Operators Manual 62
+Exmples of troubleshooting and how fixed or send folks to areas where how to resolve issues are 
+discussed.
+Aux Projector goes bad
+Sound system crashes
+Audio going in and out
+Projector not turning on
+Show has ‘drop outs’
+More…….
+
+--- Page 63 ---
+System Shutdown and Start Up 
+Full Shutdown Procedure Part 1
+• Many systems in the Star Theater are susceptible to power 
+surges. Since some of our equipment is quite expensive, it is 
+important to protect against this when heavy weather (mainly 
+thunderstorms) is due for Morehead.
+• Of course, always prioritize your own safety, but if we know 
+ahead of time, we will do a “Graceful” shutdown of the theater 
+before heading out. 
+• The following pages will discuss this, in detail, in order.
+11/28/2025 Star Theater Operators Manual 63
+
+--- Page 64 ---
+Full Shutdown Procedure Part 2
+11/28/2025 Star Theater Operators Manual 64
+So, what are the steps for a full shutdown 
+procedure?
+1. Make sure Projectors and Cove Lights are 
+off. Do this using the Power Off button, 
+shown to the right, and the “Turn off all cove” 
+button on the cove lights tab.
+2. Shut down Host, GP1, and GP2 using the 
+‘Shut Down’ button located on the systems 
+tab in Digistar, depicted, in red, to the right. 
+3. Decrease cove output 7 through 12 on the 
+bottom row of sliders such that the next step 
+causes no sound clipping.
+4. Flip laser system power switch (This is not 
+done during a normal closing, aka non-
+weather closing of theater.) This is depicted 
+to the right, marked in red.
+
+--- Page 65 ---
+Full Shutdown Procedure Part 3
+5. Go to server room, turn off cove breakers 2, 3, and 5.
+6. Shut down DS-Master Computer via the windows menu
+11/28/2025 Star Theater Operators Manual 65
+Cove Breakers (in their off state.)
+
+--- Page 66 ---
+Sixteen Main breakers 
+(In their off state.)
+Full Shutdown Procedure Part 4
+7. Shut down 4 amps. Shown below, marked in red circles.
+8. Shut down 1-16 main breakers for server rack. Shown to the right, marked 
+in red.
+9. Turn off the AKG amp, shown below, marked in red. Note that you must do 
+this step last, as turning it off while the sound system is on creates a huge 
+amount of loss in the lines and makes a terrible noise.
+11/28/2025 Star Theater Operators Manual 66
+NOTE: Breaker #8 controls, but is not 
+limited too, the 3 Digistar Computers. 
+This may be useful if you only want to 
+turn on the Digistar Computers.
+
+
+--- Page 67 ---
+11/28/2025 Star Theater Operators Manual 67
+Full Start Up Procedure
+1. Power on the AKG amp. Note that you must do this step first, as if the AKG 
+amp is off while the sound system is on, it creates a huge amount of loss in 
+the lines and makes a terrible noise.
+2. Flip breakers 1-16 to on.
+3. Turn on DS-Master computer.
+4. Turn on 4 amps.
+5. Turn on cove breakers.
+6. Turn on Digistar computers. These computers are shut down on using the 
+Digistar function, but obviously we can’t turn them on this way while they are 
+off. Use the buttons marked in red from top to bottom. You don’t need to hold 
+any buttons anywhere in the process to make them work. Single press.
+7. Flip cove light breakers to on.
+8. Go upstairs and decrease CLOVE outputs 7 to 12 to ensure no sound 
+clipping.
+9. Flip Laser power switch to on.
+10. Success
+(Note that they won’t be green like in this photo when the 
+computers are off, obviously.)
+
+--- Page 68 ---
+Regular Maintenance Schedule
+There are multiple regular maintenance tasks that should be 
+completed in order to keep the Planetarium system running in 
+good condition at optimal quality. 
+11/28/2025 Star Theater Operators Manual 68
+Perform every x months
+1 Backup
+3 Alignment
+6 Color Blend
+2 Filter Change Various
+1 Digistar Software Update
+• Keep in mind that some of these procedures solve semi-variable 
+issues. It is up to the operator to decide if one of these 
+procedures needs to be performed earlier or later.
+• Backups should be performed by this schedule unless a major 
+change is made, in which one should be performed thereafter.
+• Keep in mind that when the projectors have just been turned on, 
+they may need 30 minutes to warmup. This may result in the 
+erroneous assumption that an alignment is necessary.
+• Color blends should not need to be done very often. The only 
+thing that will change how this looks is the degradation of the 
+projectors over time.
+• You should check the projector filters and laser filters every 2 
+months, but if they are not dirty, they do not need to be changed. 
+If they need changed, cut out the correct size piece of filter foam 
+from storage and replace them.
+
+--- Page 69 ---
+Regular Maintenance
+E&S Making sure Digistar is Updated
+• Log into Digistar account, on left, and pull up current software description
+• Make sure it is most current version.
+• T o determine running version, from left hand side three lines down on pull down menu, pull up user guide from 
+menu on left hand side.
+• Compare to all versions described in release notes.
+• If we need to update (not current version) contact E&S and set up T eam Viewer to go through process.
+11/28/2025 Star Theater Operators Manual 69
+
+--- Page 70 ---
+Projector Filter Change.
+Details???? E&S Projectors? Laser system?
+11/28/2025 Star Theater Operators Manual 70
+
+
+--- Page 71 ---
+Maintenance Tab: Alignment
+The maintenance panel has controls for testing and 
+calibrating visual systems that we use, including spatial 
+alignment and color blend.
+Manual Alignment
+• Go to maintenance tab in the control panel.
+• Click on normal grid and dense grid, check each 
+respectively by inspecting the dome.
+Automated Alignment
+• Ensure the room is dark. turn screens off, close doors, 
+turn off house lights. If you want to keep a monitor on, 
+turn on the red tint.
+• Click on ‘Automated’ under the maintenance tab and 
+follow the prompts.
+• When completed you will receive message. If you do not 
+see the message navigate to the system tab and open 
+command echo. Check for the message here.
+11/28/2025 Star Theater Operators Manual 71
+
+--- Page 72 ---
+Maintenance Tab: Color Blending:
+   What is color blending? Since we are a two-projector 
+set up, the projectors need to “blend” into each other 
+on a seam line across the middle of the dome. This 
+blending, over time, due to multiple factors, can come 
+out of color and alignment. When it comes out of color, 
+this can usually be seen as a bright blurry streak 
+across the seam. This, of course, is not great for 
+shows.
+1. Begin by using the maintenance panel in the 
+control panel to turn on a grid, dense mesh is best. 
+You will use this to line up the camera.
+2. Get the camera from the downstairs office. It is 
+stored to the right as you enter the room, sitting 
+behind the spare chairs.
+3. Set up the camera in the center of the dome. Line 
+yourself up with the two projectors and be about 3 
+rows down from the top of the seating. Adjust the 
+length of the tripod arms as needed to give a level 
+base for the camera to work off of. There are levels 
+on the tripod as needed.
+4. Run the cable under the operator’s desk (Shown to 
+the right) to the camera and plug it in to the 
+respective port. 
+11/28/2025 Star Theater Operators Manual 72
+NOTE: Color Blend is done every few months 
+unless there is an obvious lack of color 
+alignment when we operate the dome. Have the 
+battery for the camera charged a day in 
+advance. Leave it on charge until it is needed.
+
+--- Page 73 ---
+Maintenance Tab: Color Blending Continued…
+5. Turn on the camera and flip open the screen. Ensure the camera is in manual mode. You 
+can ensure the camera is in manual mode using the dial depicted. Switch until the white 
+marker aligns with “M” (Indicating manual mode).
+6. Click the “Live View” button to depict what the camera is seeing.
+7. Face the camera up and line up the camera such that the fisheye lens is capturing the 
+entirety of the dome, but nothing outside of the dome; This is crucial. Turn the lens until 
+the dome is in focus.
+8. You should not need to use the zoom function.
+9. Turn off all lights. Cover any lights that cannot be turned off. Switch to red light mode for the 
+monitors. Turn off any monitors that are not required. Close the doors and ensure no one 
+allows light to enter the room. NO EXTERNAL LIGHT AT ALL. This can and will affect the 
+quality of the blend.
+10. Run the ‘Dark State’ and ‘Bright State.’ These are each automated processes. In total they 
+will take about 1 hours to complete. You may want to run them multiple times until the 
+desired quality is reached.
+11. Once completed unplug and shut everything off. Return the camera to storage. Place the 
+battery with the charger. Close up like normal.
+11/28/2025 Star Theater Operators Manual 73
+
+
+--- Page 74 ---
+11/28/2025 Star Theater Operators Manual 74
+Backups
+ What is a backup? Essentially, we copy the entire data of all 3 computers, Host, GP1, and GP2, onto either the “A” or “B” 
+drives respectively. We swap which ones are actively used each backup to ensure even use of the SSD (Host) and disk drives 
+(GPs).
+   Why do a backup? A backup ensures that, even if the entire software of Digistar was deleted, we would be able to restore it. 
+We also have smaller pseudo backups of individual shows which we hold onto incase of a show specific issue. For instance, 
+the video file for a show may corrupt, and so we can simply slot it out and replace it with the copy.
+   Additionally, we swap the drives that are used in order to ensure even use of both. This extends their lifetime use 
+exponentially.
+•  A backup should be performed about once per month. As you may have picked up on, it is very important that these are
+done in case of large or even minor issues. There are three steps in a backup; Preparing the Hardware, Preparing the 
+Software, and Post Backup Procedure.
+
+--- Page 75 ---
+Backups: Preparing the Hardware
+• This is the more physical part of the backup process. These are the 3 
+computers that run everything; Host, GP1, and GP2. 
+• Each computer has 2 drive slots. The top drive slot should always have its 
+drive mounted. The bottom slots should always have their respective drives 
+placed inside them but not mounted. This is to avoid confusion. 
+• Before starting a backup, mount all 3 drives. Push them in and then press 
+the lever closed to lock them in. If done correctly you shouldsee a green light 
+on each of the mounted backup drives. You do not need to insert the GP 
+Spares.
+• All of the drives are labeled. These include, from top to bottom in this image 
+to the right:
+• GP Host – “A”
+• GP Host – “B”
+• GP1 – “A”
+• GP1 – “B”
+• GP2 – “A”
+• GP2 – “B”
+• GP Spare – “A”
+• GP Spare – “B”
+11/28/2025 Star Theater Operators Manual 75
+• Note: These labels were added after the procedure for 
+backups was changed. 
+
+
+--- Page 76 ---
+Backups: Preparing the Software
+1. Before starting a backup. Ensure all drives, A and B, are 
+inserted. By default, the second drive is not inserted. See the 
+Hardware page for details.
+2. Shown here, in the red box, is the button you will select to begin 
+running a backup. This is on the system tab. Once again, ensure 
+backup drives are inserted before clicking this.
+3. The first prompt you see will have you select what drives are to 
+be used. Click the ‘None’ followed by the ‘All’ button to ensure all 
+drives are selected. After this, click scan. Then, a prompt will 
+show. Click ‘Okay.
+4. Now we will select the source and destination. Essentially, we 
+are copying from our main drives to the backup drives. Main 
+drives are ‘C’ and backup drives are ‘E.’ Ensure each of these is 
+selected correctly in the screen shown.
+5. Once each are selected correctly click ‘Backup.’
+6. Once the backups procedure has commenced it can take awhile 
+for the backup to complete. It is best to let the backup run over 
+night and come back in to check it the next day. The 3 bars you 
+will see represent the progress of each computer. These will be 
+green. They will turn blue when the backup is complete.  Do not 
+touch anything until the backup is complete.   
+11/28/2025 Star Theater Operators Manual 76
+
+--- Page 77 ---
+Backups: Post Backup Procedure
+1. Once the backup is complete all 3 bars should be full and 
+blue. 
+2. Once you see this, go downstairs and shut off all 3 Digistar 
+computers.
+3. Dismount the drives, A or B, that are in the secondary slots.
+4. Once you have done this, click the power button on the three 
+computers to power them on.
+5. Go back to the operators nest. You should be able to run 
+everything like normal. 
+6. T est the drives sufficiently; everything working like it should, 
+test shows, audio, projectors, etc.
+7. Once you have confirmed this shut down all 3 computers 
+again. Take out each drive and swap the first and secondary 
+slotted drives. Leave the secondary drives dismounted.
+8. T est the drives sufficiently; everything working like it should, 
+test shows, audio, projectors, etc.
+9. You have now successfully copied the drives, tested, and 
+swapped to A or B respectively. Excellent work.
+Note: Although these instructions mention every time the 
+computers should be shutdown, make sure for any maintenance or 
+testing that you DO NOT dismount or mount drives without 
+being certain of what you're doing. You should mount the drives 
+before starting a backup, but after this anytime you shuffle 
+around drives the computers should be off.
+Note: Even in the best circumstances errors can and will occur 
+outside of our control. In the event that they do, one way to 
+possibly mend the issue is by power cycling all 3 computers. This 
+should be a last resort. You can do this by pulling the plug shown 
+below. It is located behind the 3 computer housings, indicated 
+below in red.
+11/28/2025 Star Theater Operators Manual 77
+
+--- Page 78 ---
+Spare Show Copies
+If all else fails, all backups are corrupted and no one is willing to 
+send us new copies of shows, there is a physical location where 
+a copy of each shows 0, 1, 2, and audio files are stored.
+Some items move in and out of this drawer, but this box will 
+always stay here for ease of access incase of a sudden issue 
+that is unresolvable.
+11/28/2025 Star Theater Operators Manual 78
+• They are stored in this box labeled “Backups of all Shows.” 
+Within this box is a hard drive and the cable for using it. 
+Access it like any other hard drive.
+
+--- Page 79 ---
+Incident & Change Event Log
+Anytime an update or upgrade is made to the software and/or hardware, or an incident that requires troubleshooting occurs, it will be recorded on 
+our Star Theater teams site in the Changes and Incidents folder on the Changes Incidents Log. Keep in mind that the teams app is on the main 
+computer, so any time you want to keep note of a change, there should be no reason not to simply go into teams and update it here, such that 
+everyone is using the same copy with the update's information.
+The slide after this one is an example of how you should update the Incident Change Log. These baseline slides are also stored on that PowerPoint 
+as well.
+11/28/2025 Star Theater Operators Manual 79
+
+--- Page 80 ---
+Header Desc.
+Date – Discovered by: - Repaired by:
+• Detailed desc. And pictures when necessary.
+11/28/2025 Star Theater Incident Log 80
+
+--- Page 81 ---
+11/28/2025 Star Theater Operators Manual 81
+Attendance and Ticketing
+Attendance Logging
+• T o log the attendance of our visitors, make sure to mark the count on the physical attendance log located to the lright at the operator's 
+nest. Then, as soon as possible, update the attendance log for the current year session in teams, under the folder "attendance" in 
+teams. Remember, you can access teams on the Digistar at any time using the Teamsicon on the desktop.
+T eams
+Attendance Log
+
+--- Page 82 ---
+Regular Public Show Ticketing
+• We use a physical ticketing system and hardcopy form system, supplemented by a digital 
+system for credit cards.  We can take payment in the form of cash, check, or credit card. 
+• Gather all the ticketing materials stored together in the cupboards in the office, along with the 
+forms and cashbox, which are stored in the filing cabinet. Materials include Tickets bowl, 
+Tickets (5 colors), Activity Report Forms (3), Cash flow balance Form, pen, stapler, prices 
+sign, small plastic bags for tickets (one bag per show), envelope (for cash at end of day). 
+• Set up tables and chairs in the rotunda… generally two people do this task. Place all the 
+materials on the table.  Do not leave the cashbox unattended. Make sure that we begin 
+(before we sell the first ticket of the day) and end (once the revenues collected for the day are 
+removed) with $200 in the cash box.  Before we begin the ticketing for each show, fill in the 
+date, feature name, and show time on the Star Theater activity report. At the end of the day, 
+after the last show, we fill out a ‘Star Theater Cash Flow Balance Sheet’ form which includes 
+the tally from all of the shows. Forms can be found in our Star Theater Teams files in the 
+‘Cash Drawer’ folder. Current ticket prices can be seen on the forms and on the sign. 
+11/28/2025 Star Theater Operators Manual 82
+
+
+--- Page 83 ---
+Regular Public Show Ticketing Continued…
+• For each guest, collect cash (or check) or use credit card (see instructions below) 
+increase the tally and tear off a ticket of in that category to place in jar. We use 5 separate 
+ticket colors: adult/cash(or check), adult/credit, seniors&children/cash(or check), 
+seniors&children/credit, MSU(card)&toddlers. In each category, the number for the first 
+and last tickets sold that day are recorded.  The number of tickets sold, cash, and credit 
+collected are recorded for each of the five categories.  
+• After the last ticket for the show is sold, we make sure the number of tickets sold matches 
+the cash collected in each category. Once that verification is done, the teller signs and 
+dates the form and places the tickets in the small sealable plastic bags which is stapled to 
+the form.  The second signature will be provided when the director reviews and approves 
+the form.  
+• After the last show of the day, the total revenue from all the shows is tallied once again 
+and fills in the Cash Flow balance form, signs and dates the form.  The director will review 
+and provide the second signature. The revenue for the day is placed in an envelope 
+labeled: Public Shows, the date, and amount collected. The forms are stapled together 
+and along with the envelope are handed to the director or left on the desk in the office.
+11/28/2025 Star Theater Operators Manual 83
+Morehead State University Space Science Center 
+Star Theater Cash Drawer Balance Sheet
+DATE:
+1
+Total cash Ending Balance (count ALL cash at 
+end of sales) $
+2
+Less beginning balance (change fund; should 
+equal $200) (Count beginning cash and record 
+before opening sales) $ 200
+3 NET CASH  RECEIVED = Line 1 - Line 2 $
+4 Receipted Amount from Activity Report $
+5 Cash - OVER/SHORT:
+A: No difference between Lines 3 & 4 = 0
+B: Line 3 is greater than Line 4 = OVER
+$C: Line 3 is less than Line 4 = SHORT
+6
+Amount to Keep in Wallet for Change for 
+next week
+7
+Amount to be Deposited = Line 
+1 - Line 6 $
+COMMENTS
+:
+I certify that the above funds represent all monies in my possession for 
+which I am responsible.
+MUST BE SIGNED/CERTIFIED BY TWO 
+EMPLOYEES:
+Signed: Date:
+Printed Name:
+Signed: Date:
+PrintedName:
+
+--- Page 84 ---
+Credit Card Payment: Using the Kiosk
+1. Start by tapping on the screen of the Kiosk. This will open the 
+lockscreen.
+2. Press and swipe up to open.
+3. Open Safari
+4. Click and fill password.
+5. Update the password if necessary, note this change.
+6. This is now the default. Use this to charge credit/debit users.
+11/28/2025 Star Theater Operators Manual 84
+
+
+--- Page 85 ---
+Credit Card Payment: Using the Kiosk Continued…
+• Now that you have the Kiosk setup, you will need to be able to 
+create payments for guests to pay.
+• This process is generally the same for all credit payment types, 
+but we just use a different button as that logs it as a different 
+kind of payment.
+• For example, we will say that an adult wants 1 ticket using 
+credit, so…
+1. Click “Star Theater Tickets Non-T axable.”
+2. Enter the desired values. In this instance, the quantity is 1, as 
+we are selling 1 ticket, and the price is $10. Another example 
+would be 2 adults paying on 1 card. This would be a quantity of 
+2 $10 tickets. Etc.
+3. Once these are set correctly, click “Pay.” This will prompt the 
+customer via the card reader to Insert, Swipe, or T ap. All of 
+these functions are supported. While waiting, the Kiosk screen 
+will show that it is processing.
+11/28/2025 Star Theater Operators Manual 85
+
+
+--- Page 86 ---
+Credit Card Payment: Password Updates
+11/28/2025 Star Theater Operators Manual 86
+•  The credit system, provided by the MSU financial services office, occasionally requires a password 
+reset. To change the password, simply use the prompts and add or subtract a single number/letter. This page 
+will act as a log of password changes.
+Date Password Changed To:
+Original Morehead#2028
+1/25/2025 Morehead#20281
+4/26/2025 Morehead#20282
+
+--- Page 87 ---
+11/28/2025 Star Theater Operators Manual 87
+Event Catalogue Section
+
+--- Page 88 ---
+Setting up Events
+Groups by Request: Basketball Recruiting Shows
+11/28/2025 Star Theater Operators Manual 88
+• We commonly have basketball recruitment events during certain portions of the year. 
+The following is the basic formula for how these go and how to perform the actions:
+1. Turn on Digistar and then the 
+projectors.
+2. Use the setup button on the 
+basketball page under video 
+input.
+3. Get the birthday and the 
+hometown of the recruit from the 
+coordinators before the show. 
+4. Once they are seated and ready, 
+press the fade stop reset+cove 
+lights off button.
+5. Press the sports ball button to 
+start the promotional video.
+6. Once the video is finished, 
+proceed with the buttons and 
+instructions on the page.
+
+
+--- Page 89 ---
+Groups by Request: Football
+• We commonly have football recruitment events during certain portions of the year. 
+The following is the basic formula for how these go and how to perform the actions:
+1. Turn on Digistar and then the projectors.
+2. Unlike the basketball folks, they bring a different video to us every time, which we 
+upload.
+3. We also need to set up the podium (with microphone) for a ‘pep talk’. 
+4. The MSU Eagle Logo should be displayed as they enter.
+5. Once they are seated and the ‘pep talk’ is over, press the fade stop reset+cove lights 
+off button.
+6. Start the promotional video.
+7. Once the video is finished, bring up lights.
+11/28/2025 Star Theater Operators Manual 89
+
+--- Page 90 ---
+Groups by Request: External School, Community, or Church Groups
+We get requests for shows from school groups in a variety of ways including: direct contact by email (star.theater@moreheadstate.edu) or by phone, or 
+contact via the Microsoft 365 ‘Forms’ app accessible via the star theater webmail.  
+Typically, shows include a full dome planetarium feature and a live presentation of the night sky, about an hour in duration. Sometimes we get requests 
+for a laser feature presentation in lieu of a full dome planetarium feature. We also get requests for 1) a tour of the space science center, 2) a ’hands on 
+science’ activity, 3) use of the rotunda for eating lunch or a snack before or after a show.
+When a request is made, we need to obtain contact information (email address, mobile phone for point of contact) as well as logistical information 
+(size, age, and topics of interest to group, requested date and alternate date for the activity. This information is posted on the star theater calendar with 
+invitations for the star theater crew to sign up to operate for that show.  When we have at least one fully experienced crew member (two is preferable), 
+we complete the reservation and send an invoice with a W9 form. We also include a campus map, to indicate where the space science center and 
+parking are located.  We request school buses drop students off and park in overflow parking during a show.  If individual cars are involved, we get an 
+approximate number and put the point of contact in contact with our parking folks to issue individual (free) parking passes. Unless a specific feature is 
+specified, we recommend one based on age and interests of the group, and include a link to our program listings on our website (See Website 
+section).  Occasionally, a request is made from the MSU administration for an external group. In that case, we create an OCT as well as a regular 
+invoice and submit it to the correct MSU department.
+Fees are $150 for groups of >/=35, and $75 for groups of <35 for a one hour show, payable by check or cash or credit card (see credit card section) 
+upon arrival.  We don’t take ‘checks in the mail’ or purchase orders. We give a receipt when payment is received. At the rate of $50 per hour, we will 
+make the star theater available as a ‘lecture’ venue.   For ’hands on lab’ requests we can accommodate up to 30 as long as crew and lab space are 
+available. We charge for crew time at the rate of $10 per hour (for each crew member) and materials.  Space Science Center tours and using the 
+rotunda as a waiting or snacking area are free.    
+Note: Laser shows are about twice the length of full dome features, so a live presentation of the night sky following will be much shorter to stay within 
+that one hour framework.  If more ‘feature’ material is requested, more will be charged for every additional half hour at the discretion of the director.
+Every one of our full dome planetarium features has an accompanying T eacher Resource Packet (See the Website section) with related core 
+curriculum as well as hands on outreach activities for before and after the show. Packets can also be found on our Star Theater T eams site.11/28/2025 Star Theater Operators Manual 90
+
+--- Page 91 ---
+Groups by Request: MSU class, dormitory, or club
+We get internal requests via campus email or phone.  Typically, these requests include a full dome planetarium feature or laser feature and a live 
+presentation of the night sky, about an hour in duration. We also get requests for use of the star theater for lecture or hands on activity by an MSU 
+faculty member. 
+When a request is made, we need to obtain contact information (email address, mobile phone for point of contact) as well as logistical information 
+(size, age, and topics of interest to group, requested date and alternate date for the activity). This information is posted on the star theater calendar 
+with invitations for the star theater crew to sign up to operate for that show.  When we have at least one fully experienced crew member (two is 
+preferable), we complete the reservation. Unless a specific feature is specified, we recommend one based on age and interests of the group, and 
+include a link to our program listings on our website (See Website section). 
+Fees are typically waived for on-campus groups.
+11/28/2025 Star Theater Operators Manual 91
+
+--- Page 92 ---
+Special Groups: Social Engagements (Weddings, Engagements, Birthday Parties, Celebrations)
+These would be handled similarly to School, Community or Church Groups (see appropriate Special Groups section). However, arrangements will 
+usually involve some ‘extras’: Audio/Video material, food, equipment, space set aside for accompanying activities (e.g., bride’s dressing area). 
+Fees are calculated based on use of the star theater (for shows $150/hour, or for lectures $50/hour), amount of crew time (at $10/hour) with 
+additional hours for required set up or preparation time (e.g. scripts for programs) or special visual displays for the full dome.  If we are making 
+arrangements for special decorations or catering, we pass that cost on to the requester as well.  
+We need to make sure AV material we use in the star theater is from our full dome service provider (E&S) or public domain or provided by the 
+requester (e.g., family pictures or movies). 
+If the group wants to use special equipment (e.g., a bouncy house for a birthday party), we need to make sure we can accommodate the equipment 
+in terms of space and power and determine what kind of physical access and time is involved to install and remove it.
+11/28/2025 Star Theater Operators Manual 92
+
+--- Page 93 ---
+Special Events: AstraCon
+AstraCon is a three day Regional Aerospace Engineering Conference held in the early fall every other year (2024, 2026, etc.) sponsored by the 
+Space Science Center.    The Star Theater is used for the morning and/or afternoon presentation sessions as well as at least one planetarium show 
+during that time.  We can anticipate approximately 50 talks.  Presentations should be submitted and reviewed ahead of time for presentation at the 
+podium.  We also need to set up the capability for remote participation (See Remote participation section) via Webex, Zoom, Teams, or Google for 
+any or all talks.  Thus, at least two and preferably three operators should be available to set up and monitor talks with local and remote participants  
+and to trouble shoot any problems.  As we are part of the Space Science Center, no fees are charged for the use of the star theater.   
+Special Events: Space Science Center Internal T alks and External Lecture Series
+The Space Science Center does host individual speakers, including MSU faculty members, Space Systems senior design or master thesis defense 
+students, as well as external guest speakers on space-related topics of interest, especially near the end of the academic year. The star theater is 
+set up for local and remote participation as in Astracon, presentations being delivered and tested in advance so the they go smoothly and stay within 
+established time limits. Again, no fees are charged.
+11/28/2025 Star Theater Operators Manual 93
+
+--- Page 94 ---
+Special Events: Camps or Workshops
+T o date, these have included STEM+Excellence sponsored events (Space Trek, Space Prep), Rogers Scholars and Explorers, ACE Academy 
+(Organization of Black Aerospace Professionals), Upward Bound, Governors Scholars, Gear up, Robot Gladiator, and InSight.  For these groups, we 
+often are asked not only to do shows or videos they bring but to arrange talks (given by the staff) about the work we do at the space science center and 
+aerospace engineering topics and/or to set up workshops. Making those arrangements takes some planning.  Charges are the same as for  other 
+unsponsored external groups: $150/hour long show, $50/hour to use the star theater in auditorium mode, plus $10/hour for each staff member’s time.
+11/28/2025 Star Theater Operators Manual 94
+
+--- Page 95 ---
+Special Events: Hands On Science
+As part of the public shows during the summer, we do an hour long ‘hands on science’ sessions between the first and second show generally in the 
+rotunda. See the Hands on Science Folder on Star Theater Teams website or the Star Theater Console for details.  These sessions are geared for a 
+range of ages, and we ask that those ages five or under be accompanied by an adults. We usually have several activities of varying levels of difficulty 
+as part of the session and parents or crew members assisting for younger children. So far, activities have included 
+• balloon, bottle, or straw rockets, boats, or cars
+• Egg drop (from the balcony)
+• Liquids and Light (density drop, chromatography, optics)
+• Magnetic Magic (including a magnetic fishing pond)
+• Edible Rocks (texture classification of candybars as analogous to meteorites)
+• Spycraft (fingerprinting and invisible writing)
+• Flying things (foldable paper airplanes)
+• Slime Lab
+• Sound of Music (homemade musical instruments)
+• Potato Power (electrical circuits)
+• Fun with Weather
+• Jiggybot Labs (creating simple electronics and decorating mini-robot)
+• Spectroscopy lab (with gas emission lamps and spectroscope)
+• Making ice cream
+All materials we use in ‘’hands on activities’ are stored in the cabinets in room 117. Storage and listing of our inventory is in alphabetical order. We do 
+ordering as needed using one of the space science center credit cards, typically from Amazon Prime.  A copy of the list is in the Hands On Science 
+Folder.  
+11/28/2025 Star Theater Operators Manual 95
+
+--- Page 96 ---
+Special Events: International Observe the Moon Night
+ 
+Annually, NASA GSFC sets a date in September or October for International Observe the Moon Night, and then lists and coordinates celebrations at 
+planetariums and science centers and schools all over the world that want to participate.  Any organization can sign up for the list and send 
+information on their activities. As the Space Science Center and the Star Theater director have been heavily involved in lunar exploration, we do. 
+This event is planned and organized with available crew members during July, August and September (draft plan included in the Hands on Science 
+folder), including 
+• working with the MSU billing and purchasing folks to create a website for registration,
+• Arranging with the catering service we must use on campus, Aramark, to deliver pizza and drinks for fifty around 5:30 PM.  
+• creating a flyer submitted to update our website, be sent out to our email distribution and on social media sites and posted all over town.  
+Examples of flyers may be seen on our Star Theater teams website under publicity. 
+• We also plan hands on activities and purchasing of material for those activities, and assignment of crew members to to activities during the 
+event. Our activities include: 
+• back to back planetarium feature and laser feature shows, ending with a live night sky presentation in the star theater by star theater 
+operators
+• Sunscope and T elescope viewing during the event led by the astronomy club
+• Live Music with a lunar theme in the rotunda arranged with music faculty member Glen and Lisa Ginn who arrange a blues band for the 
+occasion for a fee of about $600.
+• Quilt show involving local filters who either use our balconies for hanging  or bring their own racks for display.
+• Interactive hands on science activity led by star theater operators.  In the past we have done straw rockets, slime lab, bottle boat races, 
+and balloon car races (See hands on science folder). 
+• Newly introduced in 2025 are: 
+• ‘lunar quote’ wall. Post a memorable phrase or sentence you create, in the spirit of Neil Armstrong, about the Moon.
+• Space village. Build a structure for a lunar village out of foam clay.
+• Activity tables for various clubs including:
+• Astronomy Club activity table. In the past they have used ‘planetarium on a desktop’ software.
+• Rocket Club activity table.  In the past they have done rocket launches.
+• SWISE (Society of Women in Space Exploration) activity table.
+11/28/2025 Star Theater Operators Manual 96
+
+--- Page 97 ---
+Public Shows Indoors and Outdoors
+We have public shows two Saturdays a month, in sets of three. Right now times are set at 11:30 AM, 1:30 PM, and 3:30 PM, though we have had an 
+earlier time for the first show, and much later time for the third show.  The set includes two full dome movies followed by a laser feature.  See 
+Ticketing for how we collect fees. When it is warmer, during the summer, after the public shows, we try to arrange sky viewing, or a star party, after 
+legal twlilight, using the telescope collection and members of the Astronomy Club. 
+                                                                                     
+We have had public events for ‘big events’ in the astronomical world (e.g., almost total eclipse), though usually we just ‘get the word out’ to our email 
+distribution and the local media for things like a comet visitation, major geomagnetic storms and auroras, particularly intense meteor showers.  For 
+the nearly total eclipse of April 2024, we had an outdoor event and handed out the special viewing glasses. The MSU Tuba Ephonium played. 
+Eclipse videos were running continuously in the star theater, and after the eclipse we showed the ‘Sun Struck’ full dome movie there.
+11/28/2025 Star Theater Operators Manual 97
+
+--- Page 98 ---
+Special Events: Valentines under the Stars
+This romantic event for couples is held annually to celebrate Valentines Day, and involves 
+• a four course gourmet meal with wine pairing and at (catered by Aramark)
+• ‘at table service’ (no buffet) in the beautifully decorated rotunda,
+• live music from the Lexington Symphony Harpist, 
+• a full dome movie feature and live presentation of the night sky in the star theater. 
+• Dessert is served after the show in the rotunda
+• outdoor viewing of the night sky caps the evening as weather permits. 
+• We also have a small romantic gift for the couple.  Such gifts have included 
+• star maps of the sky on their most romantic evening 
+• Beautifully illustrated books on constellations or other ‘sky’ features, 
+• his and hers matching cosmic theme socks.  
+T o our knowledge, this event is unique: no other planetarium in the world offers couples such an evening complete with a romantic meal. Space for 
+seating is limited, so the number of couples is limited to 30. We have charged between $150 and $175 per couple, which includes everything listed 
+above and free parking. 
+The event is planned and organized with available crew members during the fall prior to the Holiday season, so that couples have the opportunity to 
+purchase tickets as gifts. Steps involve:
+• First of all, contacting Aramark in October to determine the exact date, discuss the gourmet menu, wine pairing, and determine cost per couple, 
+plenty of time in advance. Based on the director’s experience and feedback from participants, the entrée should be braised or roasted with plenty 
+of liquid to stay ‘moist’.  For example, the braised short ribs worked well. No greens so no conventional salad…greens just don’t stay fresh 
+enough.  Use roasted vegetables, crostini, soup, instead.
+• Contacting the harpist (Harping Sally) to make sure she is available for that date.
+• Creating a flyer (see examples under the folder publicity) to be posted on our website (with a web update request), social media, emailed and 
+posted.
+• By early November, once a price per couple is obtained from Aramark to complete the flyer, contacting MSU billing and purchasing folks to create 
+a website for registration and payment. 
+11/28/2025 Star Theater Operators Manual 98
+
+--- Page 99 ---
+Special Events: Gift Certificates
+We do issue gift certificates by request.  Requests can be made by phone, email, or in person.  See folder with gift certificates issued and their listing 
+on the Star Theater T eams site.  Funds can be paid in person by check, cash, or credit card, just as they are for a public show.   The gift certificate 
+would then be brought to the show and checked off the listing as ‘paid’.   Gift certificate records and forms can be found at Teams in the gift 
+certificate folder.
+11/28/2025 Star Theater Operators Manual 99
+
+--- Page 100 ---
+James Hood Organization (i.e., Mesmerica, Beautifica, Astronomica...) Shows
+• Intermittently, we have had requests from the James Hood organization to do these shows. They contact the director and a contractual vehicle is 
+created with MSU financial folks in the loop.  
+• These operate very similarly to a normal show, except that instead of our normal setup, we use the "pre-show" show, before giving the following 
+announcement, fade stop reset, and playing the show. Keep in mind that we need to setup 2 sets of stanchions, one to regulate flow into the 
+hallway for dividing VIPs, and one to block off the stairwell. James Hood staff will handle all ticketing.
+• Show Opening Script: “Hello and welcome to the Star Theater for this evening's special showing of MESMERICA.MESMERICAis a visual music 
+journey created by the musician James Hood with animation by artists from around the world! This show is 50 minutes long; if at any point you 
+feel overwhelmed by the visuals, please close your eyes and enjoy the music. In case you have to leave the theater, unfortunately we are unable 
+to let you back in due to safety reasons, and we remind you not to leave any trash or belongings behind. Please no photos or recordings of any 
+kind, especially flash photography, as the dome is very reflective. Additionally, please refrain from talking during the show as to not disturb the 
+experience for the people around you, and make sure to silence your devices. Make a note that your chairs do recline and your emergency exits 
+are the doors to your left and right. Without further ado, thank you for coming and, please, enjoy the show."
+• Show Closing Script: "Everyone, I hope you enjoyed the show. If you have any questions about our other shows, such as Capcom Go or Edge of 
+Darkness, please stop by and ask questions on your ways out! Thank you, and have a safe trip home."
+• Notes: 
+• These are not the attendees we normally work with. If an audience member is being especially loud, they are given one chance to be quieter after 
+a warning from one of the James Hood staff. Alert them of this if you see it so they can handle it.
+• If an audience member asks you for a special request, do not indulge, we have to keep in line with the program.
+• If an audience member is being rude and aggressive towards you, stay calm, and alert staff.
+• If you notice someone has food or drink, kindly remind them that these are NOT allowed in the theater.
+• Due to the high quantity of people, it's more likely for us to encounter a wheelchair user. Ensure they enter the room first and use one of our 
+wheelchair accommodating spots. Make sure they are comfortable and ready before anyone else enters.
+11/28/2025 Star Theater Operators Manual 100
+
+--- Page 101 ---
+External Communication
+Website, Email Distribution, Marketing
+Star Theater is a full-service state of the art digital planetarium operated by undergraduate students and directed by an MSU Space Science Center 
+faculty and staff member for the purposes of education, entertainment, and social gatherings for campus and the surrounding communities. The Star 
+Theater, a 100-seat digital theater, projects full 180º x 360º real-time blended video and graphics on a 40-foot dome screen with state-of-the-art surround 
+sound.  In digital full dome theater mode, the all-dome video allows a broad range of programming, including simulated travel through deep space and 
+the ocean's deepest depths, full motion and free movement through a 3D textured universe viewing endless astronomical phenomena, such as comets, 
+planets, and supernovas, and 3D animations of biological, chemical, and physical systems.  PUBLIC DOMAIN External Videos and Images can also be 
+projected onto the full dome. Our 2024 refurbished laser system also projects 3D images on the full dome. Our audio system has also been refurbished 
+from 2024 to 2025 to support state of the art multi-media shows by the James Hood group. 
+We have an ‘official’ website at MSU which is controlled by the marketing department.  We submit materials to announce outreach events and activities 
+as well as the regular public show schedule using their webupdate process. THEY decide whether it can be posted or not.  The director is working on 
+getting the Morehead Tourism folks (or anyone in our email distribution) to create a ‘shadow’ website where we could post more material and particularly 
+a more comprehensive events schedule.  
+Our Website: https://www.moreheadstate.edu/academics/colleges/science/engineering-sciences/star-theater/
+11/28/2025 Star Theater Operators Manual 101
+
+--- Page 102 ---
+Website, Email Distribution, Marketing Continued…
+The director has an email distribution list (about 500 at this time) which is contacted once a month with information on upcoming astronomical events and 
+our schedule (two to three months out).  Email listing (star theater email distribution 052325.docx) can be found in Publicity folder on Star Theater T eams 
+site.
+We contact the following individually for the most impact: 
+Ky News Group for Rowan County (melissa@kynewsgroup.com),(cecil@kynewsgroup.com)
+Gateway Radio station WIVY (jeff@gatewayradio.net)
+Rowan County Review by the County Clerk/Circuit Court Office (morgan.Mitchell@rcky.us)
+MSU Public Radio Sam Morrill (srmorrill@moreheadstate.edu
+MSU Trailblazer Hallie Adams (hradams3@moreheadstate.edu
+Rowan County Chamber of Commerce Sabra Lowe (sabra@thinkmorehead.com)
+Morehead Rowan County T ourism Paige Schwartz (paige@moreheadtourism.com)(tourism@moreheadtourism.com)
+DMI Merchants, Brooke (holbrookdrug@gmail.com)
+Downtown Morehead (downtownmorehead@gmail.com)(tonypence@gmail.com)
+Campus contacts:
+• Career Advancement Megan Boone (m.boone@moreheadstate.edu)
+• Provost Chris Schroeder (c.Schroeder@moreheadstate.edu)
+• Human Resources Caroline Atkins (c.atkins@morehadstate.edu)
+• Alumni Office, Jessi Ferguson and Leslee T oy (jl.ferguson@Moreheadstate.edu, l.toy@Moreheadstate.edu)
+• Student Affairs (studentactivities@moreheadstate.edu
+• President Jay Morgan (j.morgan@Moreheadsdtate.edu)
+We also contact our MSU campus radio station and newsletters to ‘get the word out’ on any of the special events open to the public described under 
+‘special events’ including International Observe the Moon Night and Valentines under the Stars.
+11/28/2025 Star Theater Operators Manual 102
+
+--- Page 103 ---
+Website, Email Distribution, Marketing Continued…
+On our website are 
+1) a general description of our facilities, 
+2) the upcoming public shows and announcements for special upcoming events,   
+3) descriptions for all of our full dome movie and laser features, along with trailers and teacher resource packets for all of our full dome movie features,
+4) links to external resources including 
+• Astronomy picture of the Day, 
+• Space Image of the Day, 
+• Earth Image of the Day, 
+• Space Debris, 
+• National Weather Service, 
+• Space Weather prediction, Annual Astronomical Event Calendar
+• Regional Astronomy Activities including Astronomy clubs in Kentucky, 
+• Clear Sky Charts in Kentucky, 
+• AA Calendar, 
+• Observe the Moon Night, 
+• NASA Challenger Centers for STEM education, 
+• Asteroid Watch, 
+• The Sky Live…
+• The Daily Night Sky Viewing Page
+11/28/2025 Star Theater Operators Manual 103
