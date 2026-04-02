@@ -10,7 +10,7 @@ Ready-to-run files in the project:
 
 ```
 examples/simple_test.js         - Basic RGB color test
-examples/fade_test_hardware.js  - Hardware fade demonstration
+examples/fade_demo.js           - Hardware fade demonstration
 examples/preshow_ambiance.js    - Pre-show ambient lighting
 examples/lights_off.js          - Fade to off
 utilities/segment_diagnostic.js - Test individual segments
@@ -124,7 +124,7 @@ Examine existing scripts for implementation patterns:
 
 - **`core_lighting/lighting_control_v2.js`** - Main library with all lighting functions
 - **`examples/simple_test.js`** - Basic color commands
-- **`examples/fade_test_hardware.js`** - Hardware fade patterns
+- **`examples/fade_demo.js`** - Hardware fade patterns
 - **`examples/preshow_ambiance.js`** - Ambient lighting example
 - **`examples/lights_off.js`** - Clean fade to off sequence
 - **`templates/show_template.js`** - Complete show template

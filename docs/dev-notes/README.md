@@ -143,7 +143,7 @@ All scripts now use hardware-accelerated fading via the native `duration` parame
 
 Scripts using hardware fades:
 - `core_lighting/lighting_control_v2.js`
-- `examples/fade_test_hardware.js`
+- `examples/fade_demo.js`
 - `examples/simple_test.js`
 - `examples/preshow_ambiance.js`
 - `examples/lights_off.js`

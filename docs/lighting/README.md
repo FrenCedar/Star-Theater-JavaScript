@@ -316,7 +316,7 @@ coveLights segment [index] [r] [g] [b] duration [seconds]
 ## Reference Files
 
 - `core_lighting/lighting_control_v2.js` - Complete implementation
-- `examples/fade_test_hardware.js` - Hardware fade demonstrations
+- `examples/fade_demo.js` - Hardware fade demonstrations
 - `examples/simple_test.js` - Basic color tests
 - `examples/preshow_ambiance.js` - Pre-show lighting example
 - `examples/lights_off.js` - Fade to off sequence

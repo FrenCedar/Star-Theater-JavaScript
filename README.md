@@ -27,7 +27,7 @@ digistar_js_project/
 
 **examples/** - Example scripts for testing and reference
 - `simple_test.js` - Basic RGB color test
-- `fade_test_hardware.js` - Hardware fade demonstration
+- `fade_demo.js` - Hardware fade demonstration
 - `preshow_ambiance.js` - Pre-show ambient lighting
 - `lights_off.js` - Smooth fade to off
 
