@@ -71,6 +71,11 @@ Process:
 
 ## Output Format
 
+## 🎨 GUI Layout
+
+![alt text](image.png)
+
+
 Screenshots save to `digistar_screenshots/` with naming format:
 ```
 [number]_[section_name]_[timestamp].png
