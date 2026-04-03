@@ -33,9 +33,17 @@ This enables the entire web server (file serving + command interface).
 ```
 system webInterface on
 ```
-This specifically enables the command layer that processes JavaScript commands.
+This specifically enables the HTTP web interface for retrieving/setting object data and executing Digistar commands. The Ds.Web.* JavaScript functions require this to be enabled.
 
 **Both must be ON for the control interface to work.**
+
+**Verify Status:**
+```
+system get web
+system get webInterface
+```
+
+Both should return "on" or "true".
 
 ---
 
@@ -125,9 +133,14 @@ Should see a Digistar welcome page or file directory.
 ### **Test 2: DigistarWeb.js Loads**
 Navigate to:
 ```
-http://[digistar-ip]/digistar/DigistarWeb.js
+http://[digistar-ip]/software/Config/Host/web/Ds.js
 ```
-Should download or display the JavaScript API file.
+Should download or display the JavaScript Ds.Web API file. This file provides the JavaScript interface for web-based control.
+
+**Note:** The file may also be at `/digistar/DigistarWeb.js` depending on your Digistar version. The HTML file includes:
+```html
+<script type="text/javascript" src="/software/Config/Host/web/Ds.js"></script>
+```
 
 ### **Test 3: Control Interface**
 Navigate to your deployed HTML file.
@@ -360,12 +373,32 @@ Ds.Web.SendStringCommand("projectors on", function(result) {
 ```
 
 ### **Other Available APIs:**
-- `Ds.Web.SetObjectAttrPart()` - Set object attributes
-- `Ds.Web.GetObjectAttrAsStringCommand()` - Get object state
-- `Ds.Web.SceneAddObject()` - Add objects to scene
-- `Ds.Web.DirectoryOpen()` - Browse file system
 
-See Digistar 7 documentation for complete API reference.
+**Object Management:**
+- `Ds.Web.CreateObject(name, class, type, callback)` - Create Digistar objects
+- `Ds.Web.DeleteObject(object, callback)` - Delete objects
+- `Ds.Web.SetObjectAttrPart(object, attribute, part, value, duration, upTime, downTime)` - Set attributes
+- `Ds.Web.GetObjectAttrAsStringCommand(object, attribute)` - Get object state
+
+**Scene Control:**
+- `Ds.Web.SceneAddObject(sceneObject, object, drawMode, callback)` - Add to scene
+- `Ds.Web.SceneRemoveObject(sceneObject, object)` - Remove from scene
+
+**Directory Browsing:**
+- `Ds.Web.DirectoryOpen(directory, search)` - Open directory
+- `Ds.Web.DirectoryGetItem(dirRef)` - Get directory items
+- `Ds.Web.DirectoryClose(dirRef)` - Close directory
+
+**Object Hierarchy:**
+- `Ds.Web.AddObjectChild(parent, child, callback)` - Add child objects
+- `Ds.Web.RemoveObjectChild(parent, child, callback)` - Remove child objects
+
+**Helper Functions:**
+- `Ds.Web.CreateToggleButton(...)` - Create control panel buttons
+- `Ds.Web.LoadControlPanelPage(pageUrl, parent, cssClass)` - Load panel pages
+- `Ds.Web.StartUpdatesFromHost()` - Enable automatic updates
+
+See `web_control/README.md` for complete API reference with examples.
 
 ---
 

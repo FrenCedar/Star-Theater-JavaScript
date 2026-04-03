@@ -158,54 +158,178 @@ New-NetFirewallRule -DisplayName "Digistar Web Control" -Direction Inbound -Loca
 
 ---
 
-## 🔧 **API Reference**
+## 🔧 **Digistar Web API Reference**
 
-The server exposes these endpoints:
+This interface uses Digistar's built-in JavaScript Web API (`Ds.Web.*`). All commands are asynchronous and execute via callbacks.
 
-### **GET /api/projectors_on**
-Turn all projectors on
-```
-Response: {success: true, message: "Projectors turning on"}
-```
+### **Core Web Commands**
 
-### **GET /api/projectors_off**
-Turn all projectors off
+**Ds.Web.SendStringCommand(command, callback)**
+- Sends any Digistar script command
+- `command`: String command to execute
+- `callback`: Function called with result object
+- Result has `result.message` (response text) and `result.error` (boolean)
 
-### **GET /api/cove_color?r=100&g=0&b=0&duration=1.0**
-Set all cove lights to RGB color with fade
-
-Parameters:
-- `r`: Red (0-100)
-- `g`: Green (0-100)
-- `b`: Blue (0-100)
-- `duration`: Fade time in seconds
-
-### **GET /api/cove_scene?scene=warm&duration=1.0**
-Apply preset scene
-
-Parameters:
-- `scene`: Scene name (off, warm, cool, red, green, blue, purple, cyan, white)
-- `duration`: Fade time in seconds
-
-### **GET /api/get_status**
-Get current system status
-```json
-{
-    "success": true,
-    "projectors": [
-        {"name": "Projector 1", "state": "online"},
-        {"name": "Projector 2", "state": "offline"}
-    ],
-    "server": "online",
-    "timestamp": "2026-01-20T14:30:00.000Z"
-}
+**Example:**
+```javascript
+Ds.Web.SendStringCommand("coveLights segment 0 100 0 0 duration 3", function(result) {
+    if (!result.error) {
+        console.log("Command succeeded");
+    }
+});
 ```
 
-### **GET /api/send_command?command=coveLights%20segment%200%20100%200%200**
-Send custom Digistar command
+### **Object Management**
 
-Parameters:
-- `command`: URL-encoded Digistar string command
+**Ds.Web.CreateObject(name, class, type, callback)**
+- Creates Digistar object
+- `type`: "permanent", "persistent", or "temporary"
+- Permanent: Exists until system initialization
+- Persistent: Exists until "system resetAll"
+- Temporary: Exists until "system reset" or "system resetNoAV"
+
+**Ds.Web.DeleteObject(object, callback)**
+- Deletes specified Digistar object
+
+**Ds.Web.AllocObjectArray(object, attribute, count, callback)**
+- Allocates array elements for object attributes
+
+### **Object Hierarchy**
+
+**Ds.Web.AddObjectChild(parent, child, callback)**
+- Adds child object to parent hierarchy
+
+**Ds.Web.AddObjectChildBefore(parent, child, beforeObj, callback)**
+- Adds child before specified object
+
+**Ds.Web.AddObjectChildAfter(parent, child, afterObj, callback)**
+- Adds child after specified object
+
+**Ds.Web.RemoveObjectChild(parent, child, callback)**
+- Removes child from parent hierarchy
+
+### **Scene Management**
+
+**Ds.Web.SceneAddObject(sceneObject, object, drawMode, callback)**
+- Adds object to scene for rendering
+- `drawMode`: "distant", "normal", "fixed", "landscape", or "near"
+
+**Ds.Web.SceneAddObjectBefore(sceneObject, object, beforeObj, drawMode, callback)**
+**Ds.Web.SceneAddObjectAfter(sceneObject, object, afterObj, drawMode, callback)**
+- Add objects with specific ordering
+
+**Ds.Web.SceneRemoveObject(sceneObject, object)**
+- Removes object from scene (stops rendering)
+
+### **Object Properties**
+
+**Ds.GetObjectParentNames(object)** *(Synchronous)*
+- Returns array of parent names for object
+
+**Ds.GetObjectChildNames(object)** *(Synchronous)*
+- Returns array of child names for object
+
+### **Get Object Attributes**
+
+**Ds.Web.GetObjectAttrAsStringCommand(object, attribute)** *(Synchronous)*
+- Returns complete Digistar command representing attribute value
+- For arrays, returns all commands to set each element
+
+**Ds.Web.GetObjectArrayElemAsStringCommand(object, attribute, elemIndex)** *(Synchronous)*
+- Returns command for specific array element
+
+**Ds.Web.GetObjectAttrPartAsString(object, attribute, part)** *(Synchronous)*
+- Gets individual component of attribute
+- `part`: "x", "y", "z" for positions; "h", "p", "r" for attitude; "r", "g", "b" for colors
+- Use "value" for single-component or HTML hex color (#RRGGBB)
+- Use "CommandText" to get full Digistar script command
+
+### **Set Object Attributes**
+
+**Ds.Web.SetObjectAttrPart(object, attribute, part, value, duration, upTime, downTime)** *(Synchronous)*
+- Sets individual attribute component
+- `duration`: Change duration in seconds
+- `upTime`: Ramp-up time for velocity
+- `downTime`: Ramp-down time for velocity
+
+### **Directory Operations**
+
+**Ds.Web.DirectoryOpen(directory, search)**
+- Opens directory for browsing
+- `directory`: Path like "$content\\Library\\scripts"
+- `search`: Wildcard pattern like "*.ds"
+- Returns directory reference
+
+**Ds.Web.DirectoryGetItem(dirRef)**
+- Gets next item from directory
+- Returns object with `item` (filepath) and `isDirectory` (boolean)
+- Empty string when end reached
+
+**Ds.Web.DirectoryClose(dirRef)**
+- Closes directory reference
+
+### **Path Utilities**
+
+**Ds.Web.ResolvePathNameToUrl(path)**
+- Converts $software/$content paths to web URLs
+- Example: "$content\\Library" → "/content/library"
+
+**Ds.Web.UnresolvePathNameFromUrl(url)**
+- Converts URLs back to $software/$content paths
+- Example: "/content/library" → "$content\\library"
+
+### **Helper Functions**
+
+**Ds.Web.CreateToggleButton(...)**
+- Creates control-panel-style toggle button in web page
+- Updates automatically with `Ds.Web.StartUpdatesFromHost()`
+
+**Ds.Web.CreateCommandButton(...)**
+- Creates button that executes command when clicked
+
+**Ds.Web.LoadControlPanelLayout(...)**
+- Loads complete control panel layout
+
+**Ds.Web.LoadControlPanelPage(pageUrl, parent, cssClass)**
+- Loads control panel page into HTML element
+
+**Ds.Web.StartUpdatesFromHost()**
+- Enables automatic button state updates
+- Call once after creating all buttons/pages
+
+### **HTTP REST Endpoints**
+
+**Execute Command:**
+```
+http://[DSHost]:[Port]/digistar/execute?command=[URL-encoded-command]
+```
+
+**Get Object Attribute:**
+```
+http://[DSHost]:[Port]/digistar/objects/[Object]/[Attribute]/[Part]
+```
+
+**Set Object Attribute:**
+```
+http://[DSHost]:[Port]/digistar/objects/[Object]/[Attribute]/[Part]?value=[value]
+http://[DSHost]:[Port]/digistar/objects/[Object]/[Attribute]/[Part]?value=[value];dur=[duration]
+```
+
+**Browse Directory:**
+```
+http://[DSHost]:[Port]/digistar/[Path]?search=[wildcard]
+http://[DSHost]:[Port]/content/[Path]?search=[wildcard]
+```
+
+**File Access:**
+- `$Content` paths: `http://[DSHost]:[Port]/content/...`
+- `$Software` paths: `http://[DSHost]:[Port]/digistar/...`
+
+**Allowed file types:**
+- Web: .htm, .html, .css, .js, .xml
+- Images: .jpg, .jpeg, .png, .gif, .ico
+- Text: .txt
+- Digistar: .ds, .d4s, .sft, .ls, .sls, .tiles, .dscp, .ddcp
 
 ---
 
