@@ -10,19 +10,19 @@ function testAllSegmentsSequential() {
     for (var i = 0; i < 128; i++) {
         // Turn off all
         for (var j = 0; j < 128; j++) {
-            Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+            Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
         }
         
         // Turn on current segment (white)
-        Ds.sendStringCommand("coveLights segment " + i + " 100 100 100");
+        Ds.SendStringCommand("coveLights segment " + i + " 100 100 100");
         
         Ds.SendMessageStatus("Testing segment " + i);
-        Ds.Wait(500);  // Wait 500ms so you can see it
+        Ds.Wait(0.5);  // Wait 0.5 seconds so you can see it
     }
     
     // Turn all off
     for (var j = 0; j < 128; j++) {
-        Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
     }
     
     Ds.SendMessageStatus("Sequential test complete");
@@ -34,19 +34,19 @@ function testSegmentRange(start, end) {
     
     // Turn all off first
     for (var i = 0; i < 128; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
     
     // Turn on the range
     for (var i = start; i <= end; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 100 0 0");  // Red
+        Ds.SendStringCommand("coveLights segment " + i + " 100 0 0");  // Red
     }
     
-    Ds.Wait(3000);  // Wait 3 seconds
+    Ds.Wait(3);  // Wait 3 seconds
     
     // Turn off
     for (var i = start; i <= end; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
 }
 
@@ -57,19 +57,19 @@ function testProblemSegments() {
     for (var i = 110; i < 128; i++) {
         // Turn all off
         for (var j = 0; j < 128; j++) {
-            Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+            Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
         }
         
         // Try to turn on this segment (bright red)
-        Ds.sendStringCommand("coveLights segment " + i + " 100 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 100 0 0");
         
         Ds.SendMessageStatus("Segment " + i + " - Should be RED");
-        Ds.Wait(1000);
+        Ds.Wait(1);
     }
     
     // Turn all off
     for (var j = 0; j < 128; j++) {
-        Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
     }
     
     Ds.SendMessageStatus("Problem segment test complete");
@@ -83,31 +83,31 @@ function compareSegments() {
     
     // Turn all off
     for (var i = 0; i < 128; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
-    Ds.Wait(1000);
+    Ds.Wait(1);
     
     // Test known working segment
     Ds.SendMessageStatus("Testing segment 50 (should work) - RED");
-    Ds.sendStringCommand("coveLights segment 50 100 0 0");
-    Ds.Wait(2000);
-    Ds.sendStringCommand("coveLights segment 50 0 0 0");
-    Ds.Wait(1000);
+    Ds.SendStringCommand("coveLights segment 50 100 0 0");
+    Ds.Wait(2);
+    Ds.SendStringCommand("coveLights segment 50 0 0 0");
+    Ds.Wait(1);
     
     // Test problem segment
     Ds.SendMessageStatus("Testing segment 115 (problem?) - RED");
-    Ds.sendStringCommand("coveLights segment 115 100 0 0");
-    Ds.Wait(2000);
-    Ds.sendStringCommand("coveLights segment 115 0 0 0");
-    Ds.Wait(1000);
+    Ds.SendStringCommand("coveLights segment 115 100 0 0");
+    Ds.Wait(2);
+    Ds.SendStringCommand("coveLights segment 115 0 0 0");
+    Ds.Wait(1);
     
     // Test both at same time
     Ds.SendMessageStatus("Testing BOTH segments 50 and 115 - RED");
-    Ds.sendStringCommand("coveLights segment 50 100 0 0");
-    Ds.sendStringCommand("coveLights segment 115 100 0 0");
-    Ds.Wait(3000);
-    Ds.sendStringCommand("coveLights segment 50 0 0 0");
-    Ds.sendStringCommand("coveLights segment 115 0 0 0");
+    Ds.SendStringCommand("coveLights segment 50 100 0 0");
+    Ds.SendStringCommand("coveLights segment 115 100 0 0");
+    Ds.Wait(3);
+    Ds.SendStringCommand("coveLights segment 50 0 0 0");
+    Ds.SendStringCommand("coveLights segment 115 0 0 0");
     
     Ds.SendMessageStatus("Comparison complete");
 }
@@ -121,19 +121,19 @@ function testBoundary() {
     for (var i = 105; i <= 115; i++) {
         // Turn all off
         for (var j = 0; j < 128; j++) {
-            Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+            Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
         }
         
         // Turn on current segment
-        Ds.sendStringCommand("coveLights segment " + i + " 0 100 0");  // Green
+        Ds.SendStringCommand("coveLights segment " + i + " 0 100 0");  // Green
         
         Ds.SendMessageStatus("Segment " + i + " - should be GREEN");
-        Ds.Wait(1000);
+        Ds.Wait(1);
     }
     
     // Turn all off
     for (var j = 0; j < 128; j++) {
-        Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
     }
     
     Ds.SendMessageStatus("Boundary test complete");
@@ -150,21 +150,21 @@ function findCutoffPoint() {
     for (var i = 100; i < 128; i++) {
         // Turn all off
         for (var j = 0; j < 128; j++) {
-            Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+            Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
         }
         
         // Turn on test segment
-        Ds.sendStringCommand("coveLights segment " + i + " 100 100 0");  // Yellow
+        Ds.SendStringCommand("coveLights segment " + i + " 100 100 0");  // Yellow
         
         Ds.SendMessageStatus("Testing segment " + i + " - does it light up?");
-        Ds.Wait(1000);
+        Ds.Wait(1);
         
         // Manual observation needed - user must note which work
     }
     
     // Turn all off
     for (var j = 0; j < 128; j++) {
-        Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
     }
     
     Ds.SendMessageStatus("Cutoff test complete - note which segments lit up");
@@ -180,30 +180,30 @@ function tryAlternativeCommands() {
     
     // Turn all off
     for (var i = 0; i < 128; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
-    Ds.Wait(1000);
+    Ds.Wait(1);
     
     // Try standard format
     Ds.SendMessageStatus("Format 1: coveLights segment 115 100 0 0");
-    Ds.sendStringCommand("coveLights segment 115 100 0 0");
-    Ds.Wait(2000);
-    Ds.sendStringCommand("coveLights segment 115 0 0 0");
-    Ds.Wait(1000);
+    Ds.SendStringCommand("coveLights segment 115 100 0 0");
+    Ds.Wait(2);
+    Ds.SendStringCommand("coveLights segment 115 0 0 0");
+    Ds.Wait(1);
     
     // Try with leading zeros
     Ds.SendMessageStatus("Format 2: coveLights segment 0115 100 0 0");
-    Ds.sendStringCommand("coveLights segment 0115 100 0 0");
-    Ds.Wait(2000);
-    Ds.sendStringCommand("coveLights segment 0115 0 0 0");
-    Ds.Wait(1000);
+    Ds.SendStringCommand("coveLights segment 0115 100 0 0");
+    Ds.Wait(2);
+    Ds.SendStringCommand("coveLights segment 0115 0 0 0");
+    Ds.Wait(1);
     
     // Try as string
     Ds.SendMessageStatus("Format 3: coveLights segment \"115\" 100 0 0");
-    Ds.sendStringCommand('coveLights segment "115" 100 0 0');
-    Ds.Wait(2000);
-    Ds.sendStringCommand('coveLights segment "115" 0 0 0');
-    Ds.Wait(1000);
+    Ds.SendStringCommand('coveLights segment "115" 100 0 0');
+    Ds.Wait(2);
+    Ds.SendStringCommand('coveLights segment "115" 0 0 0');
+    Ds.Wait(1);
     
     Ds.SendMessageStatus("Alternative command test complete");
 }
@@ -227,8 +227,8 @@ function querySystemConfig() {
     for (var i = 0; i < queries.length; i++) {
         Ds.SendMessageStatus("Trying: " + queries[i]);
         try {
-            Ds.sendStringCommand(queries[i]);
-            Ds.Wait(500);
+            Ds.SendStringCommand(queries[i]);
+            Ds.Wait(0.5);
         } catch(e) {
             Ds.SendMessageError("Query failed: " + queries[i]);
         }
@@ -245,29 +245,29 @@ function visualPattern() {
     
     // Turn all off
     for (var i = 0; i < 128; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
-    Ds.Wait(1000);
+    Ds.Wait(1);
     
     // Pattern: Every 10th segment in different colors
     for (var i = 0; i < 128; i += 10) {
         if (i < 40) {
-            Ds.sendStringCommand("coveLights segment " + i + " 100 0 0");  // Red
+            Ds.SendStringCommand("coveLights segment " + i + " 100 0 0");  // Red
         } else if (i < 80) {
-            Ds.sendStringCommand("coveLights segment " + i + " 0 100 0");  // Green
+            Ds.SendStringCommand("coveLights segment " + i + " 0 100 0");  // Green
         } else if (i < 120) {
-            Ds.sendStringCommand("coveLights segment " + i + " 0 0 100");  // Blue
+            Ds.SendStringCommand("coveLights segment " + i + " 0 0 100");  // Blue
         } else {
-            Ds.sendStringCommand("coveLights segment " + i + " 100 100 0");  // Yellow
+            Ds.SendStringCommand("coveLights segment " + i + " 100 100 0");  // Yellow
         }
     }
     
     Ds.SendMessageStatus("Visual pattern active - observe which colors show");
-    Ds.Wait(5000);
+    Ds.Wait(5);
     
     // Turn all off
     for (var i = 0; i < 128; i++) {
-        Ds.sendStringCommand("coveLights segment " + i + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
 }
 
@@ -282,18 +282,18 @@ function quickTest() {
     for (var i = 0; i < testSegments.length; i++) {
         // Turn all off
         for (var j = 0; j < 128; j++) {
-            Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+            Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
         }
         
         var seg = testSegments[i];
-        Ds.sendStringCommand("coveLights segment " + seg + " 100 100 100");
+        Ds.SendStringCommand("coveLights segment " + seg + " 100 100 100");
         Ds.SendMessageStatus("Segment " + seg + " - WHITE");
-        Ds.Wait(1500);
+        Ds.Wait(1.5);
     }
     
     // Turn all off
     for (var j = 0; j < 128; j++) {
-        Ds.sendStringCommand("coveLights segment " + j + " 0 0 0");
+        Ds.SendStringCommand("coveLights segment " + j + " 0 0 0");
     }
     
     Ds.SendMessageStatus("Quick test complete");

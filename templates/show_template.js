@@ -12,12 +12,12 @@ var SHOW_DESCRIPTION = "Description of what this show does";
 // Option 2: Copy functions below (uncomment if needed)
 
 /*
-// Copy these functions if not using lighting_master.js:
+// Copy these functions if not using lighting library:
 
-var TOTAL_SEGMENTS = 110;
+var TOTAL_SEGMENTS = 128;
 
 function setSegment(index, r, g, b) {
-    Ds.sendStringCommand("coveLights segment " + index + " " + r + " " + g + " " + b);
+    Ds.SendStringCommand("coveLights segment " + index + " " + r + " " + g + " " + b);
 }
 
 function setAll(r, g, b) {
@@ -26,39 +26,32 @@ function setAll(r, g, b) {
     }
 }
 
-function fadeAll(fromR, fromG, fromB, toR, toG, toB, durationMs, steps) {
-    steps = steps || 50;
-    var delayMs = durationMs / steps;
-    
-    for (var step = 0; step <= steps; step++) {
-        var progress = step / steps;
-        var r = Math.round(fromR + (toR - fromR) * progress);
-        var g = Math.round(fromG + (toG - fromG) * progress);
-        var b = Math.round(fromB + (toB - fromB) * progress);
-        
-        setAll(r, g, b);
-        
-        if (step < steps) {
-            Ds.Wait(delayMs);
-        }
+// Hardware fade - uses native duration parameter
+function fadeAll(toR, toG, toB, durationSec) {
+    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
+        Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
     }
+    Ds.Wait(durationSec);
 }
 
-function fadeFromOff(toR, toG, toB, durationMs, steps) {
-    fadeAll(0, 0, 0, toR, toG, toB, durationMs, steps);
+function fadeFromOff(toR, toG, toB, durationSec) {
+    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
+        Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
+    }
+    fadeAll(toR, toG, toB, durationSec);
 }
 
-function fadeToOff(durationMs, steps) {
-    fadeAll(100, 100, 100, 0, 0, 0, durationMs, steps);
+function fadeToOff(durationSec) {
+    fadeAll(0, 0, 0, durationSec);
 }
 */
 
 // ===== SHOW CONFIGURATION =====
 
 var config = {
-    preShowDuration: 5000,      // Time for pre-show ambiance (ms)
-    introDuration: 3000,        // Intro effect duration (ms)
-    outroDuration: 3000,        // Outro effect duration (ms)
+    preShowDuration: 5,         // Time for pre-show ambiance (seconds)
+    introDuration: 3,           // Intro effect duration (seconds)
+    outroDuration: 3,           // Outro effect duration (seconds)
     
     // Colors (RGB 0-100)
     preShowColor: {r: 20, g: 40, b: 80},
@@ -75,8 +68,7 @@ function preShow() {
         config.preShowColor.r,
         config.preShowColor.g,
         config.preShowColor.b,
-        2000,
-        50
+        2
     );
     
     Ds.Wait(config.preShowDuration);
@@ -86,16 +78,15 @@ function intro() {
     Ds.SendMessageStatus("[" + SHOW_NAME + "] Intro starting...");
     
     // Fade to black
-    fadeToOff(1000, 30);
-    Ds.Wait(500);
+    fadeToOff(1);
+    Ds.Wait(0.5);
     
     // Your intro effect here
     fadeFromOff(
         config.mainColor.r,
         config.mainColor.g,
         config.mainColor.b,
-        config.introDuration,
-        50
+        config.introDuration
     );
 }
 
@@ -115,20 +106,19 @@ function mainShow() {
 function outro() {
     Ds.SendMessageStatus("[" + SHOW_NAME + "] Outro starting...");
     
-    // Fade up from dim
+    // Set initial state then fade to end color
+    setAll(10, 10, 30);
     fadeAll(
-        10, 10, 30,
         config.endColor.r,
         config.endColor.g,
         config.endColor.b,
-        config.outroDuration,
-        50
+        config.outroDuration
     );
     
-    Ds.Wait(2000);
+    Ds.Wait(2);
     
     // Fade to off
-    fadeToOff(2000, 50);
+    fadeToOff(2);
 }
 
 function cleanup() {
