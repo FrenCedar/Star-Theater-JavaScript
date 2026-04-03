@@ -68,24 +68,18 @@ Documentation is organized into the following categories under `docs/`:
 - `API_CORRECTIONS.md` - Important API usage corrections
 - `digistar_manual.txt` - Official Digistar manual
 
-**guides/** - How-to guides and workflows
-- `EASIEST_WORKFLOW.md` - Recommended workflow for script development
-- `HOW_TO_USE_FILES.md` - Managing multiple script files
-- `CINEMATIC_MODE_README.md` - Cinematic lighting guide
+**guides/** - Development guides and workflows
+- `README.md` - Script development guide, workflow, and file usage patterns
 
 **lighting/** - Lighting system documentation
-- `HARDWARE_FADE_GUIDE.md` - Hardware fade implementation
-- `LIGHTING_README.md` - Lighting system overview
+- `README.md` - Complete lighting control guide including hardware fades
 
 **capture/** - Screenshot tool documentation
-- `CAPTURE_TOOL_README.md` - Quick start guide
-- `GUI_CAPTURE_README.md` - Complete GUI documentation
-- `CAPTURE_GUIDE_INSTRUCTIONS.md` - Detailed instructions
+- `README.md` - Complete capture tool guide (GUI and hotkey versions)
 
-**dev-notes/** - Development notes and updates
-- `HARDWARE_FADE_UPDATE_SUMMARY.md` - Hardware fade implementation notes
-- `SEGMENT_ISSUE.md` - Troubleshooting segment issues
-- `CONSTELLATION_FINDER_IMPROVEMENTS.md` - Constellation finder enhancements
+**dev-notes/** - Development notes and technical details
+- `README.md` - Segment configuration, constellation finder improvements, hardware fade notes
+- `CONSTELLATION_FINDER_IMPROVEMENTS.md` - Detailed constellation finder comparison
 
 ## Hardware-Accelerated Fading
 
@@ -97,7 +91,7 @@ Ds.SendStringCommand("coveLights segment 0 100 0 0 duration 3");
 
 This approach reduces command overhead by 99.5% compared to software-based fading implementations (128 commands vs 25,600). All current scripts utilize this hardware fade capability for optimal performance.
 
-Refer to `docs/lighting/HARDWARE_FADE_GUIDE.md` for implementation details.
+Refer to `docs/lighting/README.md` for implementation details.
 
 ## Digistar API Reference
 
