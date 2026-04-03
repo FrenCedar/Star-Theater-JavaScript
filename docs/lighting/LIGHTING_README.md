@@ -1,15 +1,15 @@
-# Digistar Cove Lighting Control System
+# Digistar Cove Lighting Control
 
-Hardware-accelerated lighting control for the Digistar planetarium cove lights using the native `duration` parameter for all fades.
+Hardware-accelerated lighting control using the native `duration` parameter for smooth fades.
 
-## ⚠️ IMPORTANT: RGB Range is 0-100 (NOT 0-255)
+## RGB Range
 
-All RGB values in these scripts use 0-100 range, not the typical 0-255.
+All RGB values use 0-100 range (not 0-255).
 
-## Files
+## Available Files
 
-- **lighting_control_v2.js** - Main library with all hardware-accelerated functions
-- **Segment.js** - Basic segment control utility
+- `core_lighting/lighting_control_v2.js` - Main lighting library
+- `utilities/Segment.js` - Basic segment control
 
 ## Quick Start
 
@@ -31,7 +31,7 @@ setSegment(50, 0, 100, 0);
 
 ### Hardware Fades
 
-All fades use the native `duration` parameter — the hardware handles smooth interpolation.
+All fades use the native `duration` parameter for hardware-calculated interpolation.
 
 ```javascript
 // Fade all lights to blue over 3 seconds
@@ -49,11 +49,11 @@ setSegmentFade(10, 0, 100, 0, 1);
 
 ### Zone Control
 
-Zones divide the 128 segments into 4 regions:
-- **front**: segments 0-31
-- **right**: segments 32-63
-- **back**: segments 64-95
-- **left**: segments 96-127
+Zones divide segments into regions:
+- front: segments 0-31
+- right: segments 32-63
+- back: segments 64-95
+- left: segments 96-127
 
 ```javascript
 // Set front zone to red (instant)
@@ -65,12 +65,10 @@ fadeZone("left", 100, 100, 0, 2);
 
 ### Preset Scenes
 
+Implement in your scripts as needed:
 ```javascript
-scenePreShow();      // Soft blue ambiance (fade in)
-sceneEndShow();      // Fade to off
-sceneMSU();          // MSU blue and gold (instant)
-sceneEmergency();    // Bright white (instant)
-sceneCinematic();    // Very dim blue (fade in)
+fadeFromOff(20, 40, 80, 3);  // Pre-show ambiance
+fadeToOff(2);                // End show
 ```
 
 ## Function Reference
@@ -137,38 +135,26 @@ function myShow() {
 
 ## Best Practices
 
-**Always use the `duration` parameter for fades** — never step-loop in JavaScript.
+Always use the `duration` parameter for fades:
 
 ```javascript
-// ✅ CORRECT — hardware fade
-fadeAll(100, 0, 0, 3);
-
-// ✅ CORRECT — instant color change
-setAll(100, 0, 0);
+fadeAll(100, 0, 0, 3);  // Hardware fade
+setAll(100, 0, 0);      // Instant change
 ```
 
-**Remember to wait for the fade to complete** before running the next command:
+Wait for fade completion:
 
 ```javascript
-// ✅ GOOD
-fadeAll(100, 0, 0, 3);
-// fadeAll() already calls Ds.Wait() internally — next line runs after fade
-
-// ⚠️ RAW COMMANDS — you must wait manually
 for (var i = 0; i < TOTAL_SEGMENTS; i++) {
     Ds.SendStringCommand("coveLights segment " + i + " 100 0 0 duration 3");
 }
-Ds.Wait(3);  // Don't forget this!
+Ds.Wait(3);
 ```
 
-**Set a known starting state before fading:**
+Set known initial state:
 
 ```javascript
-// ✅ Predictable — starts from known off state
 setAll(0, 0, 0);
-fadeAll(100, 0, 0, 3);
-
-// ⚠️ Fades from whatever the current state is
 fadeAll(100, 0, 0, 3);
 ```
 
@@ -191,13 +177,10 @@ setAll(100, 78, 17);   // MSU Gold
 
 ## Troubleshooting
 
-**Lights not changing?**
-- Verify Digistar command syntax: `coveLights segment [index] [r] [g] [b]`
-- Check segment index is within range (default 0-127)
+Command syntax: `coveLights segment [index] [r] [g] [b]`
 
-**Fade too slow/fast?**
-- Adjust the `durationSec` parameter
+Segment index range: 0-127
 
-**Lights mid-fade when next command runs?**
-- Make sure `Ds.Wait(durationSec)` is called after raw commands
-- If using library functions like `fadeAll()`, the wait is handled automatically
+Adjust fade speed via `durationSec` parameter
+
+Ensure `Ds.Wait()` is called after fade commands

@@ -1,32 +1,26 @@
-# Digistar 7 User Guide Capture Instructions
+# Digistar Capture Guide
 
-## 📚 Purpose
-Capture the Digistar 7 user guide from the application window by taking screenshots and extracting text using OCR.
+Screenshot capture tool for Digistar 7 user guide content.
 
----
+## Quick Start
 
-## 🚀 Quick Start (Easiest Method)
-
-### Option 1: Simple Screenshot Tool (RECOMMENDED)
-**No dependencies to install! Uses only basic Python libraries.**
+### Simple Screenshot Tool
 
 ```powershell
 python capture_screenshots_simple.py
 ```
 
-**Then:**
-1. Click on Digistar window
-2. Press **F11** to name the section (e.g., "chapter_1")
-3. Press **F9** to capture screenshot
-4. Press **F10** to scroll down if needed
+Usage:
+1. Focus Digistar window
+2. Press F11 to name section
+3. Press F9 to capture screenshot
+4. Press F10 to scroll if needed
 5. Repeat for all sections
-6. Press **ESC** when done
+6. Press ESC when done
 
-Screenshots saved in `digistar_screenshots/`
+Screenshots save to `digistar_screenshots/`
 
----
-
-## 🎯 Option 2: Advanced Tool (OCR + Screenshots)
+## Advanced Tool (OCR)
 
 ### Step 1: Install Requirements
 

@@ -1,113 +1,67 @@
-# 📸 Digistar Capture Tool - GUI Version
+# Digistar Capture Tool - GUI Version
 
-Easy-to-use GUI tool for capturing screenshots from Digistar 7!
+GUI-based screenshot capture utility for Digistar 7.
 
----
+## Quick Start
 
-## 🚀 Quick Start (3 Easy Steps!)
-
-### 1. Install (One-Time Setup)
-Double-click: **`setup_capture_tool.bat`**
-
-Or manually:
+### Installation
 ```powershell
 pip install pyautogui pillow
 ```
 
-### 2. Launch GUI
-Double-click: **`start_capture_gui.bat`**
-
-Or manually:
+### Launch
 ```powershell
 python capture_gui.py
 ```
 
-### 3. Use It!
-1. Type section name (e.g., "introduction")
-2. Click on Digistar window
-3. Click **"CAPTURE NOW"** button
-4. Repeat for all sections!
+### Usage
+1. Enter section name
+2. Focus Digistar window
+3. Click "CAPTURE NOW"
+4. Screenshots save to `digistar_screenshots/`
 
-**Done! Screenshots save automatically to `digistar_screenshots/`** ✨
+## Features
 
----
+### Capture Controls
+- CAPTURE NOW: Screenshot entire screen
+- Scroll Down: Scroll 500 pixels
+- Scroll & Capture: Combined action
 
-## 🎨 GUI Features
+### Auto Capture
+- Configure scroll count (1-50)
+- Set delay between actions (0.5-5.0s)
+- Automated capture for long documents
 
-### 📝 Section Name
-- Enter descriptive names for each section
-- Auto-updates before each capture
-- Examples: `introduction`, `getting_started`, `api_reference`
+### Status
+- Total captures count
+- Current section name
+- Activity log
+- Quick folder access
 
-### 🎮 Capture Controls
+## Workflow
 
-**📸 CAPTURE NOW** (Big Green Button)
-- Takes screenshot of entire screen
-- Hides GUI window during capture
-- Saves with section name + timestamp
+1. Launch capture GUI
+2. Enter section name
+3. Focus Digistar window
+4. Click "CAPTURE NOW"
+5. For long sections:
+   - Click "Scroll Down" then "CAPTURE NOW"
+   - Or use "Scroll & Capture" button
+6. Repeat for each section
+7. Review screenshots in output folder
 
-**📜 Scroll Down**
-- Scrolls down 500 pixels
-- Use when content extends below screen
+## Auto Capture Usage
 
-**📜📸 Scroll & Capture**
-- Scrolls down, then captures
-- One-click combo action!
-
-### 🤖 Auto Capture
-- **Number of scrolls**: How many times to scroll (1-50)
-- **Delay (sec)**: Wait time between actions (0.5-5.0s)
-- **Start Auto Capture**: Captures initial view, then scrolls and captures automatically
-- **Stop Auto Capture**: Cancel ongoing auto-capture
-
-Perfect for long documents!
-
-### 📊 Status Section
-- **Captures**: Total screenshots taken
-- **Current**: Current section name
-- **Log**: Real-time activity feed
-- **Open Folder**: Quick access to screenshots
-
----
-
-## 📋 Typical Workflow
-
-```
-1. Launch: start_capture_gui.bat
-2. GUI window opens
-
-For each Digistar section:
-3. Type section name: "introduction"
-4. Click "Set Name" (or it sets automatically)
-5. Click on Digistar window
-6. Click "CAPTURE NOW" 
-7. If more content below:
-   - Click "Scroll Down"
-   - Click "CAPTURE NOW" again
-   OR use "Scroll & Capture" button
-
-8. Open next dropdown/section
-9. Repeat steps 3-7
-
-10. Click "Open Output Folder" to review
-11. Done!
-```
-
----
-
-## 🎯 Auto Capture Example
-
-**For long sections with lots of scrolling:**
+For long sections with multiple pages:
 
 1. Open Digistar section
-2. Type section name: `api_reference`
-3. Set "Number of scrolls": `10`
-4. Set "Delay": `1.5` seconds
+2. Enter section name
+3. Set number of scrolls (e.g., 10)
+4. Set delay between captures (e.g., 1.5 seconds)
 5. Click "Start Auto Capture"
-6. ☕ Wait while it captures automatically!
-7. Review results in log
+6. Tool automatically scrolls and captures
 
-**What it does:**
+Process:
 - Captures current view
 - Scrolls down
 - Waits 1.5 seconds
@@ -115,173 +69,31 @@ For each Digistar section:
 - Repeats 10 times
 - Stops automatically
 
----
+## Output Format
 
-## 🎨 GUI Layout
-
-```
-┌─────────────────────────────────────┐
-│     Digistar Guide Capture          │
-│   Capture screenshots from D7       │
-├─────────────────────────────────────┤
-│ 📝 Section Name                     │
-│ [introduction        ] [Set Name]   │
-├─────────────────────────────────────┤
-│ 🎮 Capture Controls                 │
-│                                     │
-│        📸 CAPTURE NOW               │
-│                                     │
-│ [📜 Scroll Down] [📜📸 Scroll &Cap] │
-├─────────────────────────────────────┤
-│ 🤖 Auto Capture                     │
-│ Scrolls: [5] Delay: [1.0] sec      │
-│ [▶️ Start Auto Capture]             │
-├─────────────────────────────────────┤
-│ 📊 Status                           │
-│ Captures: 0  Current: page          │
-│                                     │
-│ Log:                                │
-│ ┌─────────────────────────────────┐ │
-│ │ [12:30] Welcome! Ready...       │ │
-│ │ [12:31] ✓ Section: intro       │ │
-│ │ [12:31] 📸 Capturing...         │ │
-│ │ [12:31]    ✅ Saved!            │ │
-│ └─────────────────────────────────┘ │
-│                                     │
-│ [📁 Open Output Folder]             │
-└─────────────────────────────────────┘
-```
-
----
-
-## 💡 Tips & Tricks
-
-### Best Practices
-1. **Name sections clearly** - Use descriptive names
-2. **Click Digistar first** - Make sure Digistar is the active window
-3. **Review as you go** - Check log for success messages
-4. **Use auto-capture** - Great for long documents
-5. **Open folder often** - Verify screenshots look good
-
-### Window Positioning
-- Position GUI on second monitor (if available)
-- Or position GUI to side of Digistar window
-- GUI hides automatically during capture
-
-### Section Naming Ideas
-- `01_introduction`
-- `02_getting_started`
-- `03_controls_overview`
-- `04_api_reference_page1`
-- `04_api_reference_page2`
-- `05_troubleshooting`
-
-### Scrolling Strategy
-- Start at top of section
-- Capture, then scroll down
-- Capture again with slight overlap
-- Better to capture too much than miss content
-
----
-
-## 📸 Output
-
-### File Format
-```
-digistar_screenshots/
-├── 001_introduction_20241206_130000.png
-├── 002_introduction_20241206_130010.png
-├── 003_getting_started_20241206_130025.png
-└── ...
-```
-
-### Filename Structure
+Screenshots save to `digistar_screenshots/` with naming format:
 ```
 [number]_[section_name]_[timestamp].png
-   │          │              │
-   │          │              └── YYYYMMDD_HHMMSS
-   │          └── Your custom name
-   └── Sequential number (auto)
 ```
 
-**Each file includes:**
-- Sequential numbering (maintains order)
-- Your section name (for organization)
-- Timestamp (tracks when captured)
-- PNG format (high quality, lossless)
+Example:
+```
+001_introduction_20241206_130000.png
+002_getting_started_20241206_130025.png
+```
 
----
+## Troubleshooting
 
-## 🔧 Troubleshooting
-
-### GUI won't start
+Install or update dependencies:
 ```powershell
-# Reinstall packages
 pip install --upgrade pyautogui pillow
-
-# Or use setup script
-setup_capture_tool.bat
 ```
 
-### Screenshots are blank/wrong
-- **Click on Digistar window** before capturing
-- Wait 0.5s after clicking before capture
-- Make sure Digistar isn't minimized
-- Try repositioning windows
-
-### GUI is on top of Digistar
-- Move GUI window to side or second monitor
-- GUI auto-hides during capture anyway!
-
-### Auto-capture too fast/slow
-- Adjust "Delay" value
-- Increase for slower capture
-- Decrease for faster capture
-- 1.0-2.0 seconds usually works well
-
-### Scroll amount wrong
-- Edit `capture_gui.py` line with `pyautogui.scroll(-500)`
-- Change `-500` to larger (scroll more) or smaller (scroll less)
-- Negative number = scroll down
-- Positive number = scroll up
-
----
-
-## 🆚 Comparison: GUI vs Hotkey Tools
-
-### GUI Tool (capture_gui.py) ⭐ RECOMMENDED
-- ✅ Easy to use - just click buttons
-- ✅ Visual feedback - see what's happening
-- ✅ No hotkeys to remember
-- ✅ Works on all Windows systems
-- ✅ Auto-capture feature
-- ✅ Built-in log viewer
-- ✅ No permissions issues
-
-### Hotkey Tool (capture_screenshots_simple.py)
-- ✅ Keyboard-based (F9, F10, F11)
-- ✅ Minimal interface
-- ❌ Requires keyboard library
-- ❌ May have permission issues
-- ❌ Need to remember hotkeys
-
-**Verdict: Use GUI tool!** 🎉
-
----
-
-## ⚡ Quick Reference
-
-### Essential Commands
-```powershell
-# Setup (once)
-setup_capture_tool.bat
-
-# Start GUI
-start_capture_gui.bat
-
-# Or directly
-python capture_gui.py
-```
+Common issues:
+- Ensure Digistar window is focused before capture
+- Position GUI window to avoid overlap
+- Adjust delay value if auto-capture is too fast/slow
+- Modify scroll amount in `capture_gui.py` if needed
 
 ### Button Quick Guide
 - **CAPTURE NOW** = Take screenshot

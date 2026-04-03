@@ -1,8 +1,6 @@
-# Hardware Fade Guide - Native Duration Parameter
+# Hardware Fade Guide
 
-## 🎯 Game Changer Discovery!
-
-The `coveLights segment` command supports a native `duration` parameter that tells the **hardware** to smoothly fade to the target color!
+The `coveLights segment` command includes a native `duration` parameter for hardware-accelerated smooth fading.
 
 ## Command Format
 
@@ -33,25 +31,25 @@ function fadeAll(toR, toG, toB, durationSec) {
 }
 ```
 
-**Benefits:**
-- ✅ Only 110 commands (one per segment)
-- ✅ Hardware calculates the fade
-- ✅ Perfectly smooth (hardware-timed)
-- ✅ 99.5% fewer commands!
-- ✅ Script just waits, minimal processing
+Benefits:
+- Minimal command count (one per segment)
+- Hardware-calculated interpolation
+- Smooth hardware-timed fading
+- 99.5% fewer commands vs software fading
+- Minimal script processing overhead
 
 ## Performance
 
 | Method | Commands | Processing | Smoothness |
 |--------|----------|------------|------------|
-| **Hardware** | **110** | **Minimal** | **Perfect** ⭐⭐⭐⭐⭐ |
+| Hardware | 128 | Minimal | Optimal |
 
 ## Usage Examples
 
 ### Example 1: Fade to Red
 ```javascript
 function fadeAll(toR, toG, toB, durationSec) {
-    for (var i = 0; i < 110; i++) {
+    for (var i = 0; i < 128; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
     }
     Ds.Wait(durationSec);
@@ -59,13 +57,12 @@ function fadeAll(toR, toG, toB, durationSec) {
 fadeAll(100, 0, 0, 3);
 ```
 
-### Example 2: Cinematic Fade In
+### Example 2: Ambient Fade In
 ```javascript
-// Set all segments to fade to dim blue over 3 seconds
-for (var i = 0; i < 110; i++) {
+for (var i = 0; i < 128; i++) {
     Ds.SendStringCommand("coveLights segment " + i + " 8 8 25 duration 3");
 }
-Ds.Wait(3);  // Wait for fade to complete
+Ds.Wait(3);
 ```
 
 ### Example 3: Zone Fade
@@ -77,14 +74,13 @@ for (var i = 0; i <= 27; i++) {  // Front zone: 0-27
 Ds.Wait(2);
 ```
 
-### Example 4: Different Durations Per Segment
+### Example 4: Wave Effect
 ```javascript
-// Create a wave effect - each segment starts fading at different time
-for (var i = 0; i < 110; i++) {
+for (var i = 0; i < 128; i++) {
     Ds.SendStringCommand("coveLights segment " + i + " 100 0 0 duration 2");
-    Ds.Wait(0.05);  // Start next segment 50ms later
+    Ds.Wait(0.05);
 }
-Ds.Wait(2);  // Wait for last segment to finish
+Ds.Wait(2);
 ```
 
 ## Updated Function Library
@@ -92,40 +88,26 @@ Ds.Wait(2);  // Wait for last segment to finish
 ### Basic Hardware Fade Functions
 
 ```javascript
-// Fade all segments to a color
+var TOTAL_SEGMENTS = 128;
+
 function fadeAll(toR, toG, toB, durationSec) {
-    for (var i = 0; i < 110; i++) {
+    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
     }
     Ds.Wait(durationSec);
 }
 
-// Fade from off to a color
 function fadeFromOff(toR, toG, toB, durationSec) {
-    // Instantly set to off first
-    for (var i = 0; i < 110; i++) {
+    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " 0 0 0");
     }
-    // Then hardware fade to color
     fadeAll(toR, toG, toB, durationSec);
 }
 
-// Fade to off
 function fadeToOff(durationSec) {
     fadeAll(0, 0, 0, durationSec);
 }
 
-// Fade from one color to another
-function fadeFromTo(fromR, fromG, fromB, toR, toG, toB, durationSec) {
-    // Instantly set to start color
-    for (var i = 0; i < 110; i++) {
-        Ds.SendStringCommand("coveLights segment " + i + " " + fromR + " " + fromG + " " + fromB);
-    }
-    // Hardware fade to end color
-    fadeAll(toR, toG, toB, durationSec);
-}
-
-// Fade a specific zone
 function fadeZone(startSeg, endSeg, toR, toG, toB, durationSec) {
     for (var i = startSeg; i <= endSeg; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -134,51 +116,38 @@ function fadeZone(startSeg, endSeg, toR, toG, toB, durationSec) {
 }
 ```
 
-## Test File
+## Reference Implementation
 
-```
-examples/fade_test_hardware.js  - Hardware fade demo
-```
+See `examples/fade_test_hardware.js` for hardware fade demonstrations.
 
 ## Best Practices
 
-### 1. Always Use the Duration Parameter for Fades
+### 1. Use Duration Parameter
 ```javascript
-// ✅ CORRECT
 fadeAll(100, 0, 0, 3);
 ```
 
-### 2. Set Initial State Before Hardware Fade
+### 2. Set Known Initial State
 ```javascript
-// ✅ GOOD - Predictable start
-setAll(0, 0, 0);  // Instant
-fadeAll(100, 0, 0, 3);  // Hardware fade
-
-// ⚠️ OKAY - Fades from current state
-fadeAll(100, 0, 0, 3);  // But what was the current state?
+setAll(0, 0, 0);
+fadeAll(100, 0, 0, 3);
 ```
 
-### 3. Remember to Wait for Completion
+### 3. Wait for Completion
 ```javascript
-// ✅ GOOD
-for (var i = 0; i < 110; i++) {
+for (var i = 0; i < 128; i++) {
     Ds.SendStringCommand("coveLights segment " + i + " 100 0 0 duration 3");
 }
-Ds.Wait(3);  // Wait for fade to complete
-
-// ❌ BAD - Commands sent but script continues immediately
-for (var i = 0; i < 110; i++) {
-    Ds.SendStringCommand("coveLights segment " + i + " 100 0 0 duration 3");
-}
-// Script continues while lights are still fading!
+Ds.Wait(3);
 ```
 
-### 4. Use Variables for Easy Adjustment
+### 4. Use Constants
 ```javascript
 var FADE_DURATION = 3;
+var TOTAL_SEGMENTS = 128;
 
 function fadeAll(r, g, b) {
-    for (var i = 0; i < 110; i++) {
+    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + r + " " + g + " " + b + " duration " + FADE_DURATION);
     }
     Ds.Wait(FADE_DURATION);
@@ -187,14 +156,13 @@ function fadeAll(r, g, b) {
 
 ## Summary
 
-Use the `duration` parameter on every fade — one command per segment, hardware handles the rest.
+Hardware fading requires one command per segment. The hardware handles smooth interpolation.
 
 ```javascript
-// One command per segment, hardware interpolates smoothly
 Ds.SendStringCommand("coveLights segment 0 100 0 0 duration 10");
 ```
 
-## Files
+## Reference Files
 
-- `lighting_control_v2.js` - Main library with hardware fades
-- `examples/fade_test_hardware.js` - Hardware fade demo
+- `core_lighting/lighting_control_v2.js`
+- `examples/fade_test_hardware.js`

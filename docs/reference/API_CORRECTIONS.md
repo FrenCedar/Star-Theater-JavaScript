@@ -1,44 +1,44 @@
-# ⚠️ IMPORTANT API CORRECTIONS
+# API Corrections
 
-## Critical Fixes Applied
+## Critical API Usage Notes
 
-### 1. **Ds.Wait Uses SECONDS, Not Milliseconds!**
+### 1. Timing Uses Seconds
 
-**Wrong:**
+The `Ds.Wait()` and `Ds.Sleep()` functions use seconds, not milliseconds.
+
+**Incorrect:**
 ```javascript
-Ds.Wait(2000);  // ❌ This waits 2000 SECONDS (33 minutes!)
+Ds.Wait(2000);  // Waits 2000 seconds (33 minutes)
 ```
 
 **Correct:**
 ```javascript
-Ds.Wait(2);  // ✅ This waits 2 SECONDS
+Ds.Wait(2);  // Waits 2 seconds
 ```
 
-### 2. **Ds.SendStringCommand (Capital S)**
+### 2. Command Case Sensitivity
 
-**Wrong:**
+API functions use PascalCase naming convention.
+
+**Incorrect:**
 ```javascript
-Ds.sendStringCommand("coveLights segment 0 100 0 0");  // ❌ Lowercase 's'
+Ds.sendStringCommand("coveLights segment 0 100 0 0");
 ```
 
 **Correct:**
 ```javascript
-Ds.SendStringCommand("coveLights segment 0 100 0 0");  // ✅ Capital 'S'
+Ds.SendStringCommand("coveLights segment 0 100 0 0");
 ```
 
-## All Corrected Files
+## Current Files
 
-✅ **lighting_control.js** - Fixed  
-✅ **cinematic_mode.js** - Fixed  
-✅ **cinematic_mode_continuous.js** - Fixed  
-✅ **examples/simple_test.js** - Fixed  
-✅ **examples/fade_test.js** - Fixed  
-✅ **examples/preshow_ambiance.js** - Fixed  
-✅ **examples/lights_off.js** - Fixed  
-
-⚠️ **lighting_master.js** - Needs update  
-⚠️ **cinematic_presets.js** - Needs update  
-⚠️ **segment_diagnostic.js** - Needs update  
+Scripts in this project use correct API conventions:
+- `core_lighting/lighting_control_v2.js`
+- `examples/simple_test.js`
+- `examples/fade_test_hardware.js`
+- `examples/preshow_ambiance.js`
+- `examples/lights_off.js`
+- `utilities/segment_diagnostic.js`  
 
 ## Quick Reference
 
