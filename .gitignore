@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv
+venv/
+ENV/
+
+# Capture tool outputs
+digistar_screenshots/
+*.png
+*.jpg
+*.jpeg
+!docs/capture/image.png
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Node modules (for VS Code extension)
+vscode-extension/node_modules/
+node_modules/
+
+# Compiled VS Code extension
+vscode-extension/out/
+*.vsix
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Digistar specific
+*.bak
+*.backup
+
+# Personal/Local configuration
+config.local.js
+settings.local.json
+
+# Any credentials or API keys (just in case)
+*.key
+*.pem
+credentials.json
+.env
+.env.local
