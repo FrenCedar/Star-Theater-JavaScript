@@ -4,7 +4,7 @@ This project contains JavaScript scripts and tools for the Digistar 7 planetariu
 
 ## Overview
 
-This repository provides scripts for controlling cove lighting, managing shows, and interfacing with the Digistar system through both local JavaScript execution and web-based remote control.
+This repository provides scripts for controlling cove lighting, managing shows, and interfacing with the Digistar system through local JavaScript execution.
 
 ## Project Structure
 
@@ -16,7 +16,7 @@ digistar_js_project/
 ├── utilities/              Diagnostic and utility scripts
 ├── docs/                   Documentation organized by category
 ├── vscode-extension/       VS Code extension for Digistar scripting
-├── web_control/            Web-based remote control interface
+├── ascii_converter/        ASCII art texture converter for planets
 └── capture_tool/           Screenshot capture utility
 ```
 
@@ -44,14 +44,15 @@ digistar_js_project/
 
 **vscode-extension/** - VS Code extension with IntelliSense and snippets
 - Complete Digistar 7 API type definitions
-- 50+ code snippets including Web API support
+- 50+ code snippets for Digistar scripting
 - Syntax highlighting and error detection
 - Packaged extension ready for installation
 
-**web_control/** - Web-based control interface
-- `digistar_control.html` - Main web control interface
-- `SETUP_GUIDE.md` - Deployment instructions
-- Uses Digistar's built-in web server and `Ds.Web.*` API
+**ascii_converter/** - ASCII art texture converter
+- `ascii_converter_gui.py` - GUI application for converting images to ASCII art
+- `image_to_ascii.py` - Command-line conversion tool
+- Creates color-accurate ASCII textures for Digistar planets
+- Supports Braille characters, multiple character sets, and block rendering modes
 
 **capture_tool/** - Screenshot capture utility
 - `start_capture_gui.bat` - Launch GUI application
@@ -63,7 +64,7 @@ digistar_js_project/
 Documentation is organized into the following categories under `docs/`:
 
 **reference/** - API and system references
-- `DIGISTAR7_COMPLETE_REFERENCE.md` - Comprehensive Digistar 7 scripting guide including Web API
+- `DIGISTAR7_COMPLETE_REFERENCE.md` - Comprehensive Digistar 7 scripting guide
 - `DIGISTAR7_QUICK_REFERENCE.md` - Quick reference card
 - `API_CORRECTIONS.md` - Important API usage corrections
 - `digistar_manual.txt` - Official Digistar manual
@@ -105,16 +106,6 @@ Ds.SendStringCommand(command)        // Send Digistar script commands
 Ds.Wait(seconds)                     // Pause execution (seconds, not milliseconds)
 Ds.Sleep(seconds)                    // Alternative pause function (seconds)
 ```
-
-### Web API
-
-```javascript
-Ds.Web.SendStringCommand(command, callback)  // Asynchronous command execution
-Ds.Web.CreateObject(name, class, type, cb)   // Create objects remotely
-Ds.Web.DirectoryOpen(path, pattern)          // Browse directories
-```
-
-Complete Web API documentation is available in `docs/reference/DIGISTAR7_COMPLETE_REFERENCE.md`.
 
 ### Important Notes
 

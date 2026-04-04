@@ -84,3 +84,4 @@ settings.local.json
 credentials.json
 .env
 .env.local
+AllOutput.txt
