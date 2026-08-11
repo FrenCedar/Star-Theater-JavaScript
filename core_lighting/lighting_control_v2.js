@@ -1,9 +1,7 @@
-// Enhanced Digistar Cove Light Control System V2
-// NOW WITH HARDWARE-ACCELERATED FADES!
 // RGB values: 0-100 (NOT 0-255)
 
 // ===== CONFIGURATION =====
-var TOTAL_SEGMENTS = 128;  // All segments working!
+var TOTAL_SEGMENTS = 128;  // Accurate number of segments, tested and working. (no touchy touchy)
 
 // ===== BASIC FUNCTIONS =====
 
@@ -12,7 +10,7 @@ function setSegment(index, r, g, b) {
     Ds.SendStringCommand("coveLights segment " + index + " " + r + " " + g + " " + b);
 }
 
-// Set a single segment with hardware fade
+// Set a single segment with fade
 function setSegmentFade(index, r, g, b, durationSec) {
     Ds.SendStringCommand("coveLights segment " + index + " " + r + " " + g + " " + b + " duration " + durationSec);
 }
@@ -24,7 +22,7 @@ function setAll(r, g, b) {
     }
 }
 
-// Set all segments with hardware fade
+// Set all segments with fade
 function setAllFade(r, g, b, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         setSegmentFade(i, r, g, b, durationSec);
@@ -58,10 +56,6 @@ function setRangeFade(startIndex, endIndex, r, g, b, durationSec) {
     Ds.Wait(durationSec);
 }
 
-// ===== HARDWARE FADE FUNCTIONS (RECOMMENDED!) =====
-
-// Fade all segments to a color - HARDWARE ACCELERATED
-// This is the BEST way to fade - let the hardware do it!
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -69,13 +63,12 @@ function fadeAll(toR, toG, toB, durationSec) {
     Ds.Wait(durationSec);
 }
 
-// Fade to a color (from current state) - HARDWARE ACCELERATED
-// No need to set "from" color - hardware already knows current state!
+// Fade to a color (from current state)
 function fadeTo(toR, toG, toB, durationSec) {
     fadeAll(toR, toG, toB, durationSec);
 }
 
-// Fade from off to a color - HARDWARE ACCELERATED
+// Fade from off to a color
 function fadeFromOff(toR, toG, toB, durationSec) {
     setAll(0, 0, 0);
     fadeAll(toR, toG, toB, durationSec);
@@ -99,7 +92,7 @@ function setZone(zoneName, r, g, b) {
     }
 }
 
-// Fade a zone - HARDWARE ACCELERATED
+// Fade a zone
 function fadeZone(zoneName, r, g, b, durationSec) {
     if (!zones[zoneName]) {
         Ds.SendMessageError("Unknown zone: " + zoneName);
@@ -136,7 +129,6 @@ function chase(r, g, b, segmentSize, delaySec, loops) {
     }
 }
 
-// Chase with smooth hardware fades
 function chaseFade(r, g, b, segmentSize, stepDuration, loops) {
     loops = loops || 1;
     segmentSize = segmentSize || 5;
@@ -157,7 +149,7 @@ function chaseFade(r, g, b, segmentSize, stepDuration, loops) {
     }
 }
 
-// Pulse effect - HARDWARE ACCELERATED
+// Pulse effect
 function pulse(r, g, b, durationSec, loops) {
     loops = loops || 1;
     
@@ -170,7 +162,6 @@ function pulse(r, g, b, durationSec, loops) {
     }
 }
 
-// Rainbow with hardware fades
 function rainbow(fadeDuration, loops) {
     loops = loops || 1;
     var colors = [
