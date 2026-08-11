@@ -1,5 +1,5 @@
 // Simple Lighting Test - Complete Self-Contained Script
-// Just run this file in Digistar!
+// Just run this file in Digistar 7!
 
 var TOTAL_SEGMENTS = 128;
 

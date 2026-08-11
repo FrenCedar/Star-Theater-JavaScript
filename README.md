@@ -4,7 +4,7 @@ This project contains JavaScript scripts and tools for the Digistar 7 planetariu
 
 ## Overview
 
-This repository provides scripts for controlling cove lighting, managing shows, and interfacing with the Digistar system through local JavaScript execution.
+This repository provides scripts for controlling cove lighting, managing shows, and interfacing with the Digistar 7 system through local JavaScript execution.
 
 ## Project Structure
 
@@ -22,12 +22,12 @@ digistar_js_project/
 
 ### Core Directories
 
-**core_lighting/** - Lighting control library using hardware-accelerated fading
-- `lighting_control_v2.js` - Main lighting control library
+**core_lighting/** - Main lighting control library
+- `lighting_control_v2.js` - Complete lighting functions and effects
 
 **examples/** - Example scripts for testing and reference
 - `simple_test.js` - Basic RGB color test
-- `fade_demo.js` - Hardware fade demonstration
+- `fade_demo.js` - Fade effect demonstration
 - `preshow_ambiance.js` - Pre-show ambient lighting
 - `lights_off.js` - Smooth fade to off
 
@@ -36,7 +36,7 @@ digistar_js_project/
 
 **utilities/** - Tools for diagnostics and system exploration
 - `segment_diagnostic.js` - Test individual cove light segments
-- `api_discovery.js` - Discover available Digistar API functions
+- `api_discovery.js` - Discover available Digistar 7 API functions
 - `constellation_finder.js` - Calculate visible constellations
 - `constellation_finder_improved.js` - Enhanced constellation calculator
 - `projector_monitor.js` - Monitor projector status
@@ -73,28 +73,28 @@ Documentation is organized into the following categories under `docs/`:
 - `README.md` - Script development guide, workflow, and file usage patterns
 
 **lighting/** - Lighting system documentation
-- `README.md` - Complete lighting control guide including hardware fades
+- `README.md` - Complete lighting control guide and fade effects
 
 **capture/** - Screenshot tool documentation
 - `README.md` - Complete capture tool guide (GUI and hotkey versions)
 
 **dev-notes/** - Development notes and technical details
-- `README.md` - Segment configuration, constellation finder improvements, hardware fade notes
+- `README.md` - Segment configuration, constellation finder improvements, and fade implementation
 - `CONSTELLATION_FINDER_IMPROVEMENTS.md` - Detailed constellation finder comparison
 
-## Hardware-Accelerated Fading
+## Fade Effects
 
-The Digistar `coveLights segment` command includes a native `duration` parameter that enables hardware-accelerated smooth fading:
+The Digistar `coveLights segment` command includes a `duration` parameter for smooth color transitions:
 
 ```javascript
 Ds.SendStringCommand("coveLights segment 0 100 0 0 duration 3");
 ```
 
-This approach reduces command overhead by 99.5% compared to software-based fading implementations (128 commands vs 25,600). All current scripts utilize this hardware fade capability for optimal performance.
+This approach is efficient and provides smooth fading with minimal command overhead (128 commands per fade). All current scripts utilize the duration parameter for optimal performance.
 
 Refer to `docs/lighting/README.md` for implementation details.
 
-## Digistar API Reference
+## Digistar 7 API Reference
 
 ### Core Functions
 
@@ -102,7 +102,7 @@ Refer to `docs/lighting/README.md` for implementation details.
 Ds.SendMessageStatus(message)        // Output status messages
 Ds.SendMessageError(error)           // Output error messages
 Ds.FileWrite(path, mode, content)    // Write to files
-Ds.SendStringCommand(command)        // Send Digistar script commands
+Ds.SendStringCommand(command)        // Send Digistar 7 script commands
 Ds.Wait(seconds)                     // Pause execution (seconds, not milliseconds)
 Ds.Sleep(seconds)                    // Alternative pause function (seconds)
 ```

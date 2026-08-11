@@ -1,6 +1,6 @@
 # 🚀 Quick Installation Guide - Digistar 7 VS Code Extension
 
-Get up and running with Digistar scripting in VS Code in under 5 minutes!
+Get up and running with Digistar 7 scripting in VS Code in under 5 minutes!
 
 ---
 
@@ -159,7 +159,7 @@ Add to your `.vscode/settings.json`:
 1. **Try the snippets** - Type `dstemplate` for a full script structure
 2. **Read the docs** - Check `docs/DIGISTAR7_COMPLETE_REFERENCE.md`
 3. **Copy type definitions** - Copy `typings/digistar.d.ts` to your projects
-4. **Start coding!** - Create your first Digistar script
+4. **Start coding!** - Create your first Digistar 7 script
 
 ---
 
@@ -169,7 +169,7 @@ Add to your `.vscode/settings.json`:
 1. Create a file: `hello.ds.js`
 2. Use snippet: `dstemplate` + Tab
 3. Fill in the blanks
-4. Run in Digistar!
+4. Run in Digistar 7!
 
 ### **Intermediate**
 1. Use `dsobject` snippet to create objects
@@ -218,7 +218,7 @@ Add to your `.vscode/settings.json`:
 
 ## 🎉 **You're Ready!**
 
-Start writing Digistar scripts with professional tooling:
+Start writing Digistar 7 scripts with professional tooling:
 
 ✅ IntelliSense autocomplete  
 ✅ 40+ code snippets  

@@ -10,7 +10,7 @@ Ready-to-run files in the project:
 
 ```
 examples/simple_test.js         - Basic RGB color test
-examples/fade_demo.js           - Hardware fade demonstration
+examples/fade_demo.js           - Fade effect demonstration
 examples/preshow_ambiance.js    - Pre-show ambient lighting
 examples/lights_off.js          - Fade to off
 utilities/segment_diagnostic.js - Test individual segments
@@ -53,7 +53,7 @@ function setAll(r, g, b) {
     }
 }
 
-// Hardware fade function
+// Fade function using duration parameter
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -124,7 +124,7 @@ Examine existing scripts for implementation patterns:
 
 - **`core_lighting/lighting_control_v2.js`** - Main library with all lighting functions
 - **`examples/simple_test.js`** - Basic color commands
-- **`examples/fade_demo.js`** - Hardware fade patterns
+- **`examples/fade_demo.js`** - Fade effect examples
 - **`examples/preshow_ambiance.js`** - Ambient lighting example
 - **`examples/lights_off.js`** - Clean fade to off sequence
 - **`templates/show_template.js`** - Complete show template
@@ -158,14 +158,12 @@ Ds.Wait(0.5);    // Waits 0.5 seconds
 Ds.Wait(60);     // Waits 1 minute
 ```
 
-### Hardware Fades
-Always use hardware fades with the `duration` parameter:
+### Fade Effects
+Always use the `duration` parameter for smooth fading:
 
 ```javascript
-// Hardware fade (recommended)
+// Smooth fade using duration parameter
 Ds.SendStringCommand("coveLights segment 0 100 0 0 duration 3");
-
-// Never use software fade loops
 ```
 
 ### API Capitalization
@@ -238,6 +236,6 @@ Ds.SendMessage(2, "Error message");    // Error
 
 ## Further Reading
 
-- **`docs/lighting/`** - Lighting system details and hardware fade guide
+- **`docs/lighting/`** - Lighting system details and fade effects guide
 - **`docs/reference/`** - Complete Digistar 7 API reference
 - **`CONTRIBUTING.md`** - Code style and development standards

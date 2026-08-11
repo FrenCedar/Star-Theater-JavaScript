@@ -26,7 +26,7 @@ function setAll(r, g, b) {
     }
 }
 
-// Hardware fade - uses native duration parameter
+// Fade all segments to a color using duration parameter
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);

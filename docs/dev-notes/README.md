@@ -52,7 +52,7 @@ testBoundary();      // Test boundary area
 1. Run diagnostics with `segment_diagnostic.js`
 2. Observe and note which segments respond
 3. Check physical hardware and cable connections
-4. Review Digistar system settings for segment configuration
+4. Review Digistar 7 system settings for segment configuration
 
 ## Constellation Finder Improvements
 
@@ -127,9 +127,9 @@ for (var i = 0; i < constellations.length; i++) {
 }
 ```
 
-## Hardware Fade Implementation
+## Fade Implementation
 
-All scripts now use hardware-accelerated fading via the native `duration` parameter.
+All scripts use the `duration` parameter for smooth color transitions.
 
 ### Benefits
 
@@ -141,7 +141,7 @@ All scripts now use hardware-accelerated fading via the native `duration` parame
 
 ### Implementation
 
-Scripts using hardware fades:
+Scripts using fade effects:
 - `core_lighting/lighting_control_v2.js`
 - `examples/fade_demo.js`
 - `examples/simple_test.js`
@@ -152,7 +152,7 @@ Scripts using hardware fades:
 ### Example
 
 ```javascript
-// Hardware fade - 128 commands, hardware interpolates
+// Fade all segments using duration parameter
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -161,14 +161,14 @@ function fadeAll(toR, toG, toB, durationSec) {
 }
 ```
 
-See `docs/lighting/README.md` for complete hardware fade documentation.
+See `docs/lighting/README.md` for complete fade effects documentation.
 
 ## Development Standards
 
 See `CONTRIBUTING.md` for code style guidelines and development workflow.
 
 **Key standards:**
-- Use hardware fades with `duration` parameter
+- Use the `duration` parameter for smooth fading
 - All timing in **seconds** (not milliseconds)
 - Use `Ds.SendStringCommand` (PascalCase)
 - RGB values are **0-100** (not 0-255)

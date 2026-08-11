@@ -1,6 +1,6 @@
 # Digistar Cove Lighting Control
 
-Hardware-accelerated lighting control system for Digistar 7 using the native `duration` parameter for smooth fades.
+Lighting control system for Digistar 7 using the `duration` parameter for smooth color transitions.
 
 ## RGB Range
 
@@ -29,9 +29,9 @@ setRange(0, 20, 0, 0, 100);
 setSegment(50, 0, 100, 0);
 ```
 
-### Hardware Fades
+### Fade Effects
 
-All fades use the native `duration` parameter for hardware-calculated interpolation.
+All fades use the `duration` parameter for smooth color transitions.
 
 ```javascript
 // Fade all lights to blue over 3 seconds
@@ -47,7 +47,7 @@ fadeToOff(2);
 setSegmentFade(10, 0, 100, 0, 1);
 ```
 
-## Hardware Fade Guide
+## Fade Effects Guide
 
 ### Command Format
 
@@ -57,13 +57,13 @@ Ds.SendStringCommand("coveLights segment 0 100 0 0");
 // Instantly sets segment 0 to red
 ```
 
-**With Hardware Fade:**
+**With Duration Parameter:**
 ```javascript
 Ds.SendStringCommand("coveLights segment 0 100 0 0 duration 3");
-// Hardware fades segment 0 to red over 3 seconds
+// Fades segment 0 to red over 3 seconds
 ```
 
-### Why Hardware Fades
+### Benefits of Using Duration Parameter
 
 **Benefits:**
 - Minimal command count (one per segment = 128 commands total)
@@ -149,7 +149,7 @@ fadeZone("left", 100, 100, 0, 2);
 - `allOff()` - Turn off all lights instantly
 - `setRange(start, end, r, g, b)` - Set range of segments instantly
 
-### Hardware Fade Functions
+### Fade Functions
 - `setSegmentFade(index, r, g, b, durationSec)` - Fade single segment
 - `setAllFade(r, g, b, durationSec)` - Fade all segments
 - `fadeAll(toR, toG, toB, durationSec)` - Fade all to color
@@ -163,9 +163,9 @@ fadeZone("left", 100, 100, 0, 2);
 
 ### Animation Functions
 - `chase(r, g, b, segmentSize, delaySec, loops)` - Moving light chase
-- `chaseFade(r, g, b, segmentSize, stepDuration, loops)` - Chase with hardware fades
-- `pulse(r, g, b, durationSec, loops)` - Breathing pulse (hardware fades)
-- `rainbow(fadeDuration, loops)` - Rainbow color cycle (hardware fades)
+- `chaseFade(r, g, b, segmentSize, stepDuration, loops)` - Chase with fading transitions
+- `pulse(r, g, b, durationSec, loops)` - Breathing pulse with smooth fading
+- `rainbow(fadeDuration, loops)` - Rainbow color cycle with smooth transitions
 
 ### Preset Scenes
 - `scenePreShow()` - Soft blue fade in

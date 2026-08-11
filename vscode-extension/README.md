@@ -4,14 +4,14 @@
   <strong>Complete language support for Digistar 7 JavaScript API</strong>
 </p>
 
-Write Digistar planetarium scripts with IntelliSense, snippets, syntax highlighting, and error detection!
+Write Digistar 7 planetarium scripts with IntelliSense, snippets, syntax highlighting, and error detection!
 
 ---
 
 ## ✨ **Features**
 
 ### 🎯 **IntelliSense & Autocomplete**
-- Full Digistar API function signatures
+- Full Digistar 7 API function signatures
 - Parameter hints and documentation
 - Type definitions for all API calls
 - Autocomplete for `Ds.` namespace
@@ -95,7 +95,7 @@ Type a snippet prefix and press `Tab`:
 | `dsmsg` | Info message | `Ds.SendMessage(0, "message");` |
 | `dssetctrl` | Set attr with animation | Full controller syntax |
 | `dsobject` | Create & configure object | Complete object setup |
-| `dscove` | Cove light segment | Hardware fade command |
+| `dscove` | Cove light segment | Fade effect command |
 | `dstemplate` | Full script template | Complete script structure |
 
 **Example:**
@@ -170,7 +170,7 @@ main();
 - `dsresolve` - Resolve path
 
 ### **Cove Lights**
-- `dscove` - Set segment with hardware fade
+- `dscove` - Set segment with fade effect
 - `dscoveall` - Set all segments
 - `dscovefade` - Fade effect function
 
@@ -258,7 +258,7 @@ Ds.SetObjectAttr("object", "intensity", 100, {
 ### **Cove Lights**
 
 ```javascript
-// Set segment with hardware fade
+// Set segment with fade effect using duration parameter
 Ds.SendStringCommand(`coveLights segment 0 255 0 0 duration 2.0`);
 
 // All segments
@@ -310,12 +310,12 @@ The extension will show a **warning** for suspiciously large angle values.
 
 ## 🎨 **File Types**
 
-The extension recognizes these file extensions as Digistar scripts:
-- `.ds.js` - Digistar JavaScript (recommended)
+The extension recognizes these file extensions as Digistar 7 scripts:
+- `.ds.js` - Digistar 7 JavaScript (recommended)
 - `.digistar.js` - Alternative
-- `.js` - Regular JavaScript (Digistar snippets still work)
+- `.js` - Regular JavaScript (Digistar 7 snippets still work)
 
-**Recommendation:** Use `.ds.js` for Digistar-specific scripts to get full language support.
+**Recommendation:** Use `.ds.js` for Digistar 7-specific scripts to get full language support.
 
 ---
 
@@ -427,9 +427,9 @@ function helper() { ... }
 // #endregion
 ```
 
-### **5. Always Use Hardware Fades**
+### **5. Use Duration Parameter for Fades**
 ```javascript
-// Use duration parameter for smooth hardware fades
+// Use duration parameter for smooth fade effects
 Ds.SendStringCommand(`coveLights segment 0 255 0 0 duration 2.0`);
 ```
 

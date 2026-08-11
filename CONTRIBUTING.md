@@ -12,7 +12,7 @@ This is an internal project for MSU Space Science Center. This guide provides gu
 ## Code Style
 
 ### JavaScript
-- Use hardware fades with `duration` parameter (not software loops)
+- Use the `duration` parameter for smooth color transitions
 - All timing uses **seconds** (not milliseconds)
 - Use `Ds.SendStringCommand` (PascalCase, not camelCase)
 - RGB values are **0-100** (not 0-255)
@@ -58,5 +58,5 @@ Before committing:
 Use clear, descriptive commit messages:
 - `Add fade effect to show template`
 - `Fix segment 127 not responding in diagnostic tool`
-- `Update documentation for hardware fades`
+- `Update documentation for fade effects`
 - `Refactor lighting control to use PascalCase API`

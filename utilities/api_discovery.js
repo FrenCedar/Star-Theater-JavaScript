@@ -1,5 +1,5 @@
-// Digistar API Discovery Script
-// Run this in Digistar to discover available functions and write to output.txt
+// Digistar 7 API Discovery Script
+// Run this in Digistar 7 to discover available functions and write to output.txt
 
 var output = "";
 
@@ -7,7 +7,7 @@ function addLine(text) {
     output += text + "\n";
 }
 
-addLine("=== DIGISTAR JAVASCRIPT API DISCOVERY ===");
+addLine("=== DIGISTAR 7 JAVASCRIPT API DISCOVERY ===");
 addLine("");
 
 // 1. Check for timing functions in global scope
