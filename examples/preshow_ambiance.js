@@ -1,6 +1,9 @@
 // Pre-Show Ambiance Script
 // Soft blue lighting for before a show starts
 // Run this script, it will fade in and stay on
+//
+// Note: Functions are self-contained for standalone execution.
+// For larger projects, use core_lighting/lighting_control_v2.js.
 
 var TOTAL_SEGMENTS = 128;
 

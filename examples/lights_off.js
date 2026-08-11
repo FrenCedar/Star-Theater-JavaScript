@@ -1,6 +1,9 @@
 // Lights Off Script
 // Fades lights to off smoothly
 // Run this at the end of a show
+//
+// Note: Functions are self-contained for standalone execution.
+// For larger projects, use core_lighting/lighting_control_v2.js.
 
 var TOTAL_SEGMENTS = 128;
 

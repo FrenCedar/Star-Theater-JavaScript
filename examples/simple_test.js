@@ -1,5 +1,8 @@
 // Simple Lighting Test - Complete Self-Contained Script
 // Just run this file in Digistar 7!
+//
+// Note: Functions are self-contained for standalone execution.
+// For larger projects, use core_lighting/lighting_control_v2.js.
 
 var TOTAL_SEGMENTS = 128;
 
