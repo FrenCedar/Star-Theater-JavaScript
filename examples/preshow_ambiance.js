@@ -16,7 +16,7 @@ function setAll(r, g, b) {
     }
 }
 
-// Hardware-accelerated fade
+// Fade to a color over time
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -31,7 +31,7 @@ Ds.SendMessageStatus("Starting pre-show ambiance...");
 // Ensure starting from off
 setAll(0, 0, 0);
 
-// Fade to soft blue using HARDWARE over 3 seconds
+// Fade to soft blue over 3 seconds
 fadeAll(20, 40, 80, 3);
 
 Ds.SendMessageStatus("Pre-show ambiance active (soft blue)");

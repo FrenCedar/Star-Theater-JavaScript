@@ -16,7 +16,7 @@ function setAll(r, g, b) {
     }
 }
 
-// Hardware-accelerated fade
+// Fade to a color over time
 function fadeAll(toR, toG, toB, durationSec) {
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
@@ -26,9 +26,9 @@ function fadeAll(toR, toG, toB, durationSec) {
 
 // === FADE TO OFF ===
 
-Ds.SendMessageStatus("Fading lights to off (hardware fade)...");
+Ds.SendMessageStatus("Fading lights to off...");
 
-// Fade to off over 2 seconds using HARDWARE
+// Fade to off over 2 seconds
 fadeAll(0, 0, 0, 2);
 
 Ds.SendMessageStatus("Lights off");

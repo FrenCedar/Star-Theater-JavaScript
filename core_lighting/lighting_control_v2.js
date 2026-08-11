@@ -48,7 +48,7 @@ function setRange(startIndex, endIndex, r, g, b) {
     }
 }
 
-// Set a range with hardware fade
+// Set a range with fade
 function setRangeFade(startIndex, endIndex, r, g, b, durationSec) {
     for (var i = startIndex; i <= endIndex; i++) {
         setSegmentFade(i, r, g, b, durationSec);
@@ -108,7 +108,7 @@ function fadeZone(zoneName, r, g, b, durationSec) {
 
 // ===== ANIMATION FUNCTIONS =====
 
-// Chase effect with hardware fades
+// Chase effect
 function chase(r, g, b, segmentSize, delaySec, loops) {
     loops = loops || 1;
     segmentSize = segmentSize || 5;
@@ -234,4 +234,4 @@ function setTotalSegments(count) {
 }
 
 // ===== INITIALIZATION =====
-log("Lighting V2 loaded - Hardware fades enabled! - " + TOTAL_SEGMENTS + " segments");
+log("Lighting V2 loaded - " + TOTAL_SEGMENTS + " segments");
