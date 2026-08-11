@@ -20,16 +20,10 @@ function setAll(r, g, b) {
     }
 }
 
-function setAllWithDuration(r, g, b, durationSec) {
-    for (var i = 0; i < TOTAL_SEGMENTS; i++) {
-        setSegmentWithDuration(i, r, g, b, durationSec);
-    }
-}
 
-// Hardware-accelerated fade - let the cove lights do the work!
+// Hardware-accelerated fad
 function fadeAllHardware(toR, toG, toB, durationSec) {
-    // Send ONE command per segment with duration
-    // Hardware handles the smooth fade!
+
     for (var i = 0; i < TOTAL_SEGMENTS; i++) {
         Ds.SendStringCommand("coveLights segment " + i + " " + toR + " " + toG + " " + toB + " duration " + durationSec);
     }
@@ -48,32 +42,24 @@ setAll(0, 0, 0);
 Ds.Wait(1);
 
 // Fade to red using HARDWARE
-Ds.SendMessageStatus("Fading to red (HARDWARE fade - 10 seconds)...");
+Ds.SendMessageStatus("Fading to red (10 seconds)...");
 fadeAllHardware(100, 0, 0, 10);
 Ds.SendMessageStatus("Red fade complete!");
 Ds.Wait(1);
 
 // Fade to blue using HARDWARE
-Ds.SendMessageStatus("Fading to blue (HARDWARE fade - 10 seconds)...");
+Ds.SendMessageStatus("Fading to blue (10 seconds)...");
 fadeAllHardware(0, 0, 100, 10);
 Ds.SendMessageStatus("Blue fade complete!");
 Ds.Wait(1);
 
 // Fade to green using HARDWARE
-Ds.SendMessageStatus("Fading to green (HARDWARE fade - 10 seconds)...");
+Ds.SendMessageStatus("Fading to green (10 seconds)...");
 fadeAllHardware(0, 100, 0, 10);
 Ds.SendMessageStatus("Green fade complete!");
 Ds.Wait(1);
 
 // Fade to off using HARDWARE
-Ds.SendMessageStatus("Fading to off (HARDWARE fade - 10 seconds)...");
+Ds.SendMessageStatus("Fading to off (10 seconds)...");
 fadeAllHardware(0, 0, 0, 10);
 Ds.SendMessageStatus("Off fade complete!");
-
-Ds.SendMessageStatus("===============================");
-Ds.SendMessageStatus("Hardware fade test complete!");
-Ds.SendMessageStatus("Compare this to software fade:");
-Ds.SendMessageStatus("  Software: 200 commands per fade");
-Ds.SendMessageStatus("  Hardware: 110 commands per fade");
-Ds.SendMessageStatus("  Smoothness: Hardware is perfect!");
-Ds.SendMessageStatus("===============================");
