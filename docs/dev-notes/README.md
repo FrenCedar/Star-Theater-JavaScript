@@ -18,7 +18,7 @@ Scripts use `TOTAL_SEGMENTS = 128` constant (segments 0-127).
 
 ### Diagnostic Tool
 
-Use `utilities/segment_diagnostic.js` to test individual segments and verify functionality.
+Use `04_utilities/segment_diagnostic.js` to test individual segments and verify functionality.
 
 **Quick tests:**
 ```javascript
@@ -112,8 +112,8 @@ Uses Digistar's actual astronomical calculations and object database rather than
 
 ### Implementation Files
 
-- **`utilities/constellation_finder.js`** - Original implementation (reference)
-- **`utilities/constellation_finder_improved.js`** - Improved version (recommended)
+- **`04_utilities/constellation_finder.js`** - Original implementation (reference)
+- **`04_utilities/constellation_finder_improved.js`** - Improved version (recommended)
 
 ### Usage Example
 
@@ -142,12 +142,12 @@ All scripts use the `duration` parameter for smooth color transitions.
 ### Implementation
 
 Scripts using fade effects:
-- `core_lighting/lighting_control_v2.js`
-- `examples/fade_demo.js`
-- `examples/simple_test.js`
-- `examples/preshow_ambiance.js`
-- `examples/lights_off.js`
-- `utilities/segment_diagnostic.js`
+- `02_library/lighting_control_v2.js`
+- `01_learn/02_fade_demo.js`
+- `01_learn/01_simple_test.js`
+- `01_learn/03_preshow_ambiance.js`
+- `01_learn/04_lights_off.js`
+- `04_utilities/segment_diagnostic.js`
 
 ### Example
 
@@ -161,7 +161,7 @@ function fadeAll(toR, toG, toB, durationSec) {
 }
 ```
 
-See `docs/lighting/README.md` for complete fade effects documentation.
+See `docs/01_lighting_guide.md` for complete fade effects documentation.
 
 ## Development Standards
 

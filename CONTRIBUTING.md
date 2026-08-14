@@ -31,11 +31,11 @@ Ds.Wait(2000);
 
 ## File Organization
 
-- **core_lighting/** - Main libraries
-- **examples/** - Self-contained example scripts
-- **templates/** - Starting templates for new shows
-- **utilities/** - Diagnostic and helper scripts
-- **docs/** - All documentation
+- **docs/** - All documentation, start with `docs/00_START_HERE.md`
+- **01_learn/** - Self-contained example scripts, numbered in learning order
+- **02_library/** - Main libraries
+- **03_templates/** - Starting templates for new shows
+- **04_utilities/** - Diagnostic and helper scripts
 
 ## Documentation
 

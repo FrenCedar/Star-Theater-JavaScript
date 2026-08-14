@@ -8,8 +8,8 @@ All RGB values use **0-100 range** (not 0-255).
 
 ## Available Files
 
-- `core_lighting/lighting_control_v2.js` - Main lighting library with all functions
-- `utilities/Segment.js` - Basic segment control reference
+- `02_library/lighting_control_v2.js` - Main lighting library with all functions
+- `04_utilities/Segment.js` - Basic segment control reference
 
 ## Quick Start
 
@@ -315,8 +315,8 @@ coveLights segment [index] [r] [g] [b] duration [seconds]
 
 ## Reference Files
 
-- `core_lighting/lighting_control_v2.js` - Complete implementation
-- `examples/fade_demo.js` - Hardware fade demonstrations
-- `examples/simple_test.js` - Basic color tests
-- `examples/preshow_ambiance.js` - Pre-show lighting example
-- `examples/lights_off.js` - Fade to off sequence
+- `02_library/lighting_control_v2.js` - Complete implementation
+- `01_learn/02_fade_demo.js` - Hardware fade demonstrations
+- `01_learn/01_simple_test.js` - Basic color tests
+- `01_learn/03_preshow_ambiance.js` - Pre-show lighting example
+- `01_learn/04_lights_off.js` - Fade to off sequence

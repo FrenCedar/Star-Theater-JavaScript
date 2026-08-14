@@ -33,11 +33,11 @@ Ds.SendStringCommand("coveLights segment 0 100 0 0");
 ## Current Files
 
 Scripts in this project use correct API conventions:
-- `core_lighting/lighting_control_v2.js`
-- `examples/simple_test.js`
-- See `examples/fade_demo.js` for fade effect examples.
-- `examples/lights_off.js`
-- `utilities/segment_diagnostic.js`  
+- `02_library/lighting_control_v2.js`
+- `01_learn/01_simple_test.js`
+- See `01_learn/02_fade_demo.js` for fade effect examples.
+- `01_learn/04_lights_off.js`
+- `04_utilities/segment_diagnostic.js`  
 
 ## Quick Reference
 

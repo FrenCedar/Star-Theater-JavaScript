@@ -2,7 +2,7 @@
 // Demonstrates smooth color transitions using the duration parameter
 //
 // Note: Functions are self-contained for standalone execution.
-// For larger projects, use core_lighting/lighting_control_v2.js.
+// For larger projects, use 02_library/lighting_control_v2.js.
 
 var TOTAL_SEGMENTS = 128;
 
