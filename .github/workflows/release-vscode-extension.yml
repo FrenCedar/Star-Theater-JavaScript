@@ -1,0 +1,50 @@
+name: Release VS Code Extension
+
+# Builds and packages tools/vscode-extension into a .vsix and attaches it
+# to a GitHub Release whenever a version tag (e.g. v1.0.1) is pushed.
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/vscode-extension
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: tools/vscode-extension/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile TypeScript
+        run: npm run compile
+
+      - name: Package extension (.vsix)
+        run: npx @vscode/vsce package
+
+      - name: Locate packaged .vsix
+        id: vsix
+        run: echo "path=$(ls *.vsix)" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Digistar 7 Scripting ${{ github.ref_name }}
+          generate_release_notes: true
+          files: tools/vscode-extension/${{ steps.vsix.outputs.path }}

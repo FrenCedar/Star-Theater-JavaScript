@@ -1,0 +1,76 @@
+{
+  "name": "digistar7-scripting",
+  "displayName": "Digistar 7 Scripting",
+  "description": "Language support for Digistar 7 JavaScript API - syntax highlighting, IntelliSense, and snippets",
+  "version": "1.0.0",
+  "publisher": "digistar-scripting",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "digistar",
+    "digistar7",
+    "planetarium",
+    "astronomy",
+    "dome"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "digistar-js",
+        "aliases": [
+          "Digistar JavaScript",
+          "digistar-js"
+        ],
+        "extensions": [
+          ".ds.js",
+          ".digistar.js"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "digistar-js",
+        "scopeName": "source.js.digistar",
+        "path": "./syntaxes/digistar-js.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/digistar-snippets.json"
+      },
+      {
+        "language": "digistar-js",
+        "path": "./snippets/digistar-snippets.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[digistar-js]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/vsce": "^2.24.0",
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT"
+}

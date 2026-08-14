@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Digistar JavaScript",
+  "scopeName": "source.js.digistar",
+  "patterns": [
+    {
+      "include": "source.js"
+    },
+    {
+      "include": "#digistar-api"
+    }
+  ],
+  "repository": {
+    "digistar-api": {
+      "patterns": [
+        {
+          "name": "support.function.digistar",
+          "match": "\\b(Ds)\\.(SendMessage|SendStringCommand|Sleep|Wait|CreateObject|DeleteObject|GetObjectID|GetObjectAttr|SetObjectAttr|SetObjectAttrCallback|SceneAddObject|SceneRemoveObject|SceneSetDate|GetObjPositionInDome|FileRead|FileWrite|FileExists|ResolvePath|DirectorySearch|SystemCommand|SystemMemory|Reset|CartesianToDome|DomeToCartesian|GetClassAttributeNames)\\b"
+        },
+        {
+          "name": "support.type.digistar",
+          "match": "\\b(SDSBoolAttr|SDSIntAttr|SDSFloatAttr|SDSStringAttr|SDSVector3Attr|SDSColorAttr|SDSPositionAttr)\\b"
+        },
+        {
+          "name": "constant.language.coordinate-mode.digistar",
+          "match": "\\b(Cartesian|Spherical|Celestial|Relative|Orbit)\\b"
+        },
+        {
+          "name": "constant.language.distance-unit.digistar",
+          "match": "\\b(meter|kilometer|AU|parsec|light_year)\\b"
+        },
+        {
+          "name": "constant.language.controller-func.digistar",
+          "match": "\\b(Linear|EaseIn|EaseOut|EaseInOut|Exponential|Logarithmic)\\b"
+        },
+        {
+          "name": "constant.language.object-type.digistar",
+          "match": "\\b(permanent|transient|temporary)\\b"
+        },
+        {
+          "name": "string.quoted.other.digistar-path",
+          "match": "\"(\\$Content|\\$System|\\$User|\\$Temp)[^\"]*\""
+        },
+        {
+          "name": "keyword.control.digistar-command",
+          "match": "\\bcoveLights\\b"
+        }
+      ]
+    }
+  }
+}

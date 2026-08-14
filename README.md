@@ -17,6 +17,7 @@ The folders are numbered in the order a first-time learner should go through the
 5. **Copy `03_templates/show_template.js`** - starting point for your own show
 6. **Browse `04_utilities/`** - diagnostic/exploration scripts, use as needed (not required reading)
 7. **Reference `docs/reference/`** whenever you need exact API details
+8. **Install `tools/vscode-extension/`** - optional, adds IntelliSense/snippets so you can write scripts on your own laptop instead of the planetarium computer
 
 ## Project Structure
 
@@ -27,7 +28,8 @@ digistar_js_project/
 ├── 02_library/             Main lighting control library
 ├── 03_templates/           Template files for creating new shows
 ├── 04_utilities/           Diagnostic and utility scripts
-└── vscode-extension/       VS Code extension for Digistar scripting
+└── tools/
+    └── vscode-extension/   VS Code extension for Digistar scripting
 ```
 
 ### Core Directories
@@ -51,7 +53,7 @@ digistar_js_project/
 - `constellation_finder_improved.js` - Enhanced constellation calculator
 - `Segment.js` - Legacy segment control reference
 
-**vscode-extension/** - VS Code extension with IntelliSense and snippets
+**tools/vscode-extension/** - VS Code extension with IntelliSense and snippets, lets you write Digistar 7 scripts on any computer (not just the school planetarium machine)
 - Complete Digistar 7 API type definitions
 - 50+ code snippets for Digistar scripting
 - Syntax highlighting and error detection
