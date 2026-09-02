@@ -4,18 +4,18 @@ This project contains JavaScript scripts and tools for the Digistar 7 planetariu
 
 ## Overview
 
-This repository provides scripts for controlling cove lighting, managing shows, and interfacing with the Digistar 7 system through local JavaScript execution.
+This repository provides JavaScript tools and scripts for the Digistar 7 planetarium system. It currently includes cove lighting control, show templates, diagnostic utilities, and a VS Code extension for local development.
 
 ## New Here? Start With This Path
 
 The folders are numbered in the order a first-time learner should go through them:
 
 1. **Read `docs/00_START_HERE.md`** - core concepts, execution model, script anatomy
-2. **Open `01_learn/`** - run these example scripts in order (01 → 04) to see cove lighting in action
-3. **Read `docs/01_lighting_guide.md`** - the full lighting API (zones, fades, presets, animations)
-4. **Use `02_library/lighting_control_v2.js`** - drop this into a real show instead of copy-pasting functions
-5. **Copy `03_templates/show_template.js`** - starting point for your own show
-6. **Browse `04_utilities/`** - diagnostic/exploration scripts, use as needed (not required reading)
+2. **Open `cove-lights/01_learn/`** - run these example scripts in order (01 → 04) to see cove lighting in action
+3. **Read `docs/01_lighting_guide.md`** - the full cove lighting API (zones, fades, presets, animations)
+4. **Use `cove-lights/02_library/lighting_control_v2.js`** - drop this into a real show instead of copy-pasting functions
+5. **Copy `cove-lights/03_templates/show_template.js`** - starting point for your own show
+6. **Browse `cove-lights/04_utilities/`** - diagnostic/exploration scripts, use as needed (not required reading)
 7. **Reference `docs/reference/`** whenever you need exact API details
 8. **Install `tools/vscode-extension/`** - optional, adds IntelliSense/snippets so you can write scripts on your own laptop instead of the planetarium computer
 
@@ -23,35 +23,41 @@ The folders are numbered in the order a first-time learner should go through the
 
 ```
 digistar_js_project/
-├── docs/                   Documentation, read 00_START_HERE.md first
-├── 01_learn/               Example scripts, run in numeric order
-├── 02_library/             Main lighting control library
-├── 03_templates/           Template files for creating new shows
-├── 04_utilities/           Diagnostic and utility scripts
-└── tools/
-    └── vscode-extension/   VS Code extension for Digistar scripting
+├── docs/                   General documentation, read 00_START_HERE.md first
+├── cove-lights/            Cove lighting scripts and tools
+│   ├── 01_learn/           Example scripts, run in numeric order
+│   ├── 02_library/         Main lighting control library
+│   ├── 03_templates/       Template files for creating new shows
+│   ├── 04_utilities/       Diagnostic and utility scripts
+│   └── tests/              Testing and validation scripts
+├── tools/
+│   └── vscode-extension/   VS Code extension for Digistar scripting
+└── .github/workflows/      Release automation
 ```
 
 ### Core Directories
 
-**02_library/** - Main lighting control library
-- `lighting_control_v2.js` - Complete lighting functions and effects
+**cove-lights/** - Cove lighting system
+- `02_library/lighting_control_v2.js` - Complete lighting functions and effects
+- `01_learn/` - Example scripts for testing and reference, in learning order
+  - `01_simple_test.js` - Basic RGB color test
+  - `02_fade_demo.js` - Fade effect demonstration
+  - `03_preshow_ambiance.js` - Pre-show ambient lighting
+  - `04_lights_off.js` - Smooth fade to off
+- `03_templates/show_template.js` - Base template for creating show scripts
+- `04_utilities/` - Tools for diagnostics and system exploration
+  - `segment_diagnostic.js` - Test individual cove light segments
+  - `api_discovery.js` - Discover available Digistar 7 API functions
+  - `constellation_finder.js` - Calculate visible constellations
+  - `constellation_finder_improved.js` - Enhanced constellation calculator
+  - `Segment.js` - Legacy segment control reference
+- `tests/Cove_Test.js` - Validation script for cove lights
 
-**01_learn/** - Example scripts for testing and reference, in learning order
-- `01_simple_test.js` - Basic RGB color test
-- `02_fade_demo.js` - Fade effect demonstration
-- `03_preshow_ambiance.js` - Pre-show ambient lighting
-- `04_lights_off.js` - Smooth fade to off
-
-**03_templates/** - Starting templates for new projects
-- `show_template.js` - Base template for creating show scripts
-
-**04_utilities/** - Tools for diagnostics and system exploration
-- `segment_diagnostic.js` - Test individual cove light segments
-- `api_discovery.js` - Discover available Digistar 7 API functions
-- `constellation_finder.js` - Calculate visible constellations
-- `constellation_finder_improved.js` - Enhanced constellation calculator
-- `Segment.js` - Legacy segment control reference
+**docs/** - Project documentation
+- `00_START_HERE.md` - Core concepts and script anatomy
+- `01_lighting_guide.md` - Cove lighting API reference
+- `reference/` - Digistar 7 API references
+- `dev-notes/` - Development notes and troubleshooting
 
 **tools/vscode-extension/** - VS Code extension with IntelliSense and snippets, lets you write Digistar 7 scripts on any computer (not just the school planetarium machine)
 - Complete Digistar 7 API type definitions
@@ -65,7 +71,7 @@ Documentation is organized into the following categories under `docs/`:
 
 **00_START_HERE.md** - Script development guide, workflow, and file usage patterns (read this first)
 
-**01_lighting_guide.md** - Complete lighting control guide and fade effects
+**01_lighting_guide.md** - Complete cove lighting control guide and fade effects
 
 **reference/** - API and system references
 - `DIGISTAR7_COMPLETE_REFERENCE.md` - Comprehensive Digistar 7 scripting guide
@@ -87,7 +93,7 @@ This project uses **two separate Digistar 7 APIs** that are easy to confuse:
 | RGB range | **0-100** | **0-255** |
 | Documented in | `docs/01_lighting_guide.md` | `docs/reference/DIGISTAR7_QUICK_REFERENCE.md` |
 
-Everything in `01_learn/`, `02_library/`, and `03_templates/` uses the **Cove Lighting API (0-100 RGB)**. The Quick Reference card documents the separate, general-purpose object API used for camera/eye position, generic object attributes, etc.
+Everything in `cove-lights/01_learn/`, `cove-lights/02_library/`, and `cove-lights/03_templates/` uses the **Cove Lighting API (0-100 RGB)**. The Quick Reference card documents the separate, general-purpose object API used for camera/eye position, generic object attributes, etc.
 
 ## Fade Effects
 

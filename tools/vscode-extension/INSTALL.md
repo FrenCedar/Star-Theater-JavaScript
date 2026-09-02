@@ -172,7 +172,7 @@ Add to your `.vscode/settings.json`:
 1. Use `dsobject` snippet to create objects
 2. Try `dsfadein` for animations
 3. Experiment with `dscove` for lights
-4. Check examples in the project's `01_learn/` folder
+4. Check examples in the project's `cove-lights/01_learn/` folder
 
 ### **Advanced**
 1. Reference `digistar.d.ts` in your projects

@@ -6,19 +6,19 @@ This is the entry point for learning the Digistar 7 JavaScript system used in th
 
 ### Available Example Scripts
 
-Ready-to-run files in the project, in the order you should try them:
+Ready-to-run cove light files in the project, in the order you should try them:
 
 ```
-01_learn/01_simple_test.js       - Basic RGB color test
-01_learn/02_fade_demo.js         - Fade effect demonstration
-01_learn/03_preshow_ambiance.js  - Pre-show ambient lighting
-01_learn/04_lights_off.js        - Fade to off
-04_utilities/segment_diagnostic.js - Test individual segments
+cove-lights/01_learn/01_simple_test.js       - Basic RGB color test
+cove-lights/01_learn/02_fade_demo.js         - Fade effect demonstration
+cove-lights/01_learn/03_preshow_ambiance.js  - Pre-show ambient lighting
+cove-lights/01_learn/04_lights_off.js        - Fade to off
+cove-lights/04_utilities/segment_diagnostic.js - Test individual segments
 ```
 
 ### Creating Custom Scripts
 
-1. Copy `03_templates/show_template.js` as a starting point
+1. Copy `cove-lights/03_templates/show_template.js` as a starting point
 2. Modify the script sequence
 3. Save and run in Digistar
 
@@ -122,12 +122,12 @@ Ds.SendMessage(0, "Show complete");
 
 Examine existing scripts for implementation patterns:
 
-- **`02_library/lighting_control_v2.js`** - Main library with all lighting functions
-- **`01_learn/01_simple_test.js`** - Basic color commands
-- **`01_learn/02_fade_demo.js`** - Fade effect examples
-- **`01_learn/03_preshow_ambiance.js`** - Ambient lighting example
-- **`01_learn/04_lights_off.js`** - Clean fade to off sequence
-- **`03_templates/show_template.js`** - Complete show template
+- **`cove-lights/02_library/lighting_control_v2.js`** - Main library with all lighting functions
+- **`cove-lights/01_learn/01_simple_test.js`** - Basic color commands
+- **`cove-lights/01_learn/02_fade_demo.js`** - Fade effect examples
+- **`cove-lights/01_learn/03_preshow_ambiance.js`** - Ambient lighting example
+- **`cove-lights/01_learn/04_lights_off.js`** - Clean fade to off sequence
+- **`cove-lights/03_templates/show_template.js`** - Complete show template
 
 ## Color Reference
 

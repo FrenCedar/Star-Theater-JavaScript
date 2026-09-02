@@ -18,7 +18,7 @@ Scripts use `TOTAL_SEGMENTS = 128` constant (segments 0-127).
 
 ### Diagnostic Tool
 
-Use `04_utilities/segment_diagnostic.js` to test individual segments and verify functionality.
+Use `cove-lights/04_utilities/segment_diagnostic.js` to test individual segments and verify functionality.
 
 **Quick tests:**
 ```javascript
@@ -112,8 +112,8 @@ Uses Digistar's actual astronomical calculations and object database rather than
 
 ### Implementation Files
 
-- **`04_utilities/constellation_finder.js`** - Original implementation (reference)
-- **`04_utilities/constellation_finder_improved.js`** - Improved version (recommended)
+- **`cove-lights/04_utilities/constellation_finder.js`** - Original implementation (reference)
+- **`cove-lights/04_utilities/constellation_finder_improved.js`** - Improved version (recommended)
 
 ### Usage Example
 
@@ -142,12 +142,12 @@ All scripts use the `duration` parameter for smooth color transitions.
 ### Implementation
 
 Scripts using fade effects:
-- `02_library/lighting_control_v2.js`
-- `01_learn/02_fade_demo.js`
-- `01_learn/01_simple_test.js`
-- `01_learn/03_preshow_ambiance.js`
-- `01_learn/04_lights_off.js`
-- `04_utilities/segment_diagnostic.js`
+- `cove-lights/02_library/lighting_control_v2.js`
+- `cove-lights/01_learn/02_fade_demo.js`
+- `cove-lights/01_learn/01_simple_test.js`
+- `cove-lights/01_learn/03_preshow_ambiance.js`
+- `cove-lights/01_learn/04_lights_off.js`
+- `cove-lights/04_utilities/segment_diagnostic.js`
 
 ### Example
 

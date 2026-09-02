@@ -32,10 +32,10 @@ Ds.Wait(2000);
 ## File Organization
 
 - **docs/** - All documentation, start with `docs/00_START_HERE.md`
-- **01_learn/** - Self-contained example scripts, numbered in learning order
-- **02_library/** - Main libraries
-- **03_templates/** - Starting templates for new shows
-- **04_utilities/** - Diagnostic and helper scripts
+- **cove-lights/01_learn/** - Self-contained example scripts, numbered in learning order
+- **cove-lights/02_library/** - Main libraries
+- **cove-lights/03_templates/** - Starting templates for new shows
+- **cove-lights/04_utilities/** - Diagnostic and helper scripts
 
 ## Documentation
 
