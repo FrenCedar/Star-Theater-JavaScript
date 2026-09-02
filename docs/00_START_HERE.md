@@ -9,16 +9,16 @@ This is the entry point for learning the Digistar 7 JavaScript system used in th
 Ready-to-run cove light files in the project, in the order you should try them:
 
 ```
-cove-lights/01_learn/01_simple_test.js       - Basic RGB color test
-cove-lights/01_learn/02_fade_demo.js         - Fade effect demonstration
-cove-lights/01_learn/03_preshow_ambiance.js  - Pre-show ambient lighting
-cove-lights/01_learn/04_lights_off.js        - Fade to off
-cove-lights/04_utilities/segment_diagnostic.js - Test individual segments
+projects/cedar/cove-lights/01_learn/01_simple_test.js       - Basic RGB color test
+projects/cedar/cove-lights/01_learn/02_fade_demo.js         - Fade effect demonstration
+projects/cedar/cove-lights/01_learn/03_preshow_ambiance.js  - Pre-show ambient lighting
+projects/cedar/cove-lights/01_learn/04_lights_off.js        - Fade to off
+projects/cedar/cove-lights/04_utilities/segment_diagnostic.js - Test individual segments
 ```
 
 ### Creating Custom Scripts
 
-1. Copy `cove-lights/03_templates/show_template.js` as a starting point
+1. Copy `projects/cedar/cove-lights/03_templates/show_template.js` as a starting point
 2. Modify the script sequence
 3. Save and run in Digistar
 
@@ -122,12 +122,12 @@ Ds.SendMessage(0, "Show complete");
 
 Examine existing scripts for implementation patterns:
 
-- **`cove-lights/02_library/lighting_control_v2.js`** - Main library with all lighting functions
-- **`cove-lights/01_learn/01_simple_test.js`** - Basic color commands
-- **`cove-lights/01_learn/02_fade_demo.js`** - Fade effect examples
-- **`cove-lights/01_learn/03_preshow_ambiance.js`** - Ambient lighting example
-- **`cove-lights/01_learn/04_lights_off.js`** - Clean fade to off sequence
-- **`cove-lights/03_templates/show_template.js`** - Complete show template
+- **`projects/cedar/cove-lights/02_library/lighting_control_v2.js`** - Main library with all lighting functions
+- **`projects/cedar/cove-lights/01_learn/01_simple_test.js`** - Basic color commands
+- **`projects/cedar/cove-lights/01_learn/02_fade_demo.js`** - Fade effect examples
+- **`projects/cedar/cove-lights/01_learn/03_preshow_ambiance.js`** - Ambient lighting example
+- **`projects/cedar/cove-lights/01_learn/04_lights_off.js`** - Clean fade to off sequence
+- **`projects/cedar/cove-lights/03_templates/show_template.js`** - Complete show template
 
 ## Color Reference
 

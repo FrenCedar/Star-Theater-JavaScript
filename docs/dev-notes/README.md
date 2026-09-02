@@ -18,7 +18,7 @@ Scripts use `TOTAL_SEGMENTS = 128` constant (segments 0-127).
 
 ### Diagnostic Tool
 
-Use `cove-lights/04_utilities/segment_diagnostic.js` to test individual segments and verify functionality.
+Use `projects/cedar/cove-lights/04_utilities/segment_diagnostic.js` to test individual segments and verify functionality.
 
 **Quick tests:**
 ```javascript
@@ -142,12 +142,12 @@ All scripts use the `duration` parameter for smooth color transitions.
 ### Implementation
 
 Scripts using fade effects:
-- `cove-lights/02_library/lighting_control_v2.js`
-- `cove-lights/01_learn/02_fade_demo.js`
-- `cove-lights/01_learn/01_simple_test.js`
-- `cove-lights/01_learn/03_preshow_ambiance.js`
-- `cove-lights/01_learn/04_lights_off.js`
-- `cove-lights/04_utilities/segment_diagnostic.js`
+- `projects/cedar/cove-lights/02_library/lighting_control_v2.js`
+- `projects/cedar/cove-lights/01_learn/02_fade_demo.js`
+- `projects/cedar/cove-lights/01_learn/01_simple_test.js`
+- `projects/cedar/cove-lights/01_learn/03_preshow_ambiance.js`
+- `projects/cedar/cove-lights/01_learn/04_lights_off.js`
+- `projects/cedar/cove-lights/04_utilities/segment_diagnostic.js`
 
 ### Example
 

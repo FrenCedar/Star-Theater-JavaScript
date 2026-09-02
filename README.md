@@ -11,11 +11,11 @@ This repository provides JavaScript tools and scripts for the Digistar 7 planeta
 The folders are numbered in the order a first-time learner should go through them:
 
 1. **Read `docs/00_START_HERE.md`** - core concepts, execution model, script anatomy
-2. **Open `cove-lights/01_learn/`** - run these example scripts in order (01 → 04) to see cove lighting in action
+2. **Open `projects/cedar/cove-lights/01_learn/`** - run these example scripts in order (01 → 04) to see cove lighting in action
 3. **Read `docs/01_lighting_guide.md`** - the full cove lighting API (zones, fades, presets, animations)
-4. **Use `cove-lights/02_library/lighting_control_v2.js`** - drop this into a real show instead of copy-pasting functions
-5. **Copy `cove-lights/03_templates/show_template.js`** - starting point for your own show
-6. **Browse `cove-lights/04_utilities/`** - diagnostic/exploration scripts, use as needed (not required reading)
+4. **Use `projects/cedar/cove-lights/02_library/lighting_control_v2.js`** - drop this into a real show instead of copy-pasting functions
+5. **Copy `projects/cedar/cove-lights/03_templates/show_template.js`** - starting point for your own show
+6. **Browse `projects/cedar/cove-lights/04_utilities/`** - diagnostic/exploration scripts, use as needed (not required reading)
 7. **Reference `docs/reference/`** whenever you need exact API details
 8. **Install `tools/vscode-extension/`** - optional, adds IntelliSense/snippets so you can write scripts on your own laptop instead of the planetarium computer
 
@@ -24,14 +24,14 @@ The folders are numbered in the order a first-time learner should go through the
 ```
 digistar_js_project/
 ├── docs/                   General documentation, read 00_START_HERE.md first
-├── cove-lights/            Cove lighting scripts and tools
-│   ├── 01_learn/           Example scripts, run in numeric order
-│   ├── 02_library/         Main lighting control library
-│   ├── 03_templates/       Template files for creating new shows
-│   ├── 04_utilities/       Diagnostic and utility scripts
-│   └── tests/              Testing and validation scripts
 ├── projects/               Individual project workspaces
 │   └── cedar/
+│       ├── cove-lights/           Cove lighting scripts and tools
+│       │   ├── 01_learn/          Example scripts, run in numeric order
+│       │   ├── 02_library/        Main lighting control library
+│       │   ├── 03_templates/      Template files for creating new shows
+│       │   ├── 04_utilities/      Diagnostic and utility scripts
+│       │   └── tests/             Testing and validation scripts
 │       └── constellation-finder/  Constellation visibility tools
 ├── tools/
 │   └── vscode-extension/   VS Code extension for Digistar scripting
@@ -40,7 +40,7 @@ digistar_js_project/
 
 ### Core Directories
 
-**cove-lights/** - Cove lighting system
+**projects/cedar/cove-lights/** - Cove lighting system
 - `02_library/lighting_control_v2.js` - Complete lighting functions and effects
 - `01_learn/` - Example scripts for testing and reference, in learning order
   - `01_simple_test.js` - Basic RGB color test
@@ -99,7 +99,7 @@ This project uses **two separate Digistar 7 APIs** that are easy to confuse:
 | RGB range | **0-100** | **0-255** |
 | Documented in | `docs/01_lighting_guide.md` | `docs/reference/DIGISTAR7_QUICK_REFERENCE.md` |
 
-Everything in `cove-lights/01_learn/`, `cove-lights/02_library/`, and `cove-lights/03_templates/` uses the **Cove Lighting API (0-100 RGB)**. The Quick Reference card documents the separate, general-purpose object API used for camera/eye position, generic object attributes, etc.
+Everything in `projects/cedar/cove-lights/01_learn/`, `projects/cedar/cove-lights/02_library/`, and `projects/cedar/cove-lights/03_templates/` uses the **Cove Lighting API (0-100 RGB)**. The Quick Reference card documents the separate, general-purpose object API used for camera/eye position, generic object attributes, etc.
 
 ## Fade Effects
 
