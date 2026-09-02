@@ -112,8 +112,8 @@ Uses Digistar's actual astronomical calculations and object database rather than
 
 ### Implementation Files
 
-- **`cove-lights/04_utilities/constellation_finder.js`** - Original implementation (reference)
-- **`cove-lights/04_utilities/constellation_finder_improved.js`** - Improved version (recommended)
+- **`projects/cedar/constellation-finder/constellation_finder.js`** - Original implementation (reference)
+- **`projects/cedar/constellation-finder/constellation_finder_improved.js`** - Improved version (recommended)
 
 ### Usage Example
 

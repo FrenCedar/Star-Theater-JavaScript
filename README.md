@@ -30,6 +30,9 @@ digistar_js_project/
 │   ├── 03_templates/       Template files for creating new shows
 │   ├── 04_utilities/       Diagnostic and utility scripts
 │   └── tests/              Testing and validation scripts
+├── projects/               Individual project workspaces
+│   └── cedar/
+│       └── constellation-finder/  Constellation visibility tools
 ├── tools/
 │   └── vscode-extension/   VS Code extension for Digistar scripting
 └── .github/workflows/      Release automation
@@ -48,10 +51,13 @@ digistar_js_project/
 - `04_utilities/` - Tools for diagnostics and system exploration
   - `segment_diagnostic.js` - Test individual cove light segments
   - `api_discovery.js` - Discover available Digistar 7 API functions
-  - `constellation_finder.js` - Calculate visible constellations
-  - `constellation_finder_improved.js` - Enhanced constellation calculator
   - `Segment.js` - Legacy segment control reference
 - `tests/Cove_Test.js` - Validation script for cove lights
+
+**projects/** - Individual project workspaces
+- `cedar/constellation-finder/` - Constellation visibility and dome projection tools
+  - `constellation_finder.js` - Original implementation (manual calculations)
+  - `constellation_finder_improved.js` - Improved version using Digistar's native objects
 
 **docs/** - Project documentation
 - `00_START_HERE.md` - Core concepts and script anatomy
